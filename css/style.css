@@ -8,12 +8,18 @@
     --primaryGreen: #b5de8c;
     --secondaryGreen: #eaf6df;
     --footerGrey: #65645e;
+    --black: #000;
 }
 
 body {
     padding: 0;
     margin: 0;
     background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 h1 {
@@ -292,4 +298,67 @@ header .button_1 {
 .copyright a {
     text-decoration: none;
     color: var(--footerGrey);
+}
+
+/* BOKARTIKKEL  */
+
+/* .bok-illustrasjon {
+    float: right;
+    margin-right: 600px;
+    margin-top: 50px;
+    width: 200px;
+
+} */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.bok-illustrasjon {
+    grid-column: 7/10;
+    padding-top: 80px;
+    padding-right: 20px;
+}
+
+.headline {
+    grid-column: 2/6;
+    grid-row: 1;
+    padding-top: 250px;
+    padding-left: 150px;
+    line-height: 4rem;
+}
+
+.ingress {
+    grid-column: 5/9;
+    grid-row: 2;
+    line-height: 3rem;
+    font-size: 1.7rem;
+}
+
+.ingress .undertekst {
+    font-size: 1rem;
+}
+
+.paragraph {
+    grid-column: 5/10;
+    grid-row: 3;
+    line-height: 1.9rem;
+}
+
+.konklusjon {
+    background: var(--secondaryGreen);
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.heading {
+    grid-column: 3/10;
+}
+
+.last_paragraph {
+    grid-column: 5/10;
+    grid-row: 2;
+    line-height: 1.9rem;
 }
