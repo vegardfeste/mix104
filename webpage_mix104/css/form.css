@@ -36,7 +36,7 @@ p {
 header {
   width:auto;
   height: 6.1vw;
-  border: 1px  var(--primaryGreen) solid;
+
 }
 nav ul{
   list-style-type:none;
@@ -88,10 +88,13 @@ a{
 /********* form *******/
 #form{
   clear: both;
-  border: 1px solid black;
-  height: 962px;
+  height: auto;
+  padding-bottom: 7.1vw;
   position: relative;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
+}
+#form .text{
+
 }
 
 #form .text, #form .form, #form .register{
@@ -105,7 +108,7 @@ a{
    border: 1px black solid;
  }
 
- #form .form form{
+ #form .form .info{
    width:56vw;
    margin-left: 25px;
   }
@@ -148,7 +151,6 @@ a{
 }
 
 #form .text .text_2{
-  display: block;
   margin: 0 auto;
   margin-top: 30px;
   width: 746px;
@@ -167,65 +169,42 @@ a{
   color: #4DA2D1;
 }
 
-#form img{
+.img_guider {
   width:3.54vw;
   height:3.54vw;
   position: absolute;
-  right:10vw;
+  left:90vw;
 }
+
 /****  popup - form ****/
-#form .form .column{
-  display:block;
-  float: left;
-  margin-right: 50px;
-  margin-bottom: 67px;
-  position: relative;
-  width:350px;
-  height:67px;
-  border-bottom:   1px black solid;
+#medlem .column{
+  float:left;
+  width:382px;
+  height:80px;
+  margin-bottom:50px;
+  /*border: 1px solid black;*/
 }
-
-#form .form .column p{
+#medlem .column p{
+  font-size: 17px;
+}
+#medlem .column input{
+  box-sizing: border-box;
   font-size: 16px;
-  padding: 0;
-  margin: 0;
+  width: 350px;
+  height: 50px;
+  border:none;
+  outline: none;
+  border-bottom: 1px black solid;
 }
 
-#form .form .column input{
-  outline-style: none;
-  border: 0;
-  position: absolute;
-  bottom:0;
-  width:383px;
-  height:25px;
+
+#medlem span{
+  color: red;
+  display: none;
+  margin:0;
+
 }
 
-#form .checkbox{
-  clear: both;
-  width:400px;
-  height: 32px;
-}
-
- #form input[type="checkbox"]{
-   margin: 0;
-   padding: 0;
-   outline-style: none;
-   border: none;
-   float: left;
-   margin-left:10px;
-   outline: 3px solid #4DA2D1;
-   border-radius: 0;
-   clip: rect(0 0);
-}
-
-#form .form label{
-  line-height: 16px;
-  margin-left:10px;
-  display: block;
-  float: left;
-  width:346.5px;
-  font-size: 12px;
-}
 
 #form  .form  button{
   clear: both;
@@ -255,4 +234,178 @@ section .form{
 
 #form .form, #form .register{
   display: none;
+}
+
+ input[type=checkbox] + label {
+  display: block;
+  margin: 0.2em;
+  /*cursor: pointer;*/
+  padding: 0.2em;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+ input[type=checkbox] + label:before {
+  content: " ";
+  border: 0.1em solid #000;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 0.2em;
+  vertical-align:text-bottom;
+  color: transparent;
+  transition: .2s;
+}
+
+input[type=checkbox] + label:active:before {
+  transform: scale(0);
+}
+
+input[type=checkbox]:checked + label:before {
+  background-color: MediumSeaGreen;
+  border-color: MediumSeaGreen;
+  color: #fff;
+}
+input[name="telepone"], input[name="epost"]{
+  margin-bottom: 0;
+}
+#form .checkbox{
+  margin-left: 12px;
+  clear: both;
+  width:400px;
+  height: auto;
+}
+
+#form .checkbox label{
+  line-height: 16px;
+  margin-left:10px;
+  display: block;
+  float: left;
+  width:346.5px;
+  height: 70px;
+  font-size: 12px;
+}
+/********** form end *****************/
+/******************  finish registering  *************/
+.img_illu {
+  display: block;
+  margin: 0 auto;
+  width:680px;
+  height: auto;
+}
+/******************  finish registering  end **********/
+/* INFO seksjon */
+
+#info {
+    background: var(--primaryGreen);
+    min-height: auto;
+    padding-top: 73px;
+    padding-bottom: 72px;
+}
+
+#info .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#info button {
+    margin: 0 auto;
+    display: block;
+    color: var(--primaryGreen);
+    background: #fff;
+    padding: 10px 0;
+    border: none;
+    width: 270px;
+    border-radius: 43px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+#info p {
+    /* margin-left: 50%;
+    margin-top: 80px; */
+    line-height: 1.8rem;
+    font-size: 24px;
+}
+
+/* FOOTER seksjon */
+
+#footer {
+    background: var(--footerGrey);
+    color: #fff;
+}
+
+#footer .copyright {
+    background: #fff;
+    color: var(--footerGrey);
+}
+
+#footer .container {
+    padding-top: 72px;
+    padding-bottom: 65px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+#footer .container div:nth-child(1) {
+    grid-column: 2/5;
+    grid-row: 1;
+}
+
+#footer .container div:nth-child(2) {
+    grid-column: 6/8;
+    grid-row: 1;
+}
+
+#footer .container div:nth-child(3) {
+    grid-column: 9/12;
+    grid-row: 1;
+}
+
+#footer .nyhetsbrev button {
+    margin-right: 20px;
+    color: #fff;
+    background: var(--primaryGreen);
+    padding: 11px 12px;
+    border: none;
+    text-transform: uppercase;
+}
+
+#footer .nyhetsbrev input {
+    width: 150px;
+    height: 35px;
+    border: none;
+}
+
+/* BUNN AV SIDE */
+
+.copyright {
+    display: block;
+    /*ustify-content: space-between;*/
+    align-items: center;
+    padding: 3% 7%;
+}
+
+.copyright a {
+    font-size: 11.2px;
+    text-decoration: none;
+    color: var(--footerGrey);
+}
+
+.copyright .KO, .copyright .PV{
+  display: block;
+  float:left;
+}
+.copyright .PV{
+  margin-left: 100px;
+}
+.copyright .LOGONAVN{
+  float: right;
+  text-align: right;
 }
