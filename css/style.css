@@ -95,18 +95,20 @@ header .button_1 {
 
 /* SHOWCASE */
 
+
 #showcase {
-    min-height: 600px;
-    background: var(--primaryGreen);
+    min-height: 800px;
+    background: url(/img/mainback_v2-10.png) no-repeat;
+    /*  background: var(--primaryGreen); */
 }
 
 #showcase h1 {
-    margin-left: 15%;
-    margin-top: 50px;
+    margin-left: 18%;
+    margin-top: 150px;
 }
 
 #showcase p {
-    margin-left: 15%;
+    margin-left: 18%;
     line-height: 1.7rem;
 }
 
@@ -168,18 +170,29 @@ header .button_1 {
 }
 
 /* KLIMAMYTER seksjon */
+#myter .kaffe {
+    width: 500px;
+}
+
+#myter .bok {
+    width: 500px;
+}
+
+#myter .kjøtt {
+    width: 500px;
+}
 
 #myter h1 {
     margin-left: 15%;
 }
 
 #myter .container {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 #myter .container .illustrasjon {
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     padding: 10px;
     width: 20%;
     margin-top: 100px;
@@ -300,7 +313,7 @@ header .button_1 {
     color: var(--footerGrey);
 }
 
-/* BOKARTIKKEL  */
+/* ---------- BOKARTIKKEL -----------------  */
 
 /* .bok-illustrasjon {
     float: right;
@@ -321,7 +334,7 @@ header .button_1 {
     padding-right: 20px;
 }
 
-.headline {
+.bok-headline {
     grid-column: 2/6;
     grid-row: 1;
     padding-top: 250px;
@@ -362,3 +375,62 @@ header .button_1 {
     grid-row: 2;
     line-height: 1.9rem;
 }
+
+
+/* ----------- KAFFE ARTIKKEL ---------------- */
+
+
+/* -- Kaffe --  */
+.kaffe-illustrasjon {
+    grid-column: 7/10;
+    padding-top: 80px;
+    padding-right: 20px;
+    width: 700px;
+}
+
+.kaffe-headline {
+    grid-column: 2/6;
+    grid-row: 1;
+    padding-top: 250px;
+    padding-left: 150px;
+    line-height: 4rem;
+}
+
+/* -- Vann -- */
+
+.vann-statistikk {
+
+    background: var(--secondaryGreen);
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.vann-heading {
+    grid-column: 4/10;
+}
+
+.vann-paragraph {
+    grid-column: 5/10;
+    line-height: 1.9rem;
+}
+
+
+/* -- Gass -- */
+
+.gass-statistikk {
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.gass-heading {
+    grid-column: 4/10;
+}
+
+.gass-paragraph {
+    grid-column: 5/10;
+    line-height: 1.9rem;
+}
+
+/*  -- Fairtrade -- */
