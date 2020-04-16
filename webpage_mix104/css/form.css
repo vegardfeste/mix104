@@ -1,0 +1,411 @@
+
+:disabled {
+  css declarations;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/******  navigation header ******/
+:root {
+    --primaryGreen: #b5de8c;
+    --secondaryGreen: #eaf6df;
+    --footerGrey: #65645e;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+}
+
+h1 {
+    font-family: "museo slab";
+    font-size: 2.5rem;
+}
+
+header {
+    font-family: "museo sans";
+}
+
+p {
+  font-size: 20px;
+    font-family: "museo sans";
+}
+header {
+  width:auto;
+  height: 6.1vw;
+
+}
+nav ul{
+  list-style-type:none;
+  text-decoration: none;
+}
+
+header nav li{
+  text-decoration: none;
+  padding-top: 0.8vw;
+  list-style-type:none;
+  margin-top: 1vw;
+  width:8.5vw;
+  height: 2.8vw;
+  float:left;
+  margin-left:4.2vw;
+  font-size: 1vw;
+  text-align: center;
+}
+
+header .branding{
+  margin-left: 3.7vw;
+  margin-top: 0.5vw;
+  float: left;
+  width:3.54vw;
+  height:3.54vw;
+  border: 1px solid var(--primaryGreen);
+  background-color: var(--primaryGreen);
+  border-radius:2.1vw;
+}
+
+header .button_1 {
+    float: right;
+    margin-right: 1vw;
+    color: #fff;
+    margin-top: 0.5vw;
+    width: 12vw;
+    height: 3.1vw;
+    background: var(--primaryGreen);
+    padding: 0.3vw 0.6vw;
+    border-radius:3vw;
+    border: none;
+    text-transform: uppercase;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+
+/********* form *******/
+#form{
+  clear: both;
+  height: auto;
+  padding-bottom: 7.1vw;
+  position: relative;
+  /*border: 1px solid black;*/
+}
+#form .text{
+
+}
+
+#form .text, #form .form, #form .register{
+  width:821px;
+  height:auto;
+  margin: 0 auto;
+  margin-top: 7.1vw;
+}
+
+ #form .form{
+   border: 1px black solid;
+ }
+
+ #form .form .info{
+   width:56vw;
+   margin-left: 25px;
+  }
+
+#form h2{
+  font-family: "museo slab";
+  width:477px; /*33vw, 477px*/
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 53px;/*3.75vw, 54px*/
+  margin-bottom: 20px;
+}
+
+
+#form .text_1{
+  font-family: "museo slab";
+  line-height: 40px;
+  width:47vw; /*33vw, 477px*/
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 26px;/*3.75vw, 54px*/
+  cursor: #707070;
+}
+
+#form .text .btn_2{
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  color: #fff;
+  width: 270px;
+  height: 60px;
+  background: var(--primaryGreen);
+  font-size: 26.5px;/*3.75vw, 54px*/
+  padding:4.32px 8.64px;
+  border-radius:43px;
+  border: none;
+  text-transform: uppercase;
+}
+
+#form .text .text_2{
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 746px;
+  text-align: center;
+  font-size: 18px;
+}
+
+#form .text_3 {
+  font-size: 16px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 220px;
+  text-align: center;
+  font-size: 16px;
+  color: #4DA2D1;
+}
+
+.img_guider {
+  width:3.54vw;
+  height:3.54vw;
+  position: absolute;
+  left:90vw;
+}
+
+/****  popup - form ****/
+#medlem .column{
+  float:left;
+  width:382px;
+  height:80px;
+  margin-bottom:50px;
+  /*border: 1px solid black;*/
+}
+#medlem .column p{
+  font-size: 17px;
+}
+#medlem .column input{
+  box-sizing: border-box;
+  font-size: 16px;
+  width: 350px;
+  height: 50px;
+  border:none;
+  outline: none;
+  border-bottom: 1px black solid;
+}
+
+
+#medlem span{
+  color: red;
+  display: none;
+  margin:0;
+
+}
+
+
+#form  .form  button{
+  clear: both;
+  display: block;
+  margin: 0 auto;
+  margin-top: 60px;
+  color: #fff;
+  width: 12vw;
+  height: 3.1vw;
+  background: var(--primaryGreen);
+  padding: 0.3vw 0.6vw;
+  border-radius:3vw;
+  border: none;
+  text-transform: uppercase;
+}
+
+/***** pop - up for sccessful to regiter **/
+#form .register h2{
+  width:auto;
+}
+
+section .form{
+  width: auto;
+  height: 629px;
+  border: 1px solid black;
+}
+
+#form .form, #form .register{
+  display: none;
+}
+
+ input[type=checkbox] + label {
+  display: block;
+  margin: 0.2em;
+  /*cursor: pointer;*/
+  padding: 0.2em;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+ input[type=checkbox] + label:before {
+  content: " ";
+  border: 0.1em solid #000;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 0.2em;
+  vertical-align:text-bottom;
+  color: transparent;
+  transition: .2s;
+}
+
+input[type=checkbox] + label:active:before {
+  transform: scale(0);
+}
+
+input[type=checkbox]:checked + label:before {
+  background-color: MediumSeaGreen;
+  border-color: MediumSeaGreen;
+  color: #fff;
+}
+input[name="telepone"], input[name="epost"]{
+  margin-bottom: 0;
+}
+#form .checkbox{
+  margin-left: 12px;
+  clear: both;
+  width:400px;
+  height: auto;
+}
+
+#form .checkbox label{
+  line-height: 16px;
+  margin-left:10px;
+  display: block;
+  float: left;
+  width:346.5px;
+  height: 70px;
+  font-size: 12px;
+}
+/********** form end *****************/
+/******************  finish registering  *************/
+.img_illu {
+  display: block;
+  margin: 0 auto;
+  width:680px;
+  height: auto;
+}
+/******************  finish registering  end **********/
+/* INFO seksjon */
+
+#info {
+    background: var(--primaryGreen);
+    min-height: auto;
+    padding-top: 73px;
+    padding-bottom: 72px;
+}
+
+#info .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#info button {
+    margin: 0 auto;
+    display: block;
+    color: var(--primaryGreen);
+    background: #fff;
+    padding: 10px 0;
+    border: none;
+    width: 270px;
+    border-radius: 43px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+#info p {
+    /* margin-left: 50%;
+    margin-top: 80px; */
+    line-height: 1.8rem;
+    font-size: 24px;
+}
+
+/* FOOTER seksjon */
+
+#footer {
+    background: var(--footerGrey);
+    color: #fff;
+}
+
+#footer .copyright {
+    background: #fff;
+    color: var(--footerGrey);
+}
+
+#footer .container {
+    padding-top: 72px;
+    padding-bottom: 65px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+#footer .container div:nth-child(1) {
+    grid-column: 2/5;
+    grid-row: 1;
+}
+
+#footer .container div:nth-child(2) {
+    grid-column: 6/8;
+    grid-row: 1;
+}
+
+#footer .container div:nth-child(3) {
+    grid-column: 9/12;
+    grid-row: 1;
+}
+
+#footer .nyhetsbrev button {
+    margin-right: 20px;
+    color: #fff;
+    background: var(--primaryGreen);
+    padding: 11px 12px;
+    border: none;
+    text-transform: uppercase;
+}
+
+#footer .nyhetsbrev input {
+    width: 150px;
+    height: 35px;
+    border: none;
+}
+
+/* BUNN AV SIDE */
+
+.copyright {
+    display: block;
+    /*ustify-content: space-between;*/
+    align-items: center;
+    padding: 3% 7%;
+}
+
+.copyright a {
+    font-size: 11.2px;
+    text-decoration: none;
+    color: var(--footerGrey);
+}
+
+.copyright .KO, .copyright .PV{
+  display: block;
+  float:left;
+}
+.copyright .PV{
+  margin-left: 100px;
+}
+.copyright .LOGONAVN{
+  float: right;
+  text-align: right;
+}
