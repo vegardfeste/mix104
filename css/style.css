@@ -110,6 +110,11 @@ header .button_1 {
     border-radius: 3vw;
     border: none;
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button_2 {
+    cursor: pointer;
 }
 
 .button_1:hover {
@@ -189,7 +194,11 @@ label #cancel {
 
 #showcase {
     min-height: 800px;
-    background: url(/img/mainback_v2-10.png) no-repeat;
+    background: url(/img/mainback_v2-10.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     /*  background: var(--primaryGreen); */
 }
 
@@ -204,8 +213,8 @@ label #cancel {
 } */
 
 .intro {
-    max-width: 500px;
-    margin-left: 300px;
+    width: 500px;
+    margin-left: 18%;
     line-height: 1.7rem;
 
 }
@@ -330,6 +339,8 @@ label #cancel {
     #myter .kaffe {
         margin: 0;
     }
+
+
 }
 
 /* #myter h1 {
@@ -660,6 +671,14 @@ label #cancel {
 #fairtrade .container-2 {
     margin-top: 15%;
 }
+
+@media screen and (max-width: 500px) {
+    .kaffe-illustrasjon {
+        display: block;
+        width: 100px;
+    }
+}
+
 
 
 @media screen and (max-width: 500px) {
