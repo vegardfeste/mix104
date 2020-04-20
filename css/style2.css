@@ -56,13 +56,17 @@ header {
 }
 
 header a {
-    color: #4DA2D1;
+    color: #333;
     text-decoration: none;
-    /*text-transform: uppercase;*/
+    text-transform: uppercase;
     font-size: 1rem;
 }
-
+section a{
+  text-transform: none;
+  color:#4DA2D1;
+}
 header li {
+    display: inline;
     padding: 0 20px 0 20px;
 }
 
