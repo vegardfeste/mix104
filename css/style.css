@@ -559,7 +559,7 @@ label #cancel {
 }
 
 .ingress {
-  grid-column: 5/10;
+  grid-column: 4/10;
   grid-row: 2;
   line-height: 3rem;
   font-size: 1.7rem;
@@ -570,7 +570,7 @@ label #cancel {
 }
 
 .paragraph {
-  grid-column: 5/10;
+  grid-column: 4/10;
   grid-row: 3;
   line-height: 1.9rem;
 }
@@ -619,12 +619,12 @@ label #cancel {
   grid-template-columns: repeat(12, 1fr);
 }
 
-.vann-heading {
-  grid-column: 4/10;
-}
+/* .vann-heading {
+  grid-column: 3/10;
+} */
 
 .vann-paragraph {
-  grid-column: 5/10;
+  grid-column: 4/10;
   line-height: 1.9rem;
 }
 
@@ -641,7 +641,7 @@ label #cancel {
 }
 
 .gass-paragraph {
-  grid-column: 5/10;
+  grid-column: 4/10;
   line-height: 1.9rem;
 }
 
@@ -678,7 +678,7 @@ label #cancel {
 }
 
 .tips-paragraph {
-  grid-column: 5/10;
+  grid-column: 4/10;
   line-height: 1.9rem;
 }
 
@@ -692,9 +692,17 @@ label #cancel {
 }
 
 .oppdatering-paragraph {
-  grid-column: 5/10;
+  grid-column: 4/10;
   line-height: 1.9rem;
 }
+
+
+
+.grafikk {
+  grid-column: 4/12;
+  margin-bottom: 50px;
+}
+
 
 @media screen and (max-width: 500px) {
   .kaffe-illustrasjon {

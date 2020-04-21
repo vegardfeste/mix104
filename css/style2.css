@@ -589,7 +589,7 @@ p {
 
 /********* introduce************/
 .ingress {
-    grid-column: 5/9;
+    grid-column: 4/11;
     grid-row: 2;
     line-height: 3rem;
     font-size: 1.7rem;
@@ -622,7 +622,7 @@ p {
 
 .paragraph {
     font-size: 16px;
-    grid-column: 5/10;
+    grid-column: 4/10;
     grid-row: 3;
     line-height: 1.9rem;
 }
@@ -630,12 +630,70 @@ p {
 /********** main argument ***********/
 
 .chapter {
+    margin-top: 50px;
     min-height: 500px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
 
 .chapter-paragraph {
-    grid-column: 5/10;
+    grid-column: 4/10;
     line-height: 1.9rem;
+}
+
+.traktor {
+    margin-top: 200px;
+    grid-column: 2/3;
+    grid-row: 1;
+}
+
+.ku1 {
+    margin-top: 1200px;
+    grid-column: 2/3;
+    grid-row: 1;
+}
+
+.ku2 {
+    margin-top: 1700px;
+    grid-column: 11/12;
+    grid-row: 1;
+}
+
+.biff {
+    grid-row: 1;
+    margin-top: 50px;
+    grid-column: 2/3;
+}
+
+.carrot {
+    grid-row: 1;
+    margin-top: 500px;
+    grid-column: 2/3;
+}
+
+.broccoli {
+    margin-top: 300px;
+    grid-row: 1;
+    grid-column: 10/12;
+}
+
+.kraftfor {
+    grid-column: 3/8;
+    margin-bottom: 40px;
+}
+
+.myte {
+    grid-column: 3;
+}
+
+.sau {
+    grid-column: 3/8;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.storfe {
+    grid-column: 3/8;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
