@@ -48,7 +48,7 @@ ul {
 
 /* HEADER */
 
-header {
+/* header {
     color: #fff;
     text-decoration: none;
     padding-top: 10px;
@@ -97,7 +97,147 @@ header .button_1 {
 .button_1:hover {
     background-color: var(--secondaryGreen);
     color: #65645e;
+} */
+
+header .branding {
+    margin: 1vw;
+    float: left;
+    width: 2.5vw;
+    height: 2.5vw;
+    border: 1px solid var(--primaryGreen);
+    background-color: var(--primaryGreen);
+    border-radius: 2.1vw;
 }
+
+header .button_1 {
+    float: right;
+    margin: 20px;
+    color: #fff;
+    width: 10vw;
+    height: 2vw;
+    background: var(--primaryGreen);
+    padding: 0.3vw 0.6vw;
+    border-radius: 3vw;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button_2 {
+    cursor: pointer;
+}
+
+.button_1:hover {
+    background-color: var(--secondaryGreen);
+    color: #65645e;
+}
+
+nav {
+    height: 80px;
+    background: white;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+    margin-left: 50px;
+}
+
+nav ul li a {
+    position: relative;
+    padding: 5px 0;
+    color: var(--black);
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+nav ul li a:before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--primaryGreen);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s linear;
+}
+
+nav ul li a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+label #btn,
+label #cancel {
+    font-size: 30px;
+    color: var(--black);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .button_1 {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    label #btn {
+        display: block;
+    }
+
+    .branding {
+        display: none;
+    }
+
+    .button_1 {
+        display: none;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: var(--secondaryGreen);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    #check:checked~label #btn {
+        display: none;
+    }
+
+    #check:checked~label #cancel {
+        display: block;
+    }
+}
+
 
 /* SHOWCASE */
 
@@ -355,6 +495,7 @@ header .button_1 {
 * {
     box-sizing: border-box;
 }
+
 :root {
     --primaryGreen: #b5de8c;
     --secondaryGreen: #eaf6df;
@@ -362,20 +503,22 @@ header .button_1 {
     --black: #000;
 }
 
-#info p{
-  color:black;
+#info p {
+    color: black;
 }
+
 /************* kjøtt artikler **************/
-main{
-  color:black;
+main {
+    color: black;
 }
-h1{
-grid-column: 2/6;
-grid-row: 1;
-padding-top: 250px;
-padding-left: 150px;
-line-height: 4rem;
-}
+
+/* h1 {
+    grid-column: 2/6;
+    grid-row: 1;
+    padding-top: 250px;
+    padding-left: 150px;
+    line-height: 4rem;
+} */
 
 h2 {
     display: block;
@@ -396,6 +539,7 @@ h3 {
     margin-inline-end: 0px;
     font-weight: bold;
 }
+
 h5 {
     display: block;
     font-size: 0.83em;
@@ -414,29 +558,35 @@ h4 {
     margin-inline-end: 0px;
     font-weight: bold;
 }
+
 /****************** end of head text setting*******/
-ul,li,ol{
-  margin:0px;
-  padding:0px;
+ul,
+li,
+ol {
+    margin: 0px;
+    padding: 0px;
 }
 
-li{
-  margin:1em;
+li {
+    margin: 1em;
 }
 
 p {
     font-family: "museo sans";
 }
-p{
+
+p {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-.background{
-  background-color: var(--secondaryGreen);
+
+.background {
+    background-color: var(--secondaryGreen);
 }
+
 /********* introduce************/
 .ingress {
     grid-column: 5/9;
@@ -445,10 +595,26 @@ p{
     font-size: 1.7rem;
 }
 
-.grid{
+.grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
+
+.kjøtt-illustrasjon {
+    grid-column: 7/10;
+    padding-top: 80px;
+    padding-right: 20px;
+    width: 700px;
+}
+
+.kjøtt-headline {
+    grid-column: 2/6;
+    grid-row: 1;
+    padding-top: 250px;
+    padding-left: 150px;
+    line-height: 4rem;
+}
+
 
 .ingress .undertekst {
     font-size: 1rem;
