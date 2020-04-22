@@ -172,15 +172,15 @@ label #cancel {
     font-size: 20px;
   }
 
-  #check:checked~ul {
+  #check:checked ~ ul {
     left: 0;
   }
 
-  #check:checked~label #btn {
+  #check:checked ~ label #btn {
     display: none;
   }
 
-  #check:checked~label #cancel {
+  #check:checked ~ label #cancel {
     display: block;
   }
 }
@@ -696,13 +696,10 @@ label #cancel {
   line-height: 1.9rem;
 }
 
-
-
 .grafikk {
   grid-column: 4/12;
   margin-bottom: 50px;
 }
-
 
 @media screen and (max-width: 500px) {
   .kaffe-illustrasjon {
@@ -730,5 +727,34 @@ label #cancel {
     width: 230px;
     margin-left: 2%;
     line-height: 1.6rem;
+  }
+}
+
+/* --------- BOK ARTIKKEL MEDIA ------------- */
+
+/* @media screen and (max-width: 500px) {
+  .grid {
+    display: block;
+  }
+
+  .bok-illustrasjon {
+    display: none;
+  }
+
+  .bok-headline {
+    display: inline;
+  }
+
+  .konklusjon {
+    display: inline-block;
+  }
+} */
+
+/* ----------- KJØTT ARTIKKEL MEDIA ------------ */
+
+@media screen and (max-width: 500px) {
+  .grid {
+    display: inline-block;
+    background-color: red;
   }
 }

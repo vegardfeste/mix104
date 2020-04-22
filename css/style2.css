@@ -585,6 +585,7 @@ p {
 
 .background {
     background-color: var(--secondaryGreen);
+    width: 100%;
 }
 
 /********* introduce************/
@@ -599,6 +600,8 @@ p {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
+
+
 
 .kjøtt-illustrasjon {
     grid-column: 7/10;
@@ -615,10 +618,19 @@ p {
     line-height: 4rem;
 }
 
+/* .kjøtt-illustrasjon {
+    float: right;
+    width: 50%;
+} */
 
 .ingress .undertekst {
     font-size: 1rem;
 }
+
+/* .grid {
+    display: block;
+    margin-top: 200px;
+} */
 
 .paragraph {
     font-size: 16px;
@@ -696,4 +708,172 @@ p {
     grid-column: 3/8;
     margin-bottom: 40px;
     margin-top: 40px;
+}
+
+.ku1-mobil {
+    display: none;
+}
+
+.ku2-mobil {
+    display: none;
+}
+
+.mobil-broccoli {
+    display: none;
+}
+
+.mobil-carrot {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .grid {
+        display: inline-block;
+        margin: 0 40px 0 40px;
+
+    }
+
+    .ingress {
+        font-size: 1rem;
+    }
+
+    .kjøtt-illustrasjon {
+        width: auto;
+        margin-left: 0px;
+    }
+
+    .kjøtt-headline {
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .chapter {
+        display: inline-block;
+        margin: 0 40px 0 40px;
+        /* width: 100%; */
+    }
+
+    .traktor {
+        display: block;
+        margin: 0;
+
+    }
+
+    .ku1 {
+        display: none;
+    }
+
+    .ku2 {
+        display: none;
+    }
+
+    .kraftfor {
+        width: 100%;
+    }
+
+    .sau {
+        width: 100%;
+    }
+
+    .storfe {
+        width: 100%;
+    }
+
+    .biff,
+    .carrot,
+    .broccoli {
+        margin: 10px 0 0 190px;
+    }
+
+    .carrot {
+        display: none;
+    }
+
+    .broccoli {
+        display: none;
+    }
+
+    .ku1-mobil {
+        display: block;
+        margin-left: 10px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .ku2-mobil {
+        display: block;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 70px;
+    }
+
+    .mobil-broccoli {
+        display: block;
+        margin: auto;
+    }
+
+    .mobil-carrot {
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .copyright {
+        display: flex;
+    }
+
+    .copyright .KO {
+        margin-left: 10px;
+    }
+
+    .copyright .PV {
+        margin-left: 20px;
+    }
+
+    .copyright .LOGONAVN {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #footer .container {
+        display: block;
+    }
+
+    #footer .lite-info {
+        max-width: 400px;
+        margin-left: 20px;
+        line-height: 1.7rem;
+    }
+
+    #footer .nyhetsbrev {
+        margin-left: 20px;
+    }
+
+    #footer .nyhetsbrev input {
+        width: 70%;
+    }
+
+    #footer .kontakt {
+        max-width: 400px;
+        margin-left: 20px;
+        line-height: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #info {
+        display: block;
+        text-align: left;
+        /* margin: 0; */
+    }
+
+    #info .container {
+        max-width: 300px;
+    }
+
+
+
 }
