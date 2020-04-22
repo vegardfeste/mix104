@@ -172,15 +172,15 @@ label #cancel {
     font-size: 20px;
   }
 
-  #check:checked ~ ul {
+  #check:checked~ul {
     left: 0;
   }
 
-  #check:checked ~ label #btn {
+  #check:checked~label #btn {
     display: none;
   }
 
-  #check:checked ~ label #cancel {
+  #check:checked~label #cancel {
     display: block;
   }
 }
@@ -752,9 +752,4 @@ label #cancel {
 
 /* ----------- KJØTT ARTIKKEL MEDIA ------------ */
 
-@media screen and (max-width: 500px) {
-  .grid {
-    display: inline-block;
-    background-color: red;
-  }
-}
+@media screen and (max-width: 500px) {}
