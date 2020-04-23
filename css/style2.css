@@ -99,7 +99,7 @@ header .button_1 {
     color: #65645e;
 } */
 
-header .branding {
+/* header .branding {
     margin: 1vw;
     float: left;
     width: 2.5vw;
@@ -121,7 +121,33 @@ header .button_1 {
     border: none;
     text-transform: uppercase;
     cursor: pointer;
+} */
+
+header .branding {
+    margin: 15px;
+    float: left;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--primaryGreen);
+    background-color: var(--primaryGreen);
+    border-radius: 50px;
 }
+
+header .button_1 {
+    float: right;
+    margin: 20px;
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    background: var(--primaryGreen);
+    padding: 0.3vw 0.6vw;
+    border-radius: 3vw;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
 
 .button_2 {
     cursor: pointer;
@@ -194,10 +220,6 @@ label #cancel {
 @media (max-width: 600px) {
     label #btn {
         display: block;
-    }
-
-    .branding {
-        display: none;
     }
 
     .button_1 {
