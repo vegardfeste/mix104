@@ -10,7 +10,7 @@
 
 <body>
   <header>
-    <div class="header-container">
+    <!-- <div class="header-container">
       <a href="index.html">
         <div class="branding"></div>
       </a>
@@ -22,7 +22,27 @@
           <a href="form1.html"><button class="button_1">BLI MEDLEM</button></a>
         </ul>
       </nav>
+    </div> -->
+
+    <div class="header-container">
+      <a href="index.html">
+        <div class="branding"></div>
+      </a>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check">
+          <i class="fas fa-bars" id="btn"></i>
+          <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <ul>
+          <li><a href="hvem-er-vi.html">HVEM ER VI?</a></li>
+          <li><a href="klimamyter.html">KLIMAMYTER</a></li>
+          <li><a href="støtt-oss.html">STØTT OSS</a></li>
+          <a href="form1.html"><button class="button_1">BLI MEDLEM</button></a>
+        </ul>
+      </nav>
     </div>
+
   </header>
   <main>
     <section>
@@ -86,16 +106,16 @@
             Det går med nesten 4 ganger flere kaffebønner per kopp filterkaffe
             enn per kopp pulverkaffe. (NB: Sjekk oppdatering under).
           </p>
-          <div class="graf">
-            <img src="/img/bønne_data.svg" alt="Kaffebønner statistikk" />
-          </div>
+
+          <img class="bønnegraf" src="/img/bønne_data.svg" alt="Kaffebønner statistikk" />
+
         </div>
       </div>
 
 
       <!--  </div> -->
     </section>
-    <section>
+    <section class="background">
       <div class="vann-statistikk">
         <div class="vann-paragraph">
           <h2>Det trengs 4 liter vann til én kopp kaffe</h2>
@@ -115,7 +135,7 @@
             til kraftproduksjon, er holdt utenfor. (NB: Sjekk oppdatering
             under)
           </p>
-          <img src="/img/vann.svg" alt="Vann statistikk" />
+          <img class="vanngraf" src="/img/vann.svg" alt="Vann statistikk" />
         </div>
       </div>
     </section>
@@ -138,7 +158,7 @@
             per kopp kaffe (1 dl)<br />
             (NB: Sjekk oppdatering under)
           </p>
-          <img src="/img/klimagass.svg" alt="Gass statistikk" />
+          <img class="klimagraf" src="/img/klimagass.svg" alt="Gass statistikk" />
         </div>
       </div>
     </section>
@@ -146,8 +166,8 @@
     <section id="fairtrade">
       <div class="fairtrade-container">
         <img class="fair-logo" src="img/fairtrade_logo.png" alt="fairtrade logo" />
-
         <div class="fairtrade-paragraph">
+
           <h2>Hva med fairtrade?</h2>
           <p>
             En ulempe med å kjøpe en kapselmaskin er at man binder seg til
@@ -171,20 +191,17 @@
       <div class="tips">
         <div class="tips-paragraph">
           <h2>Tips til miljøbevisste kaffedrikkere</h2>
-          <ul>
-            <li>
-              Bruk riktig mengde vann. Koker du mer vann enn nødvendig til
-              pulverkaffen, går miljøbelastningen per kopp kraftig opp.
-            </li>
-            <li>Vask opp koppene med full maskin.</li>
-            <li>Ikke tilbered mer kaffe enn du klarer å drikke opp.</li>
-            <li>Velg fairtrade-sertifisert kaffe hvis du kan.</li>
-          </ul>
+          <p>&#8226 Bruk riktig mengde vann. Koker du mer vann enn nødvendig til
+            pulverkaffen, går miljøbelastningen per kopp kraftig opp.</p>
+          <p>&#8226 Vask opp koppene med full maskin.</p>
+          <p>&#8226 Ikke tilbered mer kaffe enn du klarer å drikke opp.</p>
+          <p>&#8226 Velg fairtrade-sertifisert kaffe hvis du kan.</p>
+
         </div>
       </div>
     </section>
 
-    <section>
+    <section class="background">
       <div class="oppdatering">
         <div class="oppdatering-paragraph">
           <div class="heading"></div>
@@ -227,7 +244,7 @@
           <p>gram CO2 ekvivalenter<br>
             (Kilde: Chayer et al. (2015): Life Cycle Assessment of coffee consumption: comparison of single-serve coffee
             and bulk coffee brewing)</p>
-          <img src="/img/utslipp.svg" alt="" />
+          <img class="utslipp" src="/img/utslipp.svg" alt="" />
         </div>
 
         <div class="heading">

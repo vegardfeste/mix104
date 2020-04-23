@@ -545,7 +545,7 @@ label #cancel {
 }
 
 .bok-illustrasjon {
-  grid-column: 7/10;
+  grid-column: 7/12;
   padding-top: 80px;
   padding-right: 20px;
 }
@@ -559,7 +559,7 @@ label #cancel {
 }
 
 .ingress {
-  grid-column: 4/10;
+  grid-column: 5/10;
   grid-row: 2;
   line-height: 3rem;
   font-size: 1.7rem;
@@ -570,7 +570,7 @@ label #cancel {
 }
 
 .paragraph {
-  grid-column: 4/10;
+  grid-column: 5/10;
   grid-row: 3;
   line-height: 1.9rem;
 }
@@ -612,8 +612,13 @@ label #cancel {
 
 /* -- Vann -- */
 
+.background {
+  background-color: var(--secondaryGreen);
+  width: 100%;
+}
+
 .vann-statistikk {
-  background: var(--secondaryGreen);
+  /* background: var(--secondaryGreen); */
   min-height: 500px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -649,25 +654,46 @@ label #cancel {
 
 #fairtrade {
   background-color: var(--secondaryGreen);
+
 }
 
 .fairtrade-container {
-  width: 50%;
-  margin: auto;
-  text-align: left;
-  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 100px auto 100px auto;
+  padding: 100px;
 }
 
 .fair-logo {
-  margin-top: 100px;
-  margin-right: 100px;
-  width: 200px;
-  float: left;
+  margin: auto;
 }
 
 .fairtrade-paragraph {
-  padding-top: 100px;
+  margin: auto;
 }
+
+/* .fairtrade-container {
+  width: 50%;
+  margin: auto;
+  text-align: left;
+
+} */
+
+/* .fair-logo {
+  height: 100%;
+  width: 100%;
+} */
+
+/* .fair-logo {
+  margin-top: 50px;
+  margin-right: 100px;
+  width: 25%;
+  float: left;
+} */
+
+/* .fairtrade-paragraph {
+  padding-top: 100px;
+} */
 
 /* TIPS */
 
@@ -685,7 +711,7 @@ label #cancel {
 /* OPPDATERING */
 
 .oppdatering {
-  background: var(--secondaryGreen);
+  /* background: var(--secondaryGreen); */
   min-height: 500px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -702,9 +728,87 @@ label #cancel {
 }
 
 @media screen and (max-width: 500px) {
+
+  .grid,
+  .vann-statistikk,
+  .gass-statistikk,
+  .oppdatering {
+    display: inline-block;
+    margin: 0 40px 0 40px;
+  }
+
   .kaffe-illustrasjon {
+    width: auto;
+    margin-left: 0px;
+  }
+
+  .kaffe-headline {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .bønnegraf,
+  .vanngraf,
+  .klimagraf,
+  .utslipp {
+    width: 100%;
+  }
+
+  .fairtrade-container {
     display: block;
-    width: 100px;
+    margin: 0 40px 0 40px;
+    padding: 20px;
+
+  }
+
+  .fair-logo {
+    width: 100%;
+  }
+
+  /* --- BOK MEDIA ----- */
+
+  @media screen and (max-width: 500px) {
+    .grid {
+      display: inline-block;
+      margin: 0 40px 0 40px;
+    }
+
+    .bok-illustrasjon {
+      width: 100%;
+      padding: 0;
+    }
+
+    .bok-headline {
+      width: auto;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .konklusjon {
+      display: block;
+      margin: 0 20px 0 20px;
+      padding: 20px;
+    }
+  }
+
+
+  /* .fair-logo {
+    width: 50%;
+  }
+
+  .fairtrade-paragraph {
+    display: inline-block;
+  } */
+
+}
+
+@media screen and (max-width: 500px) {
+  #hvem-vi-er {
+    display: inline-block;
+    margin: 0 40px 0 40px;
+    text-align: left;
   }
 }
 
