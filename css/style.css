@@ -47,7 +47,7 @@ ul {
 }
 
 header .branding {
-  margin: 15px;
+  margin: 20px 0 0 50px;
   float: left;
   width: 40px;
   height: 40px;
@@ -87,8 +87,8 @@ nav {
 nav ul li {
   display: inline-block;
   line-height: 80px;
-  margin: 0 15px;
-  margin-left: 50px;
+  /* margin: 0 0 0 200px; */
+  margin-left: 8%;
 }
 
 nav ul li a {
@@ -147,6 +147,10 @@ label #cancel {
     display: none;
   }
 
+  .branding {
+    margin: 0;
+  }
+
   ul {
     position: fixed;
     width: 100%;
@@ -184,11 +188,14 @@ label #cancel {
 /* SHOWCASE */
 
 #showcase {
-  min-height: 800px;
-  background: url(/img/mainback_v2-10.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  height: 800px;
+  /* background: url(/img/mainback_v2-10.png); */
+  background: url(/img/main5-10.svg) no-repeat center fixed;
+  /* background-position: center center;
+  background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
+  /* width: 100%; */
+  /* height: auto; */
   background-size: cover;
   /*  background: var(--primaryGreen); */
 }
@@ -300,15 +307,26 @@ label #cancel {
       grid-template-columns: 1fr 1fr 1fr;
   } */
 
-#myter .container {
+/* #myter .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+} */
+
+#myter .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
 
-#myter .container .illustrasjon {
-  /* border: 1px solid #ccc; */
+/* #myter .container .illustrasjon {
   padding: 10px;
   width: 20%;
+  margin-top: 100px;
+  margin-bottom: 80px;
+} */
+
+#myter .container .illustrasjon {
+  padding: 10px;
+  width: 100%;
   margin-top: 100px;
   margin-bottom: 80px;
 }
@@ -538,7 +556,10 @@ label #cancel {
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  background: url(/img/top_triangle.svg) no-repeat;
 }
+
+
 
 
 .bok-illustrasjon {
@@ -560,6 +581,7 @@ label #cancel {
   grid-row: 2;
   line-height: 3rem;
   font-size: 1.7rem;
+
 }
 
 .ingress .undertekst {
@@ -592,6 +614,22 @@ label #cancel {
 /* ----------- KAFFE ARTIKKEL ---------------- */
 
 /* -- Kaffe --  */
+
+.grid-utslipp {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /* background: url(/img/top_triangle.svg) no-repeat; */
+}
+
+.grid-kaffe {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background: url(/img/top_triangle.svg) no-repeat;
+  background-position: 100px;
+  background-position-y: 260px;
+  background-size: 105%;
+}
+
 .kaffe-illustrasjon {
   grid-column: 7/10;
   padding-top: 80px;
@@ -655,6 +693,7 @@ label #cancel {
 }
 
 .fairtrade-container {
+  font-family: "museo sans";
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 100px auto 100px auto;
@@ -729,7 +768,9 @@ label #cancel {
   .grid,
   .vann-statistikk,
   .gass-statistikk,
-  .oppdatering {
+  .oppdatering,
+  .grid-kaffe,
+  .grid-utslipp {
     display: inline-block;
     margin: 0 40px 0 40px;
   }
@@ -760,7 +801,9 @@ label #cancel {
   }
 
   .fair-logo {
-    width: 100%;
+    width: 200px;
+    margin-left: 80px;
+    margin-bottom: 50px;
   }
 
   /* --- BOK MEDIA ----- */
@@ -809,24 +852,25 @@ label #cancel {
   }
 }
 
+
 @media screen and (max-width: 500px) {
   #showcase {
     background: url(/img/mob_test5-10.svg) no-repeat;
     background-position: center;
     background-size: cover;
-    height: 50vh;
+    height: 90vh;
     /*  background: var(--primaryGreen); */
   }
 
   #showcase h1 {
     margin-top: 75px;
-    margin-left: 2%;
+    margin-left: 5%;
     font-size: 1.7rem;
   }
 
   .intro {
     width: 230px;
-    margin-left: 2%;
+    margin-left: 5%;
     line-height: 1.6rem;
   }
 }

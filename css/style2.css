@@ -621,7 +621,13 @@ p {
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    background: url(/img/top_triangle.svg) no-repeat;
+    background-position: 300px;
+    background-position-y: 120px;
+    background-size: 70%;
 }
+
+
 
 
 
@@ -751,7 +757,7 @@ p {
 @media (max-width: 500px) {
     .grid {
         display: inline-block;
-        margin: 0 40px 0 40px;
+        margin: 0 15px 0 15px;
 
     }
 
@@ -768,11 +774,12 @@ p {
         width: auto;
         margin: 0;
         padding: 0;
+        text-align: center;
     }
 
     .chapter {
         display: inline-block;
-        margin: 0 40px 0 40px;
+        margin: 0 15px 0 15px;
         /* width: 100%; */
     }
 
