@@ -947,12 +947,11 @@ margin-bottom: 58px;
 }
 
 @media screen and (max-width:750px){
-  br{
-    display:none;
-  }
   #info p{
-  width:92vw;
-  margin-bottom: 58px;
+    width: 92vw;
+    margin-bottom: 58px;
+    margin: 0 auto;
+    margin-top: 100px;
   }
 }
 @media screen and (max-width: 500px) {
