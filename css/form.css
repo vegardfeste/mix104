@@ -222,7 +222,7 @@ label #cancel {
 #form .text_1 {
   font-family: "museo slab";
   line-height: 40px;
-  width: 47vw;
+  width: 678px;
   /*33vw, 477px*/
   height: auto;
   margin: 0 auto;
@@ -683,7 +683,7 @@ input[name="epost"] {
 }
 
 #form .text_1{
-  width: 88vw;
+    width: 88vw;
     font-size: 4.53vw;
     margin-bottom: 9.1vw;
     line-height: 7vw;
