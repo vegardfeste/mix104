@@ -911,7 +911,7 @@ input[name="epost"] {
 #footer .kontakt {
   margin-top: 80px;
 }
-/*Table version for footer
+/*Table version for footer*/
 @media screen and (max-width:1024px){
   br{
     display:none;
@@ -954,8 +954,16 @@ margin-bottom: 58px;
   width:92vw;
   margin-bottom: 58px;
   }
-}**/
+}
 @media screen and (max-width: 500px) {
+  #info p, p{
+    font-size:16px;
+  }
+  #footer .container div:nth-child(1), #footer .container div:nth-child(2),#footer .container div:nth-child(3){
+    width:auto;
+    margin-top: 80px;
+  }
+
   #footer .container {
     display: block;
   }
