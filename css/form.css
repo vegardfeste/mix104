@@ -1,97 +1,188 @@
-:disabled {
-  css declarations;
+
+{
+ box-sizing: border-box;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-/******  navigation header ******/
 :root {
-  --primaryGreen: #b5de8c;
-  --secondaryGreen: #eaf6df;
-  --footerGrey: #65645e;
+ --primaryGreen: #b5de8c;
+ --secondaryGreen: #eaf6df;
+ --footerGrey: #65645e;
+ --black: #000;
 }
 
 body {
-  padding: 0;
-  margin: 0;
-  background-color: #fff;
+ padding: 0;
+ margin: 0;
+ background-color: #fff;
+}
+
+a {
+ text-decoration: none;
+ color: black;
 }
 
 h1 {
-  font-family: "museo slab";
-  font-size: 2.5rem;
+ font-family: "museo slab";
+ font-size: 2.5rem;
 }
 
 header {
-  font-family: "museo sans";
+ font-family: "museo sans";
 }
 
 p {
-  font-size: 20px;
-  font-family: "museo sans";
+ font-family: "museo sans";
 }
 
-header {
-  width: auto;
-  height: 6.1vw;
-
+.container {
+ width: 100%;
+ margin: auto;
+ overflow: hidden;
 }
 
-nav ul {
-  list-style-type: none;
-  text-decoration: none;
-}
-
-header nav li {
-  text-decoration: none;
-  padding-top: 0.8vw;
-  list-style-type: none;
-  margin-top: 1vw;
-  width: 8.5vw;
-  height: 2.8vw;
-  float: left;
-  margin-left: 4.2vw;
-  font-size: 1vw;
-  text-align: center;
+ul {
+ margin: 0;
+ padding: 0;
 }
 
 header .branding {
-  margin-left: 3.7vw;
-  margin-top: 0.5vw;
-  float: left;
-  width: 3.54vw;
-  height: 3.54vw;
-  border: 1px solid var(--primaryGreen);
-  background-color: var(--primaryGreen);
-  border-radius: 2.1vw;
+ margin: 1vw;
+ float: left;
+ width: 2.5vw;
+ height: 2.5vw;
+ border: 1px solid var(--primaryGreen);
+ background-color: var(--primaryGreen);
+ border-radius: 2.1vw;
 }
 
-/* header .button_1 {
-  float: right;
-  margin-right: 1vw;
-  color: #fff;
-  margin-top: 0.5vw;
-  width: 12vw;
-  height: 3.1vw;
-  background: var(--primaryGreen);
-  padding: 0.3vw 0.6vw;
-  border-radius: 3vw;
-  border: none;
-  text-transform: uppercase;
-} */
-
-a {
-  color: black;
-  text-decoration: none;
+header .button_1 {
+ float: right;
+ margin: 20px;
+ color: #fff;
+ width: 10vw;
+ height: 2vw;
+ background: var(--primaryGreen);
+ padding: 0.3vw 0.6vw;
+ border-radius: 3vw;
+ border: none;
+ text-transform: uppercase;
+ cursor: pointer;
 }
 
 .button_2 {
-  cursor: pointer;
-
+ cursor: pointer;
 }
 
+.button_1:hover {
+ background-color: var(--secondaryGreen);
+ color: #65645e;
+}
+
+nav {
+ height: 80px;
+ background: white;
+}
+
+nav ul li {
+ display: inline-block;
+ line-height: 80px;
+ margin: 0 15px;
+ margin-left: 50px;
+}
+
+nav ul li a {
+ position: relative;
+ padding: 5px 0;
+ color: var(--black);
+ font-size: 18px;
+ text-transform: uppercase;
+}
+
+nav ul li a:before {
+ position: absolute;
+ content: "";
+ bottom: 0;
+ left: 0;
+ width: 100%;
+ height: 3px;
+ background: var(--primaryGreen);
+ transform: scaleX(0);
+ transform-origin: right;
+ transition: transform 0.4s linear;
+}
+
+nav ul li a:hover:before {
+ transform: scaleX(1);
+ transform-origin: left;
+}
+
+label #btn,
+label #cancel {
+ font-size: 30px;
+ color: var(--black);
+ float: right;
+ line-height: 80px;
+ margin-right: 40px;
+ cursor: pointer;
+ display: none;
+}
+
+#check {
+ display: none;
+}
+
+@media (max-width: 800px) {
+ .button_1 {
+   display: none;
+ }
+}
+
+@media (max-width: 600px) {
+ label #btn {
+   display: block;
+ }
+
+ .branding {
+   display: none;
+ }
+
+ .button_1 {
+   display: none;
+ }
+
+ ul {
+   position: fixed;
+   width: 100%;
+   height: 100vh;
+   background: var(--secondaryGreen);
+   top: 80px;
+   left: -100%;
+   text-align: center;
+   transition: all 0.5s;
+ }
+
+ nav ul li {
+   display: block;
+   margin: 50px 0;
+   line-height: 30px;
+ }
+
+ nav ul li a {
+   font-size: 20px;
+ }
+
+ #check:checked~ul {
+   left: 0;
+ }
+
+ #check:checked~label #btn {
+   display: none;
+ }
+
+ #check:checked~label #cancel {
+   display: block;
+ }
+}
 /********* form *******/
 #form {
   clear: both;
@@ -112,10 +203,6 @@ a {
   margin-top: 7.1vw;
 }
 
-#form .form {
-  border: 1px black solid;
-}
-
 #form .form .info {
   width: 56vw;
   margin-left: 25px;
@@ -123,8 +210,6 @@ a {
 
 #form h2 {
   font-family: "museo slab";
-  width: 477px;
-  /*33vw, 477px*/
   height: auto;
   margin: 0 auto;
   text-align: center;
@@ -166,8 +251,8 @@ a {
 }
 
 #form .text .btn_2:hover {
-  /* background-color: var(--secondaryGreen); */
-  color: #000;
+  background-color: var(--secondaryGreen);
+  color: #65645e;
 }
 
 /* .button_1:hover {
@@ -178,7 +263,6 @@ a {
 #form .text .text_2 {
   margin: 0 auto;
   margin-top: 30px;
-  width: 746px;
   text-align: center;
   font-size: 18px;
 }
@@ -256,7 +340,6 @@ a {
 section .form {
   width: auto;
   height: 629px;
-  border: 1px solid black;
 }
 
 #form .form,
@@ -264,7 +347,7 @@ section .form {
   display: none;
 }
 
-input[type=checkbox]+label {
+.info input[type=checkbox]+label {
   display: block;
   margin: 0.2em;
   /*cursor: pointer;*/
@@ -275,7 +358,7 @@ input[type=checkbox] {
   display: none;
 }
 
-input[type=checkbox]+label:before {
+.form input[type=checkbox]+label:before {
   content: " ";
   border: 0.1em solid #000;
   border-radius: 0.2em;
@@ -324,47 +407,440 @@ input[name="epost"] {
 
 /********** form end *****************/
 /******************  finish registering  *************/
-.img_illu {
-  display: block;
-  margin: 0 auto;
-  width: 680px;
-  height: auto;
+/******************  finish registering  *************/
+.illustration{
+  width:744px;
+  height:394px;
+  position: relative;
+}
+.illustration .sun{
+  position: absolute;
+  width:200px;
+  left:73px;
+  height:auto;
+}
+.illustration .cloud1{
+  position: absolute;
+  width:173px;
+  height:auto;
+  top:57px;
+  transition: transform 1s ease-in 1s;
 }
 
+ .illustration .cloud2{
+  position: absolute;
+  width:173px;
+  height:auto;
+  top:128px;
+  left:168px;
+}
+
+ .illustration .bluecloud1{
+  position: absolute;
+  width:280px;
+  top:125.25px;
+  left: 275.25px;
+}
+
+.illustration .bluecloud2{
+  position: absolute;
+  width:237px;
+  top:260px;
+  left: 470px;
+}
+ .illustration img{
+  position: absolute;
+  width:222.75px;
+  left:414px;
+  top:23px;
+}
+@media screen and (max-width:1024px){
+#form .text, #form .form, #form .register{
+  width:654px;
+}
+#form h2 {
+  font-size: 45px;
+  margin-bottom: 71px;
+}
+#form .text_1{
+  width:592px;
+  font-size: 30px;
+  margin-bottom: 71px;
+}
+#form .text .text_2{
+  font-size: 20px;
+  width:480px;
+  margin-top: 71px;
+}
+#form .text_3{
+  margin-top: 58px;
+}
+#form .text .btn_2 {
+  width: 257px;
+  height: 56px;
+  font-size: 24px;
+}
+
+#form .form .info;{
+  margin-left:0;
+}
+/**************  column *************/
+#medlem .column{
+  clear:left;
+  width: 329px;
+  height: 119;
+  margin-left: 162.5px;
+  margin-bottom: 15px;;
+}
+#medlem .column input{
+  height: 42px;
+  width:329px;
+}
+#medlem .text_3{
+  margin-top: 31px;
+}
+#form .checkbox label{
+  height: 64px;
+  margin-left: 175px;
+  margin-bottom: 11px;
+}
+#form .form button{
+  font-size: 14px;
+  width: 162px;
+  height: 42px;
+
+}
+/******************  finish registering  *************/
+#register .illustration{
+  width:654px;
+  height: 563px;
+  position: relative;
+}
+#register .illustration .sun{
+  position: absolute;
+  width:229px;
+  left:75px;
+  top:31px;
+}
+#register .illustration .cloud1{
+  position: absolute;
+  width:160px;
+  left:25px;
+  top:121px;
+}
+
+#register .illustration .cloud2{
+  position: absolute;
+  width:160px;
+  height:auto;
+  top:203px;
+  left:144px;
+}
+
+#register .illustration .bluecloud1{
+  position: absolute;
+  width:260px;
+  top:300px;
+  left: 161px;
+}
+
+#register .illustration .bluecloud2{
+  position: absolute;
+  width:165px;
+  top:424px;
+  left:374px;
+}
+#register .illustration img{
+  position: absolute;
+  width:202px;
+  left:296px;
+  top:179px;
+}
 /******************  finish registering  end **********/
+
+}
+
+@media screen and (max-width:654px){
+#form .text, #form .form, #form .register{
+  width:100vw;
+}
+#form h2 {
+  font-size: 7vw;
+  margin-bottom: 11vw;
+}
+#form .text_1{
+  width:90vw;
+  font-size:4.6vw;
+  margin-bottom: 11vw;
+}
+#form .text .text_2{
+  font-size: 3vw;
+  width:73.4vw;
+  margin-top: 11vw;
+}
+#form .text_3{
+  margin-top: 8.9vw;
+}
+#form .text .btn_2 {
+  width: 39.2vw;
+  height: 8.5vw;
+  font-size: 3.66vw;
+
+}
+/**************  column ************/
+#medlem .column{
+  clear:left;
+  width: 50vw;
+  height: 18.19vw;
+  margin-left: 24.8vw;
+  margin-bottom: 2.3vw;;
+}
+#medlem .column input{
+  height:6.42vw;
+  width:50vw;
+}
+#medlem .text_3{
+  margin-top:4.7vw;
+}
+#form .checkbox label{
+  width: 50vw;
+  height: 9.8vw;
+  margin-left: 26.7vw;
+  margin-bottom: 1.7vw;
+}
+#form .form button{
+  font-size:2.14vw;
+  width: 24.8vw;
+  height:6.42vw;
+}
+/******************  finish registering  *************/
+#register .illustration{
+  width:100vw;
+  height: 104.4vw;
+  position: relative;
+}
+#register .illustration .sun{
+  position: absolute;
+  width:35vw;
+  left:11.46vw;
+  top:11.77vw;
+}
+#register .illustration .cloud1{
+  position: absolute;
+  width:24.46vw;
+  left:3.82vw;
+  top:25.53vw;
+}
+
+#register .illustration .cloud2{
+  position: absolute;
+  width:24.46vw;
+  height:auto;
+  top:38.07vw;
+  left:22vw;
+}
+
+#register .illustration .bluecloud1{
+  position: absolute;
+  width:39.75vw;
+  top:53vw;
+  left:24.61vw;
+}
+
+#register .illustration .bluecloud2{
+  position: absolute;
+  width:25.23vw;
+  top:71.87vw;
+  left:57.2vw;
+}
+#register .illustration img{
+  position: absolute;
+  width:31vw;
+  left:45.25vw;
+  top:34.4vw;
+}
+/******************  finish registering  end **********/
+
+}
+
+
+/************ form when width is maximum 600px ****/
+@media screen and (max-width:500px){
+  body{
+    width: 100vw;
+  }
+  #form .text, #form .form, #form .register {
+    width: 92vw;
+    margin-top: 14vw;
+}
+
+#form h2 {
+    font-size: 8.8vw;
+    margin-bottom: 14.1vw;
+}
+
+#form .text_1{
+  width: 88vw;
+    font-size: 4.53vw;
+    margin-bottom: 9.1vw;
+    line-height: 7vw;
+}
+#form .text .text_2{
+  width: 81vw;
+  font-size: 4.13vw;
+  margin-bottom: 20.21vw;
+  line-height: 6.4vw;
+}
+#form .text .btn_2{
+  width: 54.4vw;
+  height: 12.2vw;
+  border-radius: 13.8vw;
+  font-size: 5vw;
+  margin-bottom: 14.1vw
+}
+.img_guider{
+  display: none;
+}
+/******** form ****************/
+#form .form .info{
+  margin-left:0;
+}
+#medlem .column{
+  clear:left;
+  width: 60vw;
+  height: 20vw;
+  margin-left: 16vw;
+  margin-bottom: 0;
+}
+#medlem .column input{
+  width:60vw;
+  height:7.4vw;
+  font-size:2.7vw;
+}
+#medlem .column lable{
+  font-size:2.4vw;
+}
+#medlem .column span{
+  font-size:2.4vw;
+}
+#form .checkbox label {
+    clear: both;
+    line-height: 16px;
+    padding:0;
+    display: block;
+    width: 60vw;
+    height: 14vw;
+    margin: 0 auto;
+    font-size: 2.7vw;
+    margin-bottom: 5.3vw;
+    margin-left: 12.5vw;
+}
+#form .form button{
+  width:54vw;
+  height: 12.2vw;
+  border-radius: 14vw;
+  font-size:5vw;
+  margin-top: 0;
+}
+  #form .text_3{
+    font-size: 3.2vw;
+}
+/******************  finish registering  *************/
+#register .illustration{
+  width:92vw;
+  height:108.5vw;
+  position: relative;
+}
+#register .illustration .sun{
+  position: absolute;
+  width:39vw;
+  left:8.2vw;
+  top: 11.2vw;
+}
+#register .illustration .cloud1{
+  position: absolute;
+  width:27.43vw;
+  height:auto;
+  top:27.46vw;
+}
+
+#register .illustration .cloud2{
+  position: absolute;
+  width:27.43vw;
+  height:auto;
+  top:41.3vw;
+  left:20vw;
+}
+
+#register .illustration .bluecloud1{
+  position: absolute;
+  width:44.57vw;
+  top:57.6vw;
+  left: 28.27vw;
+}
+
+#register .illustration .bluecloud2{
+  position: absolute;
+  width:28.27vw;
+  top:79vw;
+  left: 59vw;
+}
+#register .illustration img{
+  position: absolute;
+  width:34.7vw;
+  left:45.9vw;
+  top:36.5vw;
+}
+}
+/******************  finish registering  end **********/
+
 /* INFO seksjon */
 
 #info {
   background: var(--primaryGreen);
-  min-height: auto;
-  padding-top: 73px;
-  padding-bottom: 72px;
+  min-height: 500px;
 }
 
+/* #info .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
 #info .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  max-width: 600px;
 }
 
 #info button {
   margin: 0 auto;
   display: block;
-  color: var(--black);
+  color: var(--primaryGreen);
   background: #fff;
   padding: 10px 0;
   border: none;
-  width: 270px;
-  border-radius: 43px;
+  width: 300px;
+  border-radius: 30px;
   font-size: 1.8rem;
   text-transform: uppercase;
+  margin-top: 50px;
 }
 
 #info p {
   /* margin-left: 50%;
-    margin-top: 80px; */
+      margin-top: 80px; */
   line-height: 1.8rem;
-  font-size: 24px;
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 500px) {
+  #info {
+    text-align: left;
+    margin: 0;
+  }
+
+  #info .container {
+    max-width: 300px;
+  }
 }
 
 /* FOOTER seksjon */
@@ -380,10 +856,9 @@ input[name="epost"] {
 }
 
 #footer .container {
-  padding-top: 72px;
-  padding-bottom: 65px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  min-height: 400px;
 }
 
 #footer .container div:nth-child(1) {
@@ -401,6 +876,15 @@ input[name="epost"] {
   grid-row: 1;
 }
 
+#footer table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#footer tr {
+  display: block;
+}
+
 #footer .nyhetsbrev button {
   margin-right: 20px;
   color: #fff;
@@ -416,32 +900,115 @@ input[name="epost"] {
   border: none;
 }
 
+#footer .lite-info {
+  margin-top: 80px;
+}
+
+#footer .nyhetsbrev {
+  margin-top: 80px;
+}
+
+#footer .kontakt {
+  margin-top: 80px;
+}
+/*Table version for footer
+@media screen and (max-width:1024px){
+  br{
+    display:none;
+  }
+p{
+  font-size: 20px;
+}
+#footer .container div:nth-child(1){
+  grid-column: 3/12;
+  grid-row: 1;
+  width:66.5vw;
+}
+#footer .container div:nth-child(2){
+  grid-column: 3/12;
+  grid-row: 2;
+  width:424px;
+}
+#footer .container div:nth-child(3){
+  grid-column: 3/12;
+  grid-row: 3;
+  width:310px;
+}
+#footer .lite-info{
+  margin-top:0;
+}
+#info p{
+width: 655px;
+margin-bottom: 58px;
+}
+#footer .kontakt, #footer .nyhetsbrev {
+    margin-top: 30px;
+}
+}
+
+@media screen and (max-width:750px){
+  br{
+    display:none;
+  }
+  #info p{
+  width:92vw;
+  margin-bottom: 58px;
+  }
+}**/
+@media screen and (max-width: 500px) {
+  #footer .container {
+    display: block;
+  }
+
+  #footer .lite-info {
+    max-width: 400px;
+    margin-left: 20px;
+    line-height: 1.7rem;
+  }
+
+  #footer .nyhetsbrev {
+    margin-left: 20px;
+  }
+
+  #footer .nyhetsbrev input {
+    width: 70%;
+  }
+
+  #footer .kontakt {
+    max-width: 400px;
+    margin-left: 20px;
+    line-height: 1.7rem;
+  }
+}
+
 /* BUNN AV SIDE */
 
 .copyright {
-  display: block;
-  /*ustify-content: space-between;*/
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 3% 7%;
+  padding: 30px 10%;
 }
 
 .copyright a {
-  font-size: 11.2px;
   text-decoration: none;
   color: var(--footerGrey);
 }
 
-.copyright .KO,
-.copyright .PV {
-  display: block;
-  float: left;
-}
+@media screen and (max-width: 500px) {
+  .copyright {
+    display: flex;
+  }
 
-.copyright .PV {
-  margin-left: 100px;
-}
+  .copyright .KO {
+    margin-left: 10px;
+  }
 
-.copyright .LOGONAVN {
-  float: right;
-  text-align: right;
+  .copyright .PV {
+    margin-left: 20px;
+  }
+
+  .copyright .LOGONAVN {
+    margin-left: 20px;
+  }
 }
