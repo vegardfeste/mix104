@@ -75,7 +75,6 @@ header .button_1 {
 }
 
 .button_1:hover {
-
   color: var(--black);
 }
 
@@ -172,15 +171,15 @@ label #cancel {
     font-size: 20px;
   }
 
-  #check:checked~ul {
+  #check:checked ~ ul {
     left: 0;
   }
 
-  #check:checked~label #btn {
+  #check:checked ~ label #btn {
     display: none;
   }
 
-  #check:checked~label #cancel {
+  #check:checked ~ label #cancel {
     display: block;
   }
 }
@@ -299,9 +298,8 @@ label #cancel {
 
   #hva-vi-gjør h4 {
     font-weight: 700px;
-    font-family: 'Museo Sans';
+    font-family: "Museo Sans";
   }
-
 }
 
 /* KLIMAMYTER seksjon */
@@ -360,7 +358,6 @@ label #cancel {
   margin-bottom: 80px;
 }
 
-
 /* ------- Klimamyter html --------- */
 
 #klima-myter .kaffe {
@@ -369,15 +366,15 @@ label #cancel {
 }
 
 #klima-myter .bok {
-  width: 600px;
+  width: 500px;
   margin-top: 20px;
-  /* margin-left: 80px; */
+  margin-left: 20px;
 }
 
 #klima-myter .kjøtt {
   width: 500px;
   margin-top: 80px;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 #klima-myter {
@@ -389,8 +386,6 @@ label #cancel {
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   margin-left: 20px;
   padding: 60px;
-
-
 }
 
 #klima-myter .container .illustrasjon {
@@ -404,9 +399,6 @@ label #cancel {
   margin-left: 15%;
   font-size: 4rem;
 }
-
-
-
 
 @media screen and (max-width: 500px) {
   #myter .container {
@@ -427,7 +419,7 @@ label #cancel {
     text-align: left;
     margin-left: 15px;
     font-weight: 700;
-    font-family: 'Museo Sans';
+    font-family: "Museo Sans";
   }
 }
 
@@ -647,7 +639,6 @@ label #cancel {
   background-size: 100%;
 }
 
-
 /* .konklusjon {
 
   -webkit-transform: skewY(2deg);
@@ -701,7 +692,7 @@ label #cancel {
 .paragraph h3 {
   font-weight: 700;
   font-size: 1.5rem;
-  font-family: 'Museo Sans';
+  font-family: "Museo Sans";
 }
 
 .konklusjon {
@@ -732,7 +723,6 @@ label #cancel {
 }
 
 /* ----------- KAFFE ARTIKKEL ---------------- */
-
 
 .background {
   background: var(--secondaryGreen);
@@ -769,8 +759,6 @@ label #cancel {
   background-position-y: 260px;
   background-size: 105%;
 }
-
-
 
 .kaffe-illustrasjon {
   grid-column: 7/10;
@@ -815,7 +803,7 @@ label #cancel {
 
 .vann-statistikk h2 {
   grid-column: 4/9;
-  font-family: 'Museo Slab';
+  font-family: "Museo Slab";
   font-weight: 700;
   font-size: 1.9rem;
 }
@@ -862,7 +850,7 @@ label #cancel {
 
 .gass-statistikk h2 {
   grid-column: 4/9;
-  font-family: 'Museo Slab';
+  font-family: "Museo Slab";
   margin-top: 70px;
 }
 
@@ -870,7 +858,7 @@ label #cancel {
   grid-column: 5/10;
   line-height: 1.9rem;
   font-weight: 300;
-  font-family: 'Museo Sans';
+  font-family: "Museo Sans";
 }
 
 .klimagraf {
@@ -926,17 +914,17 @@ label #cancel {
 }
 
 .fairtrade-container h2 {
-  font-family: 'Museo Slab';
+  font-family: "Museo Slab";
   font-size: 2rem;
   margin-bottom: 40px;
 }
 
 .fairtrade-container p {
-  font-family: 'Museo Sans';
+  font-family: "Museo Sans";
 }
 
 .fair-link {
-  color: #4DA2D1;
+  color: #4da2d1;
 }
 
 /* .fairtrade-container {
@@ -971,7 +959,7 @@ label #cancel {
 }
 
 .tips h2 {
-  font-family: 'Museo Slab';
+  font-family: "Museo Slab";
   font-size: 2.4rem;
   grid-column: 4/9;
   margin-top: 100px;
@@ -1050,7 +1038,6 @@ label #cancel {
 }
 
 @media screen and (max-width: 500px) {
-
   .grid,
   .vann-statistikk,
   .gass-statistikk,
@@ -1095,7 +1082,6 @@ label #cancel {
     display: block;
     margin: 0 40px 0 40px;
     padding: 20px;
-
   }
 
   .fair-logo {
@@ -1131,7 +1117,6 @@ label #cancel {
     }
   }
 
-
   /* .fair-logo {
     width: 50%;
   }
@@ -1139,7 +1124,6 @@ label #cancel {
   .fairtrade-paragraph {
     display: inline-block;
   } */
-
 }
 
 @media screen and (max-width: 500px) {
@@ -1162,7 +1146,6 @@ label #cancel {
   }
 }
 
-
 @media screen and (max-width: 500px) {
   #showcase {
     background: url(/img/mob_test5-10.svg) no-repeat;
@@ -1180,8 +1163,6 @@ label #cancel {
     line-height: 3rem;
     letter-spacing: 0.1rem;
   }
-
-
 
   .intro {
     width: 280px;
@@ -1217,7 +1198,6 @@ label #cancel {
   #klima-myter .container {
     padding: 0;
     margin: 0 15px 0 15px;
-
   }
 
   #klima-myter h1 {
@@ -1227,7 +1207,5 @@ label #cancel {
 
   #klima-myter .container img {
     width: 90%;
-
   }
-
 }
