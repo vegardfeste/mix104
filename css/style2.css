@@ -123,8 +123,18 @@ header .button_1 {
     cursor: pointer;
 } */
 
-header .branding {
+/* header .branding {
     margin: 15px;
+    float: left;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--primaryGreen);
+    background-color: var(--primaryGreen);
+    border-radius: 50px;
+} */
+
+header .branding {
+    margin: 20px 0 0 50px;
     float: left;
     width: 40px;
     height: 40px;
@@ -163,11 +173,18 @@ nav {
     background: white;
 }
 
-nav ul li {
+/* nav ul li {
     display: inline-block;
     line-height: 80px;
     margin: 0 15px;
     margin-left: 50px;
+} */
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    /* margin: 0 0 0 200px; */
+    margin-left: 8%;
 }
 
 nav ul li a {
@@ -589,9 +606,9 @@ ol {
     padding: 0px;
 }
 
-li {
+/* li {
     margin: 1em;
-}
+} */
 
 p {
     font-family: "museo sans";
@@ -606,16 +623,37 @@ p {
 }
 
 .background {
+    background: var(--secondaryGreen);
+    /* margin-top: 20px;
+    min-height: 800px; */
+    -webkit-transform: skewY(-2deg);
+    -ms-transform: skewY(-2deg);
+    -o-transform: skewY(-2deg);
+    -moz-transform: skewY(-2deg);
+    transform: skewY(-2deg);
+}
+
+.chapter-farge {
+    -webkit-transform: skewY(2deg);
+    -ms-transform: skewY(2deg);
+    -o-transform: skewY(2deg);
+    -moz-transform: skewY(2deg);
+    transform: skewY(2deg);
+}
+
+.background {
     background-color: var(--secondaryGreen);
     width: 100%;
+    padding: 20px;
 }
 
 /********* introduce************/
 .ingress {
-    grid-column: 4/11;
+    grid-column: 5/10;
     grid-row: 2;
     line-height: 3rem;
     font-size: 1.7rem;
+    font-weight: 300;
 }
 
 .grid {
@@ -628,9 +666,6 @@ p {
 }
 
 
-
-
-
 .kjøtt-illustrasjon {
     grid-column: 7/10;
     padding-top: 80px;
@@ -639,11 +674,14 @@ p {
 }
 
 .kjøtt-headline {
-    grid-column: 2/6;
+    grid-column: 3/7;
     grid-row: 1;
     padding-top: 250px;
-    padding-left: 150px;
-    line-height: 4rem;
+    padding-left: 100px;
+    /* line-height: 4rem; */
+    font-weight: 700;
+    letter-spacing: 0.07px;
+    opacity: 1;
 }
 
 /* .kjøtt-illustrasjon {
@@ -662,9 +700,10 @@ p {
 
 .paragraph {
     font-size: 16px;
-    grid-column: 4/10;
+    grid-column: 5/10;
     grid-row: 3;
     line-height: 1.9rem;
+    font-weight: 300;
 }
 
 /********** main argument ***********/
@@ -676,39 +715,60 @@ p {
     grid-template-columns: repeat(12, 1fr);
 }
 
+
 .chapter-paragraph {
-    grid-column: 4/10;
+    grid-column: 5/10;
     line-height: 1.9rem;
+    margin-bottom: 50px;
+}
+
+.chapter-paragraph p {
+    font-family: 'Museo Sans';
+    font-weight: 300;
+}
+
+.chapter-paragraph h3 {
+    font-weight: 500;
+    font-family: 'Museo Sans';
+    font-size: 1rem;
+}
+
+
+.chapter-paragraph h2 {
+    font-weight: 700;
+    font-family: 'Museo Slab';
 }
 
 .traktor {
     margin-top: 200px;
-    grid-column: 2/3;
+    grid-column: 2/4;
     grid-row: 1;
+    width: 300px;
 }
 
 .ku1 {
     margin-top: 1200px;
-    grid-column: 2/3;
+    grid-column: 2/4;
     grid-row: 1;
+
 }
 
 .ku2 {
-    margin-top: 1700px;
-    grid-column: 11/12;
+    margin-top: 1600px;
+    grid-column: 10/12;
     grid-row: 1;
 }
 
 .biff {
-    grid-row: 1;
     margin-top: 50px;
-    grid-column: 2/3;
+    grid-row: 1;
+    grid-column: 2/4;
 }
 
 .carrot {
     grid-row: 1;
     margin-top: 500px;
-    grid-column: 2/3;
+    grid-column: 2/4;
 }
 
 .broccoli {
@@ -718,22 +778,27 @@ p {
 }
 
 .kraftfor {
-    grid-column: 3/8;
+    grid-column: 4/9;
     margin-bottom: 40px;
 }
 
 .myte {
-    grid-column: 3;
+    grid-column: 4;
+}
+
+.myte h2 {
+    font-weight: 300;
+    font-family: 'Museo Sans';
 }
 
 .sau {
-    grid-column: 3/8;
+    grid-column: 4/9;
     margin-bottom: 40px;
     margin-top: 40px;
 }
 
 .storfe {
-    grid-column: 3/8;
+    grid-column: 4/9;
     margin-bottom: 40px;
     margin-top: 40px;
 }

@@ -285,6 +285,23 @@ label #cancel {
     display: block;
     text-align: center;
   }
+
+  #hva-vi-gjør h1 {
+    margin: 40px 100px 20px 15px;
+  }
+
+  #hva-vi-gjør p {
+    text-align: left;
+    margin: 10px 100px 10px 15px;
+    font-weight: 300;
+    line-height: 1.7rem;
+  }
+
+  #hva-vi-gjør h4 {
+    font-weight: 700px;
+    font-family: 'Museo Sans';
+  }
+
 }
 
 /* KLIMAMYTER seksjon */
@@ -395,14 +412,22 @@ label #cancel {
   #myter .container {
     display: block;
     text-align: center;
+    margin: 0 30px 0 0px;
   }
 
   #myter .container img {
-    width: 300px;
+    width: 90%;
   }
 
   #myter .kaffe {
     margin: 0;
+  }
+
+  #myter h4 {
+    text-align: left;
+    margin-left: 15px;
+    font-weight: 700;
+    font-family: 'Museo Sans';
   }
 }
 
@@ -617,10 +642,21 @@ label #cancel {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   background: url(/img/top_triangle.svg) no-repeat;
+  background-position: 300px;
+  background-position-y: 100px;
+  background-size: 100%;
 }
 
 
+/* .konklusjon {
 
+  -webkit-transform: skewY(2deg);
+  -ms-transform: skewY(2deg);
+  -o-transform: skewY(2deg);
+  -moz-transform: skewY(2deg);
+  transform: skewY(2deg);
+
+} */
 
 .bok-illustrasjon {
   grid-column: 7/12;
@@ -634,44 +670,88 @@ label #cancel {
   padding-top: 250px;
   padding-left: 150px;
   line-height: 4rem;
+  font-weight: 700;
 }
 
 .ingress {
-  grid-column: 4/10;
+  grid-column: 5/10;
   grid-row: 2;
   line-height: 3rem;
   font-size: 1.7rem;
-
+  font-weight: 300;
 }
 
 .ingress .undertekst {
-  font-size: 1rem;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
 }
 
 .paragraph {
-  grid-column: 4/11;
+  grid-column: 5/10;
   grid-row: 3;
   line-height: 1.9rem;
+  font-weight: 300;
+}
+
+.paragraph h4 {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.paragraph h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: 'Museo Sans';
 }
 
 .konklusjon {
-  background: var(--secondaryGreen);
+  /* background: var(--secondaryGreen); */
   min-height: 500px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
 
+.konk-background {
+  background: var(--secondaryGreen);
+}
+
 .heading {
-  grid-column: 3/10;
+  grid-column: 4/10;
+  margin-top: 50px;
+}
+
+.heading h1 {
+  font-weight: 700;
 }
 
 .last_paragraph {
-  grid-column: 4/11;
+  grid-column: 5/10;
   grid-row: 2;
   line-height: 1.9rem;
+  font-weight: 300;
 }
 
 /* ----------- KAFFE ARTIKKEL ---------------- */
+
+
+.background {
+  background: var(--secondaryGreen);
+  /* margin-top: 20px;
+  min-height: 800px; */
+  -webkit-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+  -o-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  transform: skewY(-2deg);
+}
+
+.vann-statistikk {
+  -webkit-transform: skewY(2deg);
+  -ms-transform: skewY(2deg);
+  -o-transform: skewY(2deg);
+  -moz-transform: skewY(2deg);
+  transform: skewY(2deg);
+}
 
 /* -- Kaffe --  */
 
@@ -690,6 +770,8 @@ label #cancel {
   background-size: 105%;
 }
 
+
+
 .kaffe-illustrasjon {
   grid-column: 7/10;
   padding-top: 80px;
@@ -701,8 +783,18 @@ label #cancel {
   grid-column: 2/6;
   grid-row: 1;
   padding-top: 250px;
-  padding-left: 150px;
+  padding-left: 100px;
   line-height: 4rem;
+}
+
+.bønnegraf {
+  grid-column: 4/8;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.kaffe-headline h1 {
+  font-size: 3.5rem;
 }
 
 /* -- Vann -- */
@@ -717,6 +809,27 @@ label #cancel {
   min-height: 500px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  margin: 20px;
+  padding: 20px;
+}
+
+.vann-statistikk h2 {
+  grid-column: 4/9;
+  font-family: 'Museo Slab';
+  font-weight: 700;
+  font-size: 1.9rem;
+}
+
+.vann-paragraph h5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+  margin-top: 60px;
+}
+
+.liten-pg {
+  font-weight: 300;
+  font-size: 0.9rem;
 }
 
 /* .vann-heading {
@@ -724,8 +837,15 @@ label #cancel {
 } */
 
 .vann-paragraph {
-  grid-column: 4/11;
+  grid-column: 5/10;
   line-height: 1.9rem;
+  font-weight: 300;
+}
+
+.vanngraf {
+  grid-column: 4/8;
+  margin-top: 40px;
+  margin-bottom: 80px;
 }
 
 /* -- Gass -- */
@@ -736,20 +856,56 @@ label #cancel {
   grid-template-columns: repeat(12, 1fr);
 }
 
-.gass-heading {
+/* .gass-heading {
   grid-column: 4/10;
+} */
+
+.gass-statistikk h2 {
+  grid-column: 4/9;
+  font-family: 'Museo Slab';
+  margin-top: 70px;
 }
 
 .gass-paragraph {
-  grid-column: 4/11;
+  grid-column: 5/10;
   line-height: 1.9rem;
+  font-weight: 300;
+  font-family: 'Museo Sans';
+}
+
+.klimagraf {
+  grid-column: 4/8;
+  margin-top: 40px;
+}
+
+.gass-paragraph h4 {
+  font-weight: 500;
 }
 
 /*  -- Fairtrade -- */
 
-#fairtrade {
+/* #fairtrade {
   background-color: var(--secondaryGreen);
 
+} */
+
+#fairtrade {
+  background: var(--secondaryGreen);
+  /* margin-top: 20px;
+  min-height: 800px; */
+  -webkit-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+  -o-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  transform: skewY(-2deg);
+}
+
+.fairtrade-container {
+  -webkit-transform: skewY(2deg);
+  -ms-transform: skewY(2deg);
+  -o-transform: skewY(2deg);
+  -moz-transform: skewY(2deg);
+  transform: skewY(2deg);
 }
 
 .fairtrade-container {
@@ -766,6 +922,21 @@ label #cancel {
 
 .fairtrade-paragraph {
   margin: auto;
+  line-height: 1.8rem;
+}
+
+.fairtrade-container h2 {
+  font-family: 'Museo Slab';
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.fairtrade-container p {
+  font-family: 'Museo Sans';
+}
+
+.fair-link {
+  color: #4DA2D1;
 }
 
 /* .fairtrade-container {
@@ -799,8 +970,15 @@ label #cancel {
   grid-template-columns: repeat(12, 1fr);
 }
 
+.tips h2 {
+  font-family: 'Museo Slab';
+  font-size: 2.4rem;
+  grid-column: 4/9;
+  margin-top: 100px;
+}
+
 .tips-paragraph {
-  grid-column: 4/10;
+  grid-column: 5/10;
   line-height: 1.9rem;
 }
 
@@ -811,16 +989,64 @@ label #cancel {
   min-height: 500px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  margin: 30px;
+  padding: 40px 0 40px 0;
+}
+
+.oppdatering {
+  -webkit-transform: skewY(2deg);
+  -ms-transform: skewY(2deg);
+  -o-transform: skewY(2deg);
+  -moz-transform: skewY(2deg);
+  transform: skewY(2deg);
+}
+
+.oppdatering h2 {
+  grid-column: 4/9;
+  font-size: 2rem;
 }
 
 .oppdatering-paragraph {
-  grid-column: 4/10;
+  grid-column: 5/10;
   line-height: 1.9rem;
+  font-weight: 300;
+}
+
+.grid-utslipp {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
 
 .grafikk {
-  grid-column: 4/12;
+  grid-column: 5/12;
   margin-bottom: 50px;
+}
+
+.grid-utslipp h3 {
+  grid-column: 5/10;
+}
+
+.utslipp {
+  grid-column: 4/10;
+}
+
+.konk-paragraph {
+  grid-column: 5/10;
+  line-height: 1.9rem;
+  font-weight: 300;
+}
+
+.konk-heading {
+  grid-column: 3/10;
+  margin-top: 50px;
+}
+
+.konk-heading h1 {
+  font-size: 2rem;
+}
+
+.ref {
+  font-size: 0.7rem;
 }
 
 @media screen and (max-width: 500px) {
@@ -844,6 +1070,18 @@ label #cancel {
     width: auto;
     margin: 0;
     padding: 0;
+    text-align: center;
+  }
+
+  .kaffe-headline h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  .grid-kaffe {
+    background-position: -60px;
+    background-position-y: 250px;
+    background-size: 160%;
   }
 
   .bønnegraf,
@@ -907,8 +1145,20 @@ label #cancel {
 @media screen and (max-width: 500px) {
   #hvem-vi-er {
     display: inline-block;
-    margin: 0 40px 0 40px;
     text-align: left;
+  }
+
+  #hvem-vi-er h1 {
+    margin: 40px 100px 20px 15px;
+  }
+
+  #hvem-vi-er p {
+    margin: 10px 100px 10px 15px;
+    font-weight: 300;
+  }
+
+  #hvem-vi-er .container {
+    margin: 0;
   }
 }
 
@@ -918,20 +1168,26 @@ label #cancel {
     background: url(/img/mob_test5-10.svg) no-repeat;
     background-position: center;
     background-size: cover;
-    height: 90vh;
+    height: 110vh;
     /*  background: var(--primaryGreen); */
   }
 
   #showcase h1 {
-    margin-top: 75px;
+    margin-top: 60px;
     margin-left: 5%;
-    font-size: 1.7rem;
+    font-size: 2.1rem;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: 0.1rem;
   }
 
+
+
   .intro {
-    width: 230px;
+    width: 280px;
     margin-left: 5%;
-    line-height: 1.6rem;
+    line-height: 2rem;
+    font-weight: 300;
   }
 }
 
@@ -957,4 +1213,21 @@ label #cancel {
 
 /* ----------- KJØTT ARTIKKEL MEDIA ------------ */
 
-@media screen and (max-width: 500px) {}
+@media screen and (max-width: 500px) {
+  #klima-myter .container {
+    padding: 0;
+    margin: 0 15px 0 15px;
+
+  }
+
+  #klima-myter h1 {
+    text-align: left;
+    margin-left: 15px;
+  }
+
+  #klima-myter .container img {
+    width: 90%;
+
+  }
+
+}
