@@ -464,24 +464,24 @@ label #cancel {
       width: 90px;
   } */
 
-/* INFO seksjon */
+/* stott-oss seksjon */
 
-#info {
+#stott-oss {
   background: var(--primaryGreen);
   min-height: 500px;
 }
 
-/* #info .container {
+/* #stott-oss .container {
     display: flex;
     justify-content: center;
     align-items: center;
 } */
 
-#info .container {
+#stott-oss .container {
   max-width: 600px;
 }
 
-#info button {
+#stott-oss button {
   margin: 0 auto;
   display: block;
   color: var(--black);
@@ -495,11 +495,11 @@ label #cancel {
   margin-top: 20px;
 }
 
-#info button:hover {
+#stott-oss button:hover {
   color: var(--footerGrey);
 }
 
-#info p {
+#stott-oss p {
   /* margin-left: 50%;
       margin-top: 80px; */
   line-height: 2.5rem;
@@ -507,12 +507,12 @@ label #cancel {
 }
 
 @media screen and (max-width: 500px) {
-  #info {
+  #stott-oss {
     text-align: left;
     margin: 0;
   }
 
-  #info .container {
+  #stott-oss .container {
     max-width: 300px;
   }
 }
@@ -605,7 +605,7 @@ label #cancel {
   opacity: 0.8;
 }
 
-#footer .lite-info {
+#footer .lite-stott-oss {
   margin-top: 80px;
 }
 
@@ -622,7 +622,7 @@ label #cancel {
     display: block;
   }
 
-  #footer .lite-info {
+  #footer .lite-stott-oss {
     max-width: 400px;
     margin-left: 20px;
     line-height: 1.7rem;
