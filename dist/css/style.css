@@ -189,7 +189,7 @@ label #cancel {
 #showcase {
   height: 800px;
   /* background: url(/img/mainback_v2-10.png); */
-  background: url(/dist/img/main5-10.svg) no-repeat center fixed;
+  background: url(/img/main5-10.svg) no-repeat center fixed;
   /* background-position: center center;
   background-repeat: no-repeat; */
   /* background-attachment: fixed; */
@@ -681,7 +681,7 @@ label #cancel {
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  background: url(/dist/img/top_triangle.svg) no-repeat;
+  background: url(/img/top_triangle.svg) no-repeat;
   background-position: 300px;
   background-position-y: 100px;
   background-size: 100%;
@@ -802,7 +802,7 @@ label #cancel {
 .grid-kaffe {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  background: url(/dist/img/top_triangle.svg) no-repeat;
+  background: url(/img/top_triangle.svg) no-repeat;
   background-position: 100px;
   background-position-y: 260px;
   background-size: 105%;
@@ -1197,7 +1197,7 @@ label #cancel {
 
 @media screen and (max-width: 500px) {
   #showcase {
-    background: url(/dist/img/mob_test5-10.svg) no-repeat;
+    background: url(/img/mob_test5-10.svg) no-repeat;
     background-position: center;
     background-size: cover;
     height: 110vh;
