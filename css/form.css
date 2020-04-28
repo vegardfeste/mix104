@@ -82,9 +82,12 @@ header .button_1 {
   cursor: pointer;
 }
 
+/* .button_2 button:hover {
+  color: var(--black);
+} */
+
 .button_1:hover {
-  background-color: var(--secondaryGreen);
-  color: #65645e;
+  color: var(--black);
 }
 
 nav {
@@ -268,8 +271,7 @@ label #cancel {
 }
 
 #form .text .btn_2:hover {
-  background-color: var(--secondaryGreen);
-  color: #65645e;
+  color: var(--black);
 }
 
 /* .button_1:hover {
