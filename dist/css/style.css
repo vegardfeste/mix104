@@ -617,6 +617,49 @@ label #cancel {
   margin-top: 80px;
 }
 
+/*Tablet version for footer*/
+@media screen and (max-width:1024px) {
+  br {
+    display: none;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  #footer .container div:nth-child(1) {
+    grid-column: 3/12;
+    grid-row: 1;
+    width: 66.5vw;
+  }
+
+  #footer .container div:nth-child(2) {
+    grid-column: 3/12;
+    grid-row: 2;
+    width: 424px;
+  }
+
+  #footer .container div:nth-child(3) {
+    grid-column: 3/12;
+    grid-row: 3;
+    width: 310px;
+  }
+
+  #footer .lite-info {
+    margin-top: 0;
+  }
+
+  #stott-oss p {
+    width: 655px;
+    margin-bottom: 58px;
+  }
+
+  #footer .kontakt,
+  #footer .nyhetsbrev {
+    margin-top: 30px;
+  }
+}
+
 @media screen and (max-width:750px) {
   #stott-oss p {
     width: 92vw;
