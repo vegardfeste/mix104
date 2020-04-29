@@ -605,7 +605,7 @@ label #cancel {
   opacity: 0.8;
 }
 
-#footer .lite-stott-oss {
+#footer .lite-info {
   margin-top: 80px;
 }
 
@@ -617,12 +617,34 @@ label #cancel {
   margin-top: 80px;
 }
 
+@media screen and (max-width:750px) {
+  #stott-oss p {
+    width: 92vw;
+    margin-bottom: 58px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+}
+
 @media screen and (max-width: 500px) {
+
+  #stott-oss p,
+  p {
+    font-size: 16px;
+  }
+
+  #footer .container div:nth-child(1),
+  #footer .container div:nth-child(2),
+  #footer .container div:nth-child(3) {
+    width: auto;
+    margin-top: 80px;
+  }
+
   #footer .container {
     display: block;
   }
 
-  #footer .lite-stott-oss {
+  #footer .lite-info {
     max-width: 400px;
     margin-left: 20px;
     line-height: 1.7rem;
