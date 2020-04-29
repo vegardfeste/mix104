@@ -617,7 +617,7 @@ label #cancel {
   margin-top: 80px;
 }
 
-/*Tablet version for footer*/
+/*Tablet version for footer
 @media screen and (max-width:1024px) {
   br {
     display: none;
@@ -658,7 +658,7 @@ label #cancel {
   #footer .nyhetsbrev {
     margin-top: 30px;
   }
-}
+}*/
 
 @media screen and (max-width:750px) {
   #stott-oss p {
