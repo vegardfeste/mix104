@@ -63,6 +63,20 @@ header .branding {
   border-radius: 50px;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.content-padding {
+  padding-top: 118px;
+}
+
+.header-container {
+  z-index:99;
+}
+
 
 /* ----------- BUTTONS -------- */
 

@@ -35,7 +35,7 @@
 
 <body>
   <header>
-    <div class="header-container">
+    <div id="navigation-bar" class="header-container">
       <a href="index.html">
         <div class="branding"></div>
       </a>
@@ -55,7 +55,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
     <!-- HOVEDBILDE SEKSJON -->
     <section id="showcase">
       <div class="container">
@@ -276,6 +276,18 @@
       <a href="#" class="LOGONAVN">&copy 2020 FRAMTIDEN I VÅRE HENDER</a>
     </div>
   </footer>
+
+  <script>
+    window.onscroll = function() {stickyNav()};
+    
+    var navbar = document.getElementById("navigation-bar");
+    var main = document.getElementById("main-content")
+    
+    function stickyNav() {
+        navbar.classList.add("sticky");
+        main.classList.add("content-padding")
+    }
+  </script>
 </body>
 
 </html>
