@@ -134,66 +134,60 @@ header .button_1 {
 } */
 
 header .branding {
-    margin: 20px 0 0 50px;
+    margin: 25px 0 25px 72px;
     float: left;
-    width: 40px;
-    height: 40px;
+    width: 68px;
+    height: 68px;
     border: 1px solid var(--primaryGreen);
     background-color: var(--primaryGreen);
     border-radius: 50px;
-}
-
-header .button_1 {
+  }
+  
+  header .button_1 {
     float: right;
-    margin: 20px;
+    margin: 29px 55px 29px 0px;
     color: #fff;
-    width: 150px;
-    height: 40px;
+    width: 231px;
+    height: 60px;
     background: var(--primaryGreen);
     padding: 0.3vw 0.6vw;
     border-radius: 3vw;
     border: none;
     text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
     cursor: pointer;
-}
-
-
-
-.button_2 {
+  }
+  
+  .button_2 {
     cursor: pointer;
-}
-
-.button_1:hover {
-    background-color: var(--secondaryGreen);
-    color: #65645e;
-}
-
-nav {
-    height: 80px;
+  }
+  
+  .button_1:hover {
+    color: var(--black);
+  }
+  
+  nav {
+    height: 118px;
     background: white;
-}
-
-/* nav ul li {
+  }
+  
+  nav ul li {
     display: inline-block;
-    line-height: 80px;
-    margin: 0 15px;
-    margin-left: 50px;
-} */
-
-nav ul li {
-    display: inline-block;
-    line-height: 80px;
+    line-height: 118px;
     /* margin: 0 0 0 200px; */
     margin-left: 8%;
-}
-
-nav ul li a {
+  }
+  
+  nav ul li a {
     position: relative;
     padding: 5px 0;
     color: var(--black);
     font-size: 18px;
+    font-weight: 700;
     text-transform: uppercase;
-}
+  }
 
 nav ul li a:before {
     position: absolute;
