@@ -1,8 +1,8 @@
-/* Variables */
-
 * {
   box-sizing: border-box;
 }
+
+/* ---- Variables -----*/
 
 :root {
   --primaryGreen: #b5de8c;
@@ -15,6 +15,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #fff;
+
 }
 
 a {
@@ -23,17 +24,15 @@ a {
 }
 
 h1 {
-  font-family: "museo slab";
+  font-family: "museo-slab";
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 4.2rem;
 }
 
-header {
-  font-family: "museo sans";
-}
+
 
 p {
-  font-family: "museo sans";
+  font-family: "museo-sans";
   font-weight: 300;
 }
 
@@ -48,6 +47,12 @@ ul {
   padding: 0;
 }
 
+/* ------------- HEADER ------------ */
+
+header {
+  font-family: "museo-sans";
+}
+
 header .branding {
   margin: 25px 0 25px 72px;
   float: left;
@@ -57,6 +62,9 @@ header .branding {
   background-color: var(--primaryGreen);
   border-radius: 50px;
 }
+
+
+/* ----------- BUTTONS -------- */
 
 header .button_1 {
   float: right;
@@ -75,6 +83,7 @@ header .button_1 {
   cursor: pointer;
 }
 
+
 .button_2 {
   cursor: pointer;
 }
@@ -82,6 +91,9 @@ header .button_1 {
 .button_1:hover {
   color: var(--black);
 }
+
+
+/* ------------- NAVIGATION ---------------- */
 
 nav {
   height: 118px;
@@ -91,7 +103,6 @@ nav {
 nav ul li {
   display: inline-block;
   line-height: 118px;
-  /* margin: 0 0 0 200px; */
   margin-left: 8%;
 }
 
@@ -136,6 +147,8 @@ label #cancel {
 #check {
   display: none;
 }
+
+/* ----------- MOBILE HAMBURGER MENU --------------- */
 
 @media (max-width: 800px) {
   .button_1 {
@@ -190,20 +203,12 @@ label #cancel {
   }
 }
 
-/* SHOWCASE */
+/* -------------------- SHOWCASE ---------------------- */
 
 #showcase {
   height: 800px;
-  /* background: url(/img/mainback_v2-10.png); */
   background: url(/img/main5-10.svg) no-repeat center fixed;
-  /* background-position: center center;
-  background-repeat: no-repeat; */
-  /* background-attachment: fixed; */
-  /* width: 100%; */
-  /* height: auto; */
   background-size: cover;
-
-  /*  background: var(--primaryGreen); */
 }
 
 #showcase h1 {
@@ -217,18 +222,13 @@ label #cancel {
   line-height: 2.5rem;
 }
 
-/* #showcase p {
-    margin-left: 18%;
-    line-height: 1.7rem;
-} */
-
 .intro {
   width: 500px;
   margin-left: 18%;
   line-height: 1.7rem;
 }
 
-/* Hvem vi er seksjon */
+/* ---------- Hvem vi er seksjon -------------*/
 
 #hvem-vi-er {
   min-height: 400px;
@@ -237,7 +237,6 @@ label #cancel {
 #hvem-vi-er h1 {
   margin-left: 15%;
   margin-top: 50px;
-  font-weight: 700;
 }
 
 #hvem-vi-er p {
@@ -246,7 +245,7 @@ label #cancel {
   font-weight: 300;
 }
 
-/* HVA VI GJØR SEKSJON */
+/* ------------ HVA VI GJØR SEKSJON -------------- */
 
 #hva-vi-gjør {
   background: var(--secondaryGreen);
@@ -266,7 +265,6 @@ label #cancel {
   -moz-transform: skewY(2deg);
   transform: skewY(2deg);
   display: flex;
-  /* justify-content: space-around; */
 }
 
 #hva-vi-gjør h1 {
@@ -289,7 +287,7 @@ label #cancel {
 
 #hva-vi-gjør h4 {
   font-weight: 700px;
-  font-family: "Museo Sans";
+  font-family: "museo-sans";
 }
 
 #hva-vi-gjør p {
@@ -298,6 +296,8 @@ label #cancel {
   font-weight: 300;
   line-height: 1.7rem;
 }
+
+/* ------ MOBILE Hva vi gjør -------- */
 
 @media screen and (max-width: 500px) {
   #hva-vi-gjør .container {
@@ -318,20 +318,18 @@ label #cancel {
 
   #hva-vi-gjør h4 {
     font-weight: 700px;
-    font-family: "Museo Sans";
+    font-family: "museo-sans";
   }
 }
 
-/* KLIMAMYTER seksjon */
+/* ------------- KLIMAMYTER index seksjon -------------- */
 #myter .kaffe {
   width: 500px;
-  /* margin-left: 80px; */
 }
 
 #myter .bok {
   width: 500px;
   margin-top: 20px;
-  /* margin-left: 80px; */
 }
 
 #myter .kjøtt {
@@ -344,16 +342,6 @@ label #cancel {
   margin-left: 15%;
 }
 
-/* #myter .container {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-  } */
-
-/* #myter .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-} */
-
 #myter {
   margin: 80px 0 80px 0;
 }
@@ -364,25 +352,16 @@ label #cancel {
   margin-left: 20px;
 }
 
-/* #myter .container .illustrasjon {
-  padding: 10px;
-  width: 20%;
-  margin-top: 100px;
-  margin-bottom: 80px;
-} */
-
 #myter .container .illustrasjon {
-  /* padding: 10px; */
   width: 100%;
   margin-top: 100px;
   margin-bottom: 80px;
 }
 
-/* ------- Klimamyter html --------- */
+/* ------------- Klimamyter html -------------- */
 
 #klima-myter .kaffe {
   width: 500px;
-  /* margin-left: 80px; */
 }
 
 #klima-myter .bok {
@@ -409,7 +388,6 @@ label #cancel {
 }
 
 #klima-myter .container .illustrasjon {
-  /* padding: 10px; */
   width: 100%;
   margin-top: 100px;
   margin-bottom: 80px;
@@ -439,43 +417,17 @@ label #cancel {
     text-align: left;
     margin-left: 15px;
     font-weight: 700;
-    font-family: "Museo Sans";
+    font-family: "museo-sans";
   }
 }
 
-/* #myter h1 {
-      margin-left: 15%;
-  }
 
-  #myter {
-      margin-top: 100px;
-      min-height: 300px;
-  }
-
-  #myter .illustrasjon {
-      float: left;
-      width: 30%;
-      padding: 10px;
-      margin-top: 100px;
-
-  }
-
-  #myter .illustrasjon img {
-      width: 90px;
-  } */
-
-/* stott-oss seksjon */
+/* ------------ STØTT OSS seksjon ------------------*/
 
 #stott-oss {
   background: var(--primaryGreen);
   min-height: 500px;
 }
-
-/* #stott-oss .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 #stott-oss .container {
   max-width: 800px;
@@ -500,8 +452,6 @@ label #cancel {
 }
 
 #stott-oss p {
-  /* margin-left: 50%;
-      margin-top: 80px; */
   line-height: 2.5rem;
   margin-top: 100px;
 }
@@ -517,7 +467,7 @@ label #cancel {
   }
 }
 
-/* FOOTER seksjon */
+/* ----------------- FOOTER seksjon ------------------ */
 
 #footer {
   background: var(--footerGrey);
@@ -526,12 +476,12 @@ label #cancel {
 
 #footer h4 {
   font-weight: 700;
-  font-family: "Museo Sans";
+  font-family: "museo-sans";
 }
 
 #footer p {
   font-weight: 300;
-  font-family: "Museo Sans";
+  font-family: "museo-sans";
   line-height: 1.5rem;
 }
 
@@ -750,10 +700,10 @@ label #cancel {
 
 } */
 
-.grid {
+.grid-bok {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  background: url(/img/top_triangle.svg) no-repeat;
+  background: url(img/top_triangle.svg) no-repeat;
   background-position: 300px;
   background-position-y: 100px;
   background-size: 100%;
@@ -907,10 +857,10 @@ label #cancel {
 
 /* -- Vann -- */
 
-.background {
+/* .background {
   background-color: var(--secondaryGreen);
   width: 100%;
-}
+} */
 
 .vann-statistikk {
   /* background: var(--secondaryGreen); */
@@ -923,7 +873,7 @@ label #cancel {
 
 .vann-statistikk h2 {
   grid-column: 4/9;
-  font-family: "Museo Slab";
+  font-family: "museo-slab";
   font-weight: 700;
   font-size: 1.9rem;
 }
@@ -970,7 +920,7 @@ label #cancel {
 
 .gass-statistikk h2 {
   grid-column: 4/9;
-  font-family: "Museo Slab";
+  font-family: "museo-slab";
   margin-top: 70px;
 }
 
@@ -978,7 +928,7 @@ label #cancel {
   grid-column: 5/10;
   line-height: 1.9rem;
   font-weight: 300;
-  font-family: "Museo Sans";
+  font-family: "museo-sans";
 }
 
 .klimagraf {
@@ -1017,7 +967,7 @@ label #cancel {
 }
 
 .fairtrade-container {
-  font-family: "museo sans";
+  font-family: "museo-sans";
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 100px auto 100px auto;
@@ -1034,13 +984,13 @@ label #cancel {
 }
 
 .fairtrade-container h2 {
-  font-family: "Museo Slab";
+  font-family: "museo-slab";
   font-size: 2rem;
   margin-bottom: 40px;
 }
 
 .fairtrade-container p {
-  font-family: "Museo Sans";
+  font-family: "museo-sans";
 }
 
 .fair-link {
@@ -1079,7 +1029,7 @@ label #cancel {
 }
 
 .tips h2 {
-  font-family: "Museo Slab";
+  font-family: "museo-slab";
   font-size: 2.4rem;
   grid-column: 4/9;
   margin-top: 100px;
@@ -1167,6 +1117,7 @@ label #cancel {
   .grid-utslipp {
     display: inline-block;
     margin: 0 40px 0 40px;
+    /* margin: 0 15px 0 15px; */
   }
 
   .kaffe-illustrasjon {
@@ -1332,6 +1283,279 @@ label #cancel {
 }
 
 
+/************* KJØTT artikler **************/
+
+
+.background {
+  width: 100%;
+  background: var(--secondaryGreen);
+  -webkit-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+  -o-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  transform: skewY(-2deg);
+}
+
+.chapter-farge {
+  -webkit-transform: skewY(2deg);
+  -ms-transform: skewY(2deg);
+  -o-transform: skewY(2deg);
+  -moz-transform: skewY(2deg);
+  transform: skewY(2deg);
+}
+
+.ingress {
+  grid-column: 5/10;
+  grid-row: 2;
+  line-height: 3rem;
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background: url(img/top_triangle.svg) no-repeat;
+  background-position: 300px;
+  background-position-y: 120px;
+  background-size: 70%;
+}
+
+
+.kjøtt-illustrasjon {
+  grid-column: 7/10;
+  padding-top: 80px;
+  padding-right: 20px;
+  width: 700px;
+}
+
+.kjøtt-headline {
+  grid-column: 3/7;
+  grid-row: 1;
+  padding-top: 250px;
+  padding-left: 100px;
+  font-weight: 700;
+  letter-spacing: 0.07px;
+  opacity: 1;
+}
+
+.ingress .undertekst {
+  font-size: 1rem;
+}
+
+.paragraph {
+  font-size: 16px;
+  grid-column: 5/10;
+  grid-row: 3;
+  line-height: 1.9rem;
+  font-weight: 300;
+}
+
+.chapter {
+  margin-top: 50px;
+  min-height: 500px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.chapter-paragraph {
+  grid-column: 5/10;
+  line-height: 1.9rem;
+  margin-bottom: 50px;
+}
+
+.chapter-paragraph p {
+  font-family: 'Museo Sans';
+  font-weight: 300;
+}
+
+.chapter-paragraph h3 {
+  font-weight: 500;
+  font-family: 'Museo Sans';
+  font-size: 1rem;
+}
+
+
+.chapter-paragraph h2 {
+  font-weight: 700;
+  font-family: 'Museo Slab';
+}
+
+.traktor {
+  margin-top: 200px;
+  grid-column: 2/4;
+  grid-row: 1;
+  width: 300px;
+}
+
+.ku1 {
+  margin-top: 1200px;
+  grid-column: 2/4;
+  grid-row: 1;
+
+}
+
+.ku2 {
+  margin-top: 1600px;
+  grid-column: 10/12;
+  grid-row: 1;
+}
+
+.biff {
+  margin-top: 50px;
+  grid-row: 1;
+  grid-column: 2/4;
+}
+
+.carrot {
+  grid-row: 1;
+  margin-top: 500px;
+  grid-column: 2/4;
+}
+
+.broccoli {
+  margin-top: 300px;
+  grid-row: 1;
+  grid-column: 10/12;
+}
+
+.kraftfor {
+  grid-column: 4/9;
+  margin-bottom: 40px;
+}
+
+.myte {
+  grid-column: 4;
+}
+
+.myte h2 {
+  font-weight: 300;
+  font-family: 'Museo Sans';
+}
+
+.sau {
+  grid-column: 4/9;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.storfe {
+  grid-column: 4/9;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.ku1-mobil {
+  display: none;
+}
+
+.ku2-mobil {
+  display: none;
+}
+
+.mobil-broccoli {
+  display: none;
+}
+
+.mobil-carrot {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  /* .grid {
+    display: inline-block;
+    margin: 0 15px 0 15px;
+  } */
+
+  .ingress {
+    font-size: 1rem;
+  }
+
+  .kjøtt-illustrasjon {
+    width: auto;
+    margin-left: 0px;
+  }
+
+  .kjøtt-headline {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .chapter {
+    display: inline-block;
+    margin: 0 15px 0 15px;
+  }
+
+  .traktor {
+    display: block;
+    margin: 0;
+
+  }
+
+  .ku1 {
+    display: none;
+  }
+
+  .ku2 {
+    display: none;
+  }
+
+  .kraftfor {
+    width: 100%;
+  }
+
+  .sau {
+    width: 100%;
+  }
+
+  .storfe {
+    width: 100%;
+  }
+
+  .biff,
+  .carrot,
+  .broccoli {
+    margin: 10px 0 0 190px;
+  }
+
+  .carrot {
+    display: none;
+  }
+
+  .broccoli {
+    display: none;
+  }
+
+  .ku1-mobil {
+    display: block;
+    margin-left: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .ku2-mobil {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 70px;
+  }
+
+  .mobil-broccoli {
+    display: block;
+    margin: auto;
+  }
+
+  .mobil-carrot {
+    display: block;
+    margin: auto;
+  }
+}
+
+
+
+
 /********* form *******/
 #form {
   clear: both;
@@ -1358,7 +1582,7 @@ label #cancel {
 }
 
 #form h2 {
-  font-family: "museo slab";
+  font-family: "museo-slab";
   height: auto;
   margin: 0 auto;
   text-align: center;
@@ -1369,7 +1593,7 @@ label #cancel {
 
 
 #form .text_1 {
-  font-family: "museo slab";
+  font-family: "museo-slab";
   line-height: 40px;
   width: 678px;
   /*33vw, 477px*/
