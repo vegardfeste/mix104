@@ -416,18 +416,18 @@ label #cancel {
 
 /* INFO seksjon */
 
-#info {
+#stott-oss {
     background: var(--primaryGreen);
     min-height: 500px;
 }
 
-#info .container {
+#stott-oss .container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#info button {
+#stott-oss button {
     margin: 0 auto;
     display: block;
     color: var(--primaryGreen);
@@ -441,7 +441,7 @@ label #cancel {
     margin-top: 50px;
 }
 
-#info p {
+#stott-oss p {
     /* margin-left: 50%;
       margin-top: 80px; */
     line-height: 1.8rem;
@@ -542,7 +542,7 @@ label #cancel {
     --black: #000;
 }
 
-#info p {
+#stott-oss p {
     color: black;
 }
 
@@ -958,13 +958,13 @@ p {
 }
 
 @media screen and (max-width: 500px) {
-    #info {
+    #stott-oss {
         display: block;
         text-align: left;
         /* margin: 0; */
     }
 
-    #info .container {
+    #stott-oss .container {
         max-width: 300px;
     }
 
