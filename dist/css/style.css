@@ -241,7 +241,37 @@ label #cancel {
   margin-left: 18%;
   line-height: 1.7rem;
 }
+@media screen and (max-width: 1024px){
+  #showcase h1{
+    font-size: 2.1rem;
+    margin-left: 10vw;
+  }
 
+  #showcase p{
+    font-size: 1.3rem;
+  }
+
+  .intro{
+    width:500px;
+    margin-left: 10vw;
+  }
+
+}
+@media screen and (max-width: 750px){
+  #showcase h1{
+    font-size: 2.1rem;
+    width: 306px;
+  }
+
+  #showcase p{
+    font-size: 1.3rem;
+  }
+
+  .intro{
+    width:306px;
+  }
+
+}
 /* ---------- Hvem vi er seksjon -------------*/
 
 #hvem-vi-er {
@@ -249,7 +279,7 @@ label #cancel {
 }
 
 #hvem-vi-er h1 {
-  margin-left: 15%;
+  margin-left: 18%;
   margin-top: 50px;
 }
 
@@ -258,6 +288,31 @@ label #cancel {
   line-height: 1.7rem;
   font-weight: 300;
 }
+@media screen and (max-width: 1024px){
+  #hvem-vi-er h1 {
+    margin-left: 10%;
+    font-size: 2.1rem;
+}
+#hvem-vi-er p{
+  margin-left: 18%;
+}
+}
+
+@media screen and (max-width: 750px){
+  #hvem-vi-er h1 {
+    margin-left: 10%;
+    font-size: 2.1rem;
+    }
+    #hvem-vi-er p{
+      width:80vw;
+      margin-left: 10%;
+    }
+    br{
+      display: none;
+    }
+}
+
+
 
 /* ------------ HVA VI GJØR SEKSJON -------------- */
 
@@ -311,8 +366,54 @@ label #cancel {
   line-height: 1.7rem;
 }
 
-/* ------ MOBILE Hva vi gjør -------- */
+.box img{
+  padding: 80px;
+  border-radius: 100px;
+  border: 1px solid black;
+}
 
+/* ------ MOBILE Hva vi gjør -------- */
+@media screen and (max-width: 1024px) {
+  #hva-vi-gjør h1{
+    font-size:2.1rem;
+    margin-left: 10vw;
+  }
+  #hva-vi-gjør .container{
+    display: block;
+  }
+  #hva-vi-gjør .box{
+    display:block;
+    width:536px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  #hva-vi-gjør .box img{
+    display:block;
+    width:186px;
+    margin: 0 auto;
+  }
+  #hva-vi-gjør h4{
+    text-align: center;
+  }
+  #hva-vi-gjør p{
+    width:536px;
+    margin: 0;
+  }
+  #hva-vi-gjør .container-2{
+    margin-top:0;
+  }
+
+}
+
+@media screen and (max-width: 750px){
+  #hva-vi-gjør p{
+    width:80vw
+}
+#hva-vi-gjør .box{
+  width:80vw;
+}
+}
 @media screen and (max-width: 500px) {
   #hva-vi-gjør .container {
     display: block;
@@ -411,6 +512,26 @@ label #cancel {
   margin-left: 15%;
   font-size: 4rem;
 }
+@media screen and (max-width:1024px){
+  #myter h1{
+    font-size: 2.1rem;
+    margin-left: 10vw;
+  }
+  #myter  .container {
+    margin-left: 10vw;
+    grid-template-columns:repeat(3,252px);
+    padding-left: 16px;
+  }
+}
+@media screen and (max-width:800px){
+  #myter  .container {
+    margin-left: 10vw;
+    grid-template-columns:repeat(1,252px);
+    grid-template-rows:repeat(3,252px);
+    padding-left: 16px;
+  }
+
+}
 
 @media screen and (max-width: 500px) {
   #myter .container {
@@ -469,7 +590,12 @@ label #cancel {
   line-height: 2.5rem;
   margin-top: 100px;
 }
-
+@media screen and (max-width:1024px){
+  #stott-oss p {
+    width:80vw;
+    margin-left: 10vw;
+  }
+}
 @media screen and (max-width: 500px) {
   #stott-oss {
     text-align: left;
@@ -623,6 +749,39 @@ label #cancel {
     margin-top: 30px;
   }
 }*/
+@media screen and (max-width:1024px){
+  #footer br{
+    display:none;
+  }
+p{
+  font-size: 20px;
+}
+#footer .container div:nth-child(1){
+  grid-column: 3/12;
+  grid-row: 1;
+  width:66.5vw;
+}
+#footer .container div:nth-child(2){
+  grid-column: 3/12;
+  grid-row: 2;
+  width:424px;
+}
+#footer .container div:nth-child(3){
+  grid-column: 3/12;
+  grid-row: 3;
+  width:310px;
+}
+#footer .lite-info{
+  margin-top:0;
+}
+#info p{
+width: 655px;
+margin-bottom: 58px;
+}
+#footer .kontakt, #footer .nyhetsbrev {
+    margin-top: 30px;
+}
+}
 
 @media screen and (max-width:750px) {
   #stott-oss p {
@@ -631,6 +790,8 @@ label #cancel {
     margin: 0 auto;
     margin-top: 100px;
   }
+  }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -685,7 +846,11 @@ label #cancel {
   text-decoration: none;
   color: var(--footerGrey);
 }
-
+@media screen and (max-width:750px){
+  .copyright a{
+    width:200px;
+  }
+}
 @media screen and (max-width: 500px) {
   .copyright {
     display: flex;
