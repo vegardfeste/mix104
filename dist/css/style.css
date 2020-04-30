@@ -2018,7 +2018,7 @@ input[name="epost"] {
   }
 
   #form h2 {
-    width: 408px;
+    /*width: 408px;*/
     font-size: 45px;
     margin-bottom: 71px;
   }
@@ -2148,7 +2148,7 @@ input[name="epost"] {
   #form h2 {
     font-size: 7vw;
     margin-bottom: 11vw;
-    width: 62.4vw;
+    /*width: 62.4vw;*/
   }
 
   #form .text_1 {
