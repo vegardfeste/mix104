@@ -373,10 +373,25 @@ label #cancel {
   line-height: 1.7rem;
 }
 
-.box img {
+/* .box img {
   padding: 80px;
   border-radius: 100px;
   border: 1px solid black;
+  width: 100px;
+} */
+
+
+
+.penger {
+  width: 100px;
+}
+
+.oljefond {
+  width: 100px;
+}
+
+.livsstil {
+  width: 150px;
 }
 
 /* ------ MOBILE Hva vi gjør -------- */
