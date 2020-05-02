@@ -9,27 +9,27 @@
   <script defer src="https://kit.fontawesome.com/a076d05399.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
       // Add smooth scrolling to all links
-      $("a").on('click', function(event) {
-    
+      $("a").on('click', function (event) {
+
         if (this.hash !== "") {
           event.preventDefault();
           var hash = this.hash;
-    
+
           // Using jQuery's animate() method to add smooth page scroll
           // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
           $('html, body').animate({
             scrollTop: $(hash).offset().top
-          }, 600, function(){
-    
+          }, 600, function () {
+
             // Add hash (#) to URL when done scrolling (default click behavior)
             window.location.hash = hash;
           });
-        } 
+        }
       });
     });
-    </script>
+  </script>
   <title>Framtiden i våre hender</title>
 </head>
 
@@ -37,7 +37,9 @@
   <header>
     <div id="navigation-bar" class="header-container">
       <a href="index.html">
-        <div class="branding"></div>
+        <div class="branding">
+          <img src="img/f-logo.svg" alt="">
+        </div>
       </a>
       <nav>
         <input type="checkbox" id="check" />
@@ -278,14 +280,16 @@
   </footer>
 
   <script>
-    window.onscroll = function() {stickyNav()};
-    
+    window.onscroll = function () {
+      stickyNav()
+    };
+
     var navbar = document.getElementById("navigation-bar");
     var main = document.getElementById("main-content")
-    
+
     function stickyNav() {
-        navbar.classList.add("sticky");
-        main.classList.add("content-padding")
+      navbar.classList.add("sticky");
+      main.classList.add("content-padding")
     }
   </script>
 </body>
