@@ -15,7 +15,6 @@ body {
   padding: 0;
   margin: 0;
   background-color: #fff;
-
 }
 
 a {
@@ -28,8 +27,6 @@ h1 {
   font-weight: 700;
   font-size: 4.2rem;
 }
-
-
 
 p {
   font-family: "museo-sans";
@@ -77,7 +74,6 @@ header .branding {
   z-index: 99;
 }
 
-
 /* ----------- BUTTONS -------- */
 
 header .button_1 {
@@ -97,7 +93,6 @@ header .button_1 {
   cursor: pointer;
 }
 
-
 .button_2 {
   cursor: pointer;
 }
@@ -105,7 +100,6 @@ header .button_1 {
 .button_1:hover {
   color: var(--black);
 }
-
 
 /* ------------- NAVIGATION ---------------- */
 
@@ -204,15 +198,15 @@ label #cancel {
     font-size: 20px;
   }
 
-  #check:checked~ul {
+  #check:checked ~ ul {
     left: 0;
   }
 
-  #check:checked~label #btn {
+  #check:checked ~ label #btn {
     display: none;
   }
 
-  #check:checked~label #cancel {
+  #check:checked ~ label #cancel {
     display: block;
   }
 }
@@ -221,7 +215,7 @@ label #cancel {
 
 #showcase {
   height: 100vh;
-  background: url(/img/main5-10.svg) no-repeat center fixed;
+  background: url(/img/hjemside.svg) no-repeat center fixed;
   background-size: cover;
 }
 
@@ -256,7 +250,6 @@ label #cancel {
     width: 500px;
     margin-left: 10vw;
   }
-
 }
 
 @media screen and (max-width: 750px) {
@@ -272,7 +265,6 @@ label #cancel {
   .intro {
     width: 306px;
   }
-
 }
 
 /* ---------- Hvem vi er seksjon -------------*/
@@ -318,8 +310,6 @@ label #cancel {
     display: none;
   }
 }
-
-
 
 /* ------------ HVA VI GJØR SEKSJON -------------- */
 
@@ -380,8 +370,6 @@ label #cancel {
   width: 100px;
 } */
 
-
-
 .penger {
   width: 100px;
 }
@@ -416,7 +404,7 @@ label #cancel {
   margin: 20px;
 } */
 
-.container-1{
+.container-1 {
   margin-left: 30px;
 }
 
@@ -428,10 +416,6 @@ label #cancel {
   float: left;
   margin-right: 30px;
 }
-
-
-
-
 
 /* ------ MOBILE Hva vi gjør -------- */
 @media screen and (max-width: 1024px) {
@@ -470,12 +454,11 @@ label #cancel {
   #hva-vi-gjør .container-2 {
     margin-top: 0;
   }
-
 }
 
 @media screen and (max-width: 750px) {
   #hva-vi-gjør p {
-    width: 80vw
+    width: 80vw;
   }
 
   #hva-vi-gjør .box {
@@ -582,7 +565,7 @@ label #cancel {
   font-size: 4rem;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
   #myter h1 {
     font-size: 2.1rem;
     margin-left: 10vw;
@@ -595,14 +578,13 @@ label #cancel {
   }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
   #myter .container {
     margin-left: 10vw;
     grid-template-columns: repeat(1, 252px);
     grid-template-rows: repeat(3, 252px);
     padding-left: 16px;
   }
-
 }
 
 @media screen and (max-width: 500px) {
@@ -627,7 +609,6 @@ label #cancel {
     font-family: "museo-sans";
   }
 }
-
 
 /* ------------ STØTT OSS seksjon ------------------*/
 
@@ -663,7 +644,7 @@ label #cancel {
   margin-top: 100px;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
   #stott-oss p {
     width: 80vw;
     margin-left: 10vw;
@@ -823,7 +804,7 @@ label #cancel {
     margin-top: 30px;
   }
 }*/
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
   #footer br {
     display: none;
   }
@@ -865,7 +846,7 @@ label #cancel {
   }
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width: 750px) {
   #stott-oss p {
     width: 92vw;
     margin-bottom: 58px;
@@ -874,10 +855,7 @@ label #cancel {
   }
 }
 
-}
-
 @media screen and (max-width: 500px) {
-
   #stott-oss p,
   p {
     font-size: 16px;
@@ -929,7 +907,7 @@ label #cancel {
   color: var(--footerGrey);
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width: 750px) {
   .copyright a {
     width: 200px;
   }
@@ -1114,6 +1092,7 @@ label #cancel {
   grid-column: 4/8;
   margin-top: 40px;
   margin-bottom: 80px;
+  width: 100px;
 }
 
 .kaffe-headline h1 {
@@ -1373,7 +1352,6 @@ label #cancel {
 }
 
 @media screen and (max-width: 500px) {
-
   .grid,
   .vann-statistikk,
   .gass-statistikk,
@@ -1547,9 +1525,7 @@ label #cancel {
   }
 }
 
-
 /************* KJØTT artikler **************/
-
 
 .background {
   width: 100%;
@@ -1585,7 +1561,6 @@ label #cancel {
   background-position-y: 120px;
   background-size: 70%;
 }
-
 
 .kjøtt-illustrasjon {
   grid-column: 7/10;
@@ -1631,20 +1606,19 @@ label #cancel {
 }
 
 .chapter-paragraph p {
-  font-family: 'Museo Sans';
+  font-family: "Museo Sans";
   font-weight: 300;
 }
 
 .chapter-paragraph h3 {
   font-weight: 500;
-  font-family: 'Museo Sans';
+  font-family: "Museo Sans";
   font-size: 1rem;
 }
 
-
 .chapter-paragraph h2 {
   font-weight: 700;
-  font-family: 'Museo Slab';
+  font-family: "Museo Slab";
 }
 
 .traktor {
@@ -1658,7 +1632,6 @@ label #cancel {
   margin-top: 1200px;
   grid-column: 2/4;
   grid-row: 1;
-
 }
 
 .ku2 {
@@ -1696,7 +1669,7 @@ label #cancel {
 
 .myte h2 {
   font-weight: 300;
-  font-family: 'Museo Sans';
+  font-family: "Museo Sans";
 }
 
 .sau {
@@ -1757,7 +1730,6 @@ label #cancel {
   .traktor {
     display: block;
     margin: 0;
-
   }
 
   .ku1 {
@@ -1819,9 +1791,6 @@ label #cancel {
   }
 }
 
-
-
-
 /********* form *******/
 #form {
   clear: both;
@@ -1857,7 +1826,6 @@ label #cancel {
   margin-bottom: 20px;
 }
 
-
 #form .text_1 {
   font-family: "museo-slab";
   line-height: 40px;
@@ -1886,7 +1854,6 @@ label #cancel {
   border: none;
   text-transform: uppercase;
   cursor: pointer;
-
 }
 
 #form .text .btn_2:hover {
@@ -1913,7 +1880,7 @@ label #cancel {
   width: 220px;
   text-align: center;
   font-size: 16px;
-  color: #4DA2D1;
+  color: #4da2d1;
 }
 
 .img_guider {
@@ -1946,14 +1913,11 @@ label #cancel {
   border-bottom: 1px black solid;
 }
 
-
 #medlem span {
   color: red;
   display: none;
   margin: 0;
-
 }
-
 
 #form .form button {
   clear: both;
@@ -1985,18 +1949,18 @@ section .form {
   display: none;
 }
 
-.info input[type=checkbox]+label {
+.info input[type="checkbox"] + label {
   display: block;
   margin: 0.2em;
   /*cursor: pointer;*/
   padding: 0.2em;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   display: none;
 }
 
-.form input[type=checkbox]+label:before {
+.form input[type="checkbox"] + label:before {
   content: " ";
   border: 0.1em solid #000;
   border-radius: 0.2em;
@@ -2008,14 +1972,14 @@ input[type=checkbox] {
   margin-right: 0.2em;
   vertical-align: text-bottom;
   color: transparent;
-  transition: .2s;
+  transition: 0.2s;
 }
 
-input[type=checkbox]+label:active:before {
+input[type="checkbox"] + label:active:before {
   transform: scale(0);
 }
 
-input[type=checkbox]:checked+label:before {
+input[type="checkbox"]:checked + label:before {
   background-color: MediumSeaGreen;
   border-color: MediumSeaGreen;
   color: #fff;
@@ -2096,8 +2060,7 @@ input[name="epost"] {
   top: 23px;
 }
 
-@media screen and (max-width:1024px) {
-
+@media screen and (max-width: 1024px) {
   #form .text,
   #form .form,
   #form .register {
@@ -2145,7 +2108,6 @@ input[name="epost"] {
     height: 119;
     margin-left: 162.5px;
     margin-bottom: 15px;
-    ;
   }
 
   #medlem .column input {
@@ -2167,7 +2129,6 @@ input[name="epost"] {
     font-size: 14px;
     width: 162px;
     height: 42px;
-
   }
 
   /******************  finish registering  *************/
@@ -2221,11 +2182,9 @@ input[name="epost"] {
   }
 
   /******************  finish registering  end **********/
-
 }
 
-@media screen and (max-width:654px) {
-
+@media screen and (max-width: 654px) {
   #form .text,
   #form .form,
   #form .register {
@@ -2258,7 +2217,6 @@ input[name="epost"] {
     width: 39.2vw;
     height: 8.5vw;
     font-size: 3.66vw;
-
   }
 
   /**************  column ************/
@@ -2268,7 +2226,6 @@ input[name="epost"] {
     height: 18.19vw;
     margin-left: 24.8vw;
     margin-bottom: 2.3vw;
-    ;
   }
 
   #medlem .column input {
@@ -2344,12 +2301,10 @@ input[name="epost"] {
   }
 
   /******************  finish registering  end **********/
-
 }
 
-
 /************ form when width is maximum 500px ****/
-@media screen and (max-width:500px) {
+@media screen and (max-width: 500px) {
   body {
     width: 100vw;
   }
@@ -2386,7 +2341,7 @@ input[name="epost"] {
     height: 12.2vw;
     border-radius: 13.8vw;
     font-size: 5vw;
-    margin-bottom: 14.1vw
+    margin-bottom: 14.1vw;
   }
 
   .img_guider {
