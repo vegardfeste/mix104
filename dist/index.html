@@ -5,27 +5,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.css" type="text/css" />
-  <link rel="stylesheet" href="https://use.typekit.net/lso1gho.css">
+  <link rel="stylesheet" href="https://use.typekit.net/lso1gho.css" />
   <script defer src="https://kit.fontawesome.com/a076d05399.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     $(document).ready(function () {
       // Add smooth scrolling to all links
-      $("a").on('click', function (event) {
-
+      $("a").on("click", function (event) {
         if (this.hash !== "") {
           event.preventDefault();
           var hash = this.hash;
 
           // Using jQuery's animate() method to add smooth page scroll
           // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 600, function () {
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
+          $("html, body").animate({
+              scrollTop: $(hash).offset().top,
+            },
+            600,
+            function () {
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            }
+          );
         }
       });
     });
@@ -38,7 +39,7 @@
     <div id="navigation-bar" class="header-container">
       <a href="index.html">
         <div class="branding">
-          <img src="img/f-logo.svg" alt="">
+          <img src="img/f-logo.svg" alt="" />
         </div>
       </a>
       <nav>
@@ -91,12 +92,83 @@
     </section>
 
     <!-- Hva vi gjør seksjon -->
+    <!-- <section id="hva-vi-gjør">
+        <h1>Hva vi gjør</h1>
+        <div class="container">
+          <div class="container-1">
+            <div class="box">
+              <img class="etiskeklær" src="img/etiskeklær.svg" alt="#" />
+              <h4>Etiske klær</h4>
+              <p>
+                Vi jobber for at kleskjedene skal å gi<br />
+                tekstilarbeiderne verdige og trygge arbeidsvilkår, med en lønn
+                de kan leve av. Vi arbeider for en etikklov som skal lovfeste
+                retten til å få informasjon om arbeidsforholdene der varen er
+                produsert.
+              </p>
+            </div>
+            <div class="box">
+              <img class="penger" src="img/bank_icon.svg" alt="#" />
+              <h4>Etiske penger</h4>
+              <p>
+                Vi gransker bankenes arbeid med etikk og bærekraft. Vi ser på
+                hvordan selskaper og virksomheter, som bankene investerer i og
+                låner ut penger til, påvirker mennesker og miljø.
+              </p>
+            </div>
+            <div class="box">
+              <img class="oljefond" src="img/olje_icon.svg" alt="#" />
+              <h4>Grønt oljefond</h4>
+              <p>
+                Vi arbeider for at oljefondet investerer mest mulig klima- og
+                miljøvennlig, og investerer minst mulig i kull og olje. Vi
+                ønsker at fondet skal få investere direkte i fornybar
+                energiinfrastruktur som ikke er tilgjengelig på børsene.
+              </p>
+            </div>
+          </div>
+          <div class="container-2">
+            <div class="box">
+              <img class="livsstil" src="img/livsstil_icon.svg" alt="#" />
+              <h4>Miljøvennlig livsstil</h4>
+              <p>
+                Vi vil inspirere til etisk og miljøvennlig forbruk. Vi gir deg
+                tips slik at du kan leve mer miljøvennlig i hverdagen. Vi
+                arbeider for at myndigheter og næringsliv gjør det enklere å ta
+                de grønne valgene.
+              </p>
+            </div>
+            <div class="box">
+              <img class="giftfri" src="img/giftfri.svg" alt="#" />
+              <h4>Giftfri hverdag</h4>
+              <p>
+                Vi jobber for strengere regulering og utfasing av miljøgifter i
+                forbrukerprodukter. Vi legger press på produsenter og arbeider
+                for politisk støtte til strengere regulering, innføring av
+                avgifter og forbud.
+              </p>
+            </div>
+            <div class="box">
+              <img class="klimamat" src="img/klimamat.svg" alt="#" />
+              <h4>Klimavennlig mat</h4>
+              <p>
+                Maten står for rundt 20 prosent av klimafotavtrykket vårt. Vi
+                arbeider for tiltak som reduserer kastingen av mat og reduserer
+                forbruket av kjøtt til det beste for miljøet, dyrene og helsa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
     <section id="hva-vi-gjør">
       <h1>Hva vi gjør</h1>
       <div class="container">
         <div class="container-1">
-          <div class="box">
-            <img class="klær" src="#" alt="#" />
+          <div class="imgBox">
+            <img class="etiskeklær" src="img/etiskeklær.svg" alt="#" />
+          </div>
+          <div class="content">
             <h4>Etiske klær</h4>
             <p>
               Vi jobber for at kleskjedene skal å gi<br />
@@ -106,8 +178,11 @@
               produsert.
             </p>
           </div>
-          <div class="box">
+
+          <div class="imgBox">
             <img class="penger" src="img/bank_icon.svg" alt="#" />
+          </div>
+          <div class="content">
             <h4>Etiske penger</h4>
             <p>
               Vi gransker bankenes arbeid med etikk og bærekraft. Vi ser på
@@ -115,8 +190,12 @@
               låner ut penger til, påvirker mennesker og miljø.
             </p>
           </div>
-          <div class="box">
+
+          <div class="imgBox">
             <img class="oljefond" src="img/olje_icon.svg" alt="#" />
+          </div>
+
+          <div class="content">
             <h4>Grønt oljefond</h4>
             <p>
               Vi arbeider for at oljefondet investerer mest mulig klima- og
@@ -126,9 +205,13 @@
             </p>
           </div>
         </div>
+        <!-- ------------------------ -->
         <div class="container-2">
-          <div class="box">
+          <div class="imgBox">
             <img class="livsstil" src="img/livsstil_icon.svg" alt="#" />
+          </div>
+
+          <div class="content">
             <h4>Miljøvennlig livsstil</h4>
             <p>
               Vi vil inspirere til etisk og miljøvennlig forbruk. Vi gir deg
@@ -137,8 +220,11 @@
               de grønne valgene.
             </p>
           </div>
-          <div class="box">
-            <img class="giftfri" src="#" alt="#" />
+          <div class="imgBox">
+            <img class="giftfri" src="img/giftfri.svg" alt="#" />
+          </div>
+
+          <div class="content">
             <h4>Giftfri hverdag</h4>
             <p>
               Vi jobber for strengere regulering og utfasing av miljøgifter i
@@ -147,8 +233,11 @@
               avgifter og forbud.
             </p>
           </div>
-          <div class="box">
-            <img class="mat" src="#" alt="#" />
+          <div class="imgBox">
+            <img class="klimamat" src="img/klimamat.svg" alt="#" />
+          </div>
+
+          <div class="content">
             <h4>Klimavennlig mat</h4>
             <p>
               Maten står for rundt 20 prosent av klimafotavtrykket vårt. Vi
@@ -165,11 +254,11 @@
       <h1>Klimamyter</h1>
       <div class="container">
         <a href="kjøtt.html">
-          <img class="kjøtt" src="/img/kjøtt5.svg" alt="#" />
+          <img class="kjøtt" src="/img/kjøtt5.svg" alt="vekt med kjøtt og grønnsaker" />
           <h4>Sju myter om kjøtt</h4>
         </a>
         <a href="kaffe.html">
-          <img class="kaffe" src="/img/kaffe4.svg" alt="#" />
+          <img class="kaffe" src="/img/kaffe4.svg" alt="illustrasjon av et valg mellom kapsel og filter-kaffe" />
           <h4>Er kapselkaffe en mijøbombe?</h4>
         </a>
         <a href="bok.html">
@@ -281,15 +370,15 @@
 
   <script>
     window.onscroll = function () {
-      stickyNav()
+      stickyNav();
     };
 
     var navbar = document.getElementById("navigation-bar");
-    var main = document.getElementById("main-content")
+    var main = document.getElementById("main-content");
 
     function stickyNav() {
       navbar.classList.add("sticky");
-      main.classList.add("content-padding")
+      main.classList.add("content-padding");
     }
   </script>
 </body>
