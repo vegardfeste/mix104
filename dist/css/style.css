@@ -220,7 +220,7 @@ label #cancel {
 /* -------------------- SHOWCASE ---------------------- */
 
 #showcase {
-  height: 800px;
+  height: 100vh;
   background: url(/img/main5-10.svg) no-repeat center fixed;
   background-size: cover;
 }
