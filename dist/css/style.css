@@ -966,7 +966,7 @@ label #cancel {
 .grid-bok {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  background: url(img/top_triangle.svg) no-repeat;
+  background: url(/img/top_triangle.svg) no-repeat;
   background-position: 300px;
   background-position-y: 100px;
   background-size: 100%;
