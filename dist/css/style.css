@@ -63,7 +63,7 @@ header .branding {
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
 }
 
 .content-padding {
@@ -215,8 +215,9 @@ label #cancel {
 
 #showcase {
   height: 100vh;
-  background: url(/img/hjemside.svg) no-repeat center fixed;
+  background: url("../img/hjemside.svg") no-repeat center fixed;
   background-size: cover;
+  background-position: 80%;
 }
 
 #showcase h1 {
@@ -237,6 +238,12 @@ label #cancel {
 }
 
 @media screen and (max-width: 1024px) {
+  #showcase {
+    height: 65vh;
+    background: url("../img/hjemside.svg") no-repeat;
+    background-size: cover;
+    background-position: 65%;
+  }
   #showcase h1 {
     font-size: 2.1rem;
     margin-left: 10vw;
@@ -291,7 +298,11 @@ label #cancel {
   }
 
   #hvem-vi-er p {
-    margin-left: 18%;
+    width: 68vw;
+    margin:0 auto;
+  }
+  #hvem-vi-er br{
+    display: none;
   }
 }
 
@@ -358,9 +369,10 @@ label #cancel {
 
 #hva-vi-gjør p {
   text-align: left;
-  margin: 10px 100px 10px 15px;
+  /*margin: 10px 100px 10px 15px;*/
   font-weight: 300;
   line-height: 1.7rem;
+  margin-right: 70px;
 }
 
 /* .box img {
@@ -397,7 +409,7 @@ label #cancel {
 /* .imgBox {
   float: left;
   margin-right: 20px;
-  
+
 }
 
 .container-1 {
@@ -410,6 +422,16 @@ label #cancel {
 
 #hva-vi-gjør .container {
   display: flex;
+  width:75vw;
+}
+#hva-vi-gjør .content{
+  height:300px;
+  width: 40vw;
+}
+#hva-vi-gjør  .logo{
+  width:135px;
+  height:250px;
+  float: left;
 }
 
 .imgBox {
@@ -426,6 +448,8 @@ label #cancel {
 
   #hva-vi-gjør .container {
     display: block;
+    padding-top: 60px;
+  /*  border: solid;*/
   }
 
   #hva-vi-gjør .box {
@@ -444,21 +468,47 @@ label #cancel {
 
   #hva-vi-gjør h4 {
     text-align: center;
+    margin: 0;
+    padding: 0;
   }
 
   #hva-vi-gjør p {
-    width: 536px;
-    margin: 0;
+    width: 50vw;
+    padding-bottom: 40px;
+    height:auto;
+    margin: 0 auto;
   }
 
   #hva-vi-gjør .container-2 {
     margin-top: 0;
   }
+  #hva-vi-gjør br{
+    display: none;
+  }
+  #hva-vi-gjør  .logo{
+    clear:both;
+    height: auto;
+    margin: 0 auto;
+    margin-left: 33vw;
+    padding-bottom: 20px;
+  }
+  #hva-vi-gjør .container-1 {
+    margin-left: 0;
+  }
+  #hva-vi-gjør .content{
+    height: auto;
+    width:80vw;
+    /*border: 1px solid black;*/
+    margin: 0 auto;
+  }
+  #hva-vi-gjør .imgBox{
+    width:80vw;
+  }
 }
 
 @media screen and (max-width: 750px) {
   #hva-vi-gjør p {
-    width: 80vw;
+    /*width: 80vw;*/
   }
 
   #hva-vi-gjør .box {
@@ -491,18 +541,17 @@ label #cancel {
 
 /* ------------- KLIMAMYTER index seksjon -------------- */
 #myter .kaffe {
-  width: 500px;
+  width: 300px;
 }
 
 #myter .bok {
-  width: 500px;
+  width: 300px;
   margin-top: 20px;
 }
 
 #myter .kjøtt {
-  width: 500px;
-  margin-top: 80px;
-  margin-left: 10px;
+  width: 300px;
+  margin-top: 50px;
 }
 
 #myter h1 {
@@ -514,9 +563,10 @@ label #cancel {
 }
 
 #myter .container {
+  /*border:solid;*/
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  margin-left: 20px;
+  grid-template-columns: repeat(3,26.7vw);
+  margin-left:15vw;
 }
 
 #myter .container .illustrasjon {
@@ -525,22 +575,20 @@ label #cancel {
   margin-bottom: 80px;
 }
 
+#myte h4{
+  padding-left: 15vw;
+}
+
 /* ------------- Klimamyter html -------------- */
 
 #klima-myter .kaffe {
-  width: 500px;
 }
 
 #klima-myter .bok {
-  width: 500px;
-  margin-top: 20px;
-  margin-left: 20px;
 }
 
 #klima-myter .kjøtt {
-  width: 500px;
   margin-top: 80px;
-  margin-left: 5px;
 }
 
 #klima-myter {
@@ -549,7 +597,7 @@ label #cancel {
 
 #klima-myter .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns:repeat(3,300px);
   margin-left: 20px;
   padding: 60px;
 }
@@ -566,6 +614,11 @@ label #cancel {
 }
 
 @media screen and (max-width: 1024px) {
+
+  #myter .bok, #myter .kjøtt, #myter .kaffe  {
+    width:24.6vw;
+  }
+
   #myter h1 {
     font-size: 2.1rem;
     margin-left: 10vw;
@@ -573,17 +626,20 @@ label #cancel {
 
   #myter .container {
     margin-left: 10vw;
-    grid-template-columns: repeat(3, 252px);
-    padding-left: 16px;
+    grid-template-columns: repeat(3, 26.6vw);
   }
+
 }
 
 @media screen and (max-width: 800px) {
   #myter .container {
-    margin-left: 10vw;
-    grid-template-columns: repeat(1, 252px);
-    grid-template-rows: repeat(3, 252px);
-    padding-left: 16px;
+    grid-template-columns: repeat(1, 345px);
+    /*grid-template-rows: repeat(3, 252px);*/
+    width:345px;
+    margin:0 auto;
+  }
+  #myter .bok, #myter .kjøtt, #myter .kaffe  {
+    width:345px;
   }
 }
 
@@ -844,6 +900,9 @@ label #cancel {
   #footer .nyhetsbrev {
     margin-top: 30px;
   }
+  #footer br{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -853,6 +912,7 @@ label #cancel {
     margin: 0 auto;
     margin-top: 100px;
   }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -860,6 +920,7 @@ label #cancel {
   p {
     font-size: 16px;
   }
+
 
   #footer .container div:nth-child(1),
   #footer .container div:nth-child(2),
@@ -1463,7 +1524,7 @@ label #cancel {
 
 @media screen and (max-width: 500px) {
   #showcase {
-    background: url(/img/mob_test5-10.svg) no-repeat;
+    background: url("../img/mob_test5-10.svg") no-repeat;
     background-position: center;
     background-size: cover;
     height: 110vh;
