@@ -63,7 +63,7 @@ document.oninput = function (e) {
 function check(n) {
     var value = variable.input[n+1].value;
     var reg_epost = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
-    var reg_navn = /^[a-zA-Z]{1,20}|[\u4e00-\u9fa5]{1,10}$/;
+    var reg_navn = /^["ø","å","æ"]|["Ø","Å","Æ"]|[a-zA-Z]{1,20}|[\u4e00-\u9fa5]{1,10}$/;
     var reg_pone = /^(\+?47)?[49]\d{7}$/;
     if (n == 0 || n == 1) {
         var result = reg_navn.test(value);
