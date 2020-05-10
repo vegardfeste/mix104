@@ -1866,7 +1866,7 @@ label #cancel {
 #form .text,
 #form .form,
 #form .register {
-  width: 821px;
+  width: 829px;
   height: auto;
   margin: 0 auto;
   margin-top: 7.1vw;
@@ -1890,7 +1890,7 @@ label #cancel {
 #form .text_1 {
   font-family: "museo-slab";
   line-height: 40px;
-  width: 678px;
+  /*width: 678px;*/
   /*33vw, 477px*/
   height: auto;
   margin: 0 auto;
@@ -1938,7 +1938,7 @@ label #cancel {
   display: block;
   margin: 0 auto;
   margin-top: 30px;
-  width: 220px;
+  /*width: 220px;*/
   text-align: center;
   font-size: 16px;
   color: #4da2d1;
