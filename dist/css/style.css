@@ -46,14 +46,6 @@ h2 {
   letter-spacing: 0rem; 
 }
 
-.homepage-heading {
-  font-family: "museo-slab";
-  font-weight: "700";
-  font-size: 4.19rem; 
-  line-height: 1.35; 
-  letter-spacing: 0rem;
-}
-
 h3 { 
   font-family: "museo-sans";
   font-weight: 700; 
@@ -132,6 +124,11 @@ ul {
 }
 
 .homepage-heading {
+  font-family: "museo-slab";
+  font-weight: "700";
+  font-size: 4.19rem; 
+  line-height: 1.35; 
+  letter-spacing: 0rem;
   margin-left: 15%;
   margin-top: 100px;
 }
