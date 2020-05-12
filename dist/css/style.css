@@ -133,6 +133,10 @@ ul {
   margin-top: 100px;
 }
 
+.homepage-small-heading {
+  font-weight: 700;
+}
+
 .list {
   font-family: "museo-sans";
   font-weight: 300;
