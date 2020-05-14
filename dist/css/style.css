@@ -539,16 +539,14 @@ label #cancel {
   -o-transform: skewY(2deg);
   -moz-transform: skewY(2deg);
   transform: skewY(2deg);
-  position: absolute;
-  margin-left: 15%;
 }
 
 #hva-vi-gjør .container-1 {
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 #hva-vi-gjør .container-2 {
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 #hva-vi-gjør h4 {
@@ -558,59 +556,23 @@ label #cancel {
 
 #hva-vi-gjør p {
   text-align: left;
-  /*margin: 10px 100px 10px 15px;*/
   font-weight: 300;
   line-height: 1.7rem;
   margin-right: 70px;
+  overflow: hidden;
 }
-
-/* .box img {
-  padding: 80px;
-  border-radius: 100px;
-  border: 1px solid black;
-  width: 100px;
-} */
 
 .icon {
   width: 150px;
 }
 
-/* .penger {
-  width: 100px;
-}
-
-.oljefond {
-  width: 100px;
-}
-
-.livsstil {
-  width: 100px;
-}
-
-.giftfri {
-  width: 100px;
-}
-
-.klimamat {
-  width: 100px;
-}
-
-.etiskeklær {
-  width: 100px;
-} */
-
-/* .imgBox {
+.imgBox {
   float: left;
   margin-right: 20px;
-
 }
 
 .container-1 {
   margin: 20px;
-} */
-
-.container-1 {
-  margin-left: 30px;
 }
 
 #hva-vi-gjør .container {
@@ -1914,15 +1876,23 @@ label #cancel {
 }
 
 .carrot {
-  grid-row: 1;
-  margin-top: 500px;
-  grid-column: 2/4;
+  width: 200px;
+  margin-left: -40vw;
+  margin-right: -50vw;
+  position: absolute;
+  margin-top: 700px;
+  left: 50%;
+  right: 50%;
 }
 
 .broccoli {
-  margin-top: 300px;
-  grid-row: 1;
-  grid-column: 10/12;
+  width: 200px;
+  margin-left: 25vw;
+  margin-right: -50vw;
+  position: absolute;
+  margin-top: 400px;
+  left: 50%;
+  right: 50%;
 }
 
 .kraftfor {
