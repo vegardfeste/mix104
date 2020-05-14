@@ -2093,7 +2093,7 @@ label #cancel {
 #form .text,
 #form .form,
 #form .register {
-  width: 829px;
+  width: 1013px;
   height: auto;
   margin: 0 auto;
   margin-top: 7.1vw;
@@ -2104,42 +2104,51 @@ label #cancel {
   margin-left: 25px;
 }
 
-#form h2 {
+/* #form h2 {
   font-family: "museo-slab";
   height: auto;
   margin: 0 auto;
   text-align: center;
   font-size: 53px;
-  /*3.75vw, 54px*/
+  /*3.75vw, 54px
   margin-bottom: 20px;
+} */
+
+#form h1 {
+  text-align: center;
 }
 
-#form .text_1 {
+/* #form .text_1 {
   font-family: "museo-slab";
   line-height: 40px;
   /*width: 678px;*/
-  /*33vw, 477px*/
+  /*33vw, 477px
   height: auto;
   margin: 0 auto;
   text-align: center;
   font-size: 26px;
-  /*3.75vw, 54px*/
+  /*3.75vw, 54px
   cursor: #707070;
+} */
+
+#form .intro-tekst {
+  text-align: center;
 }
 
 #form .text .btn_2 {
   display: block;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 60px;
   color: #fff;
-  width: 270px;
-  height: 60px;
   background: var(--primaryGreen);
-  font-size: 26.5px;
-  /*3.75vw, 54px*/
-  padding: 4.32px 8.64px;
-  border-radius: 43px;
+  padding: 18px 0;
   border: none;
+  width: 300px;
+  border-radius: 3vw;
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 0.02rem;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -2211,15 +2220,19 @@ label #cancel {
   clear: both;
   display: block;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 30px;
+  margin-bottom: 60px;
   color: #fff;
-  width: 12vw;
-  height: 3.1vw;
   background: var(--primaryGreen);
-  padding: 0.3vw 0.6vw;
-  border-radius: 3vw;
+  padding: 18px 0;
   border: none;
+  width: 300px;
+  border-radius: 3vw;
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 0.02rem;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 /***** pop - up for sccessful to regiter **/
@@ -2355,7 +2368,7 @@ input[name="epost"] {
     width: 654px;
   }
 
-  #form h2 {
+  #form h1 {
     /*width: 408px;*/
     font-size: 45px;
     margin-bottom: 71px;
