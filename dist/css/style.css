@@ -126,7 +126,7 @@ ul {
   margin-bottom: 0;
 }
 
-.stott-oss-tekst {
+.bli-medlem-footer-tekst {
   grid-column: 4/9;
   font-weight: 500;
   font-size: 1.8rem;
@@ -749,7 +749,7 @@ label #cancel {
 
 #myter .bok {
   width: 300px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 #myter .kjøtt {
@@ -758,7 +758,7 @@ label #cancel {
 }
 
 #myter h2 {
-  margin-top: 60px;
+  margin-top: 120px;
   margin-left: 14.53%;
 /*   position: flex; */
 }
@@ -772,6 +772,7 @@ label #cancel {
   display: grid;
   grid-template-columns: repeat(3, 26.7vw);
   margin-left: 14.53%;
+  margin-bottom: 60px;
 }
 
 /* #myter .container .illustrasjon {
@@ -876,52 +877,62 @@ label #cancel {
 
 /* ------------ STØTT OSS seksjon ------------------*/
 
-#stott-oss {
+#bli-medlem-footer {
   background: var(--primaryGreen);
-  min-height: 500px;
 }
 
-#stott-oss .container {
+#bli-medlem-footer .container {
   max-width: 1000px;
 }
 
-#stott-oss button {
+#bli-medlem-footer button {
   margin: 0 auto;
   display: block;
   color: var(--black);
   background: #fff;
-  padding: 10px 0;
+  padding: 18px 0;
   border: none;
   width: 300px;
-  border-radius: 30px;
+  border-radius: 3vw;
+  font-weight: 700;
   font-size: 1.8rem;
+  letter-spacing: 0.02rem;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 60px;
+  margin-bottom: 100px;
 }
 
-#stott-oss button:hover {
-  color: var(--footerGrey);
+#bli-medlem-footer button:hover {
+  color: var(--primaryGreen);
+/*   background: var(--secondaryGreen); */
 }
 
-/* #stott-oss p {
-  line-height: 2.7rem;
+
+#bli-medlem-footer p {
   margin-top: 100px;
+}
+
+/* .anchor-space {
+  padding-top: 30px;
 } */
 
 @media screen and (max-width: 1024px) {
-  #stott-oss p {
+
+#bli-medlem-footer   p {
     width: 80vw;
     margin-left: 10vw;
   }
 }
 
 @media screen and (max-width: 500px) {
-  #stott-oss {
+
+#bli-medlem-footer   {
     text-align: left;
     margin: 0;
   }
 
-  #stott-oss .container {
+
+#bli-medlem-footer   .container {
     max-width: 300px;
   }
 }
@@ -1071,7 +1082,8 @@ label #cancel {
     margin-top: 0;
   }
 
-  #stott-oss p {
+
+#bli-medlem-footer   p {
     width: 655px;
     margin-bottom: 58px;
   }
@@ -1128,7 +1140,8 @@ label #cancel {
 }
 
 @media screen and (max-width: 750px) {
-  #stott-oss p {
+
+#bli-medlem-footer   p {
     width: 92vw;
     margin-bottom: 58px;
     margin: 0 auto;
@@ -1137,7 +1150,8 @@ label #cancel {
 }
 
 @media screen and (max-width: 500px) {
-  #stott-oss p,
+
+#bli-medlem-footer   p,
   p {
     font-size: 16px;
   }
