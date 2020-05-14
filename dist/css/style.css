@@ -166,8 +166,16 @@ ul {
   margin-bottom: 1.75rem;
 }
 
-@media screen and (max-width: 1024px) {
+.social_icon {
+  display: flex;
+}
 
+.social_icon img {
+  width: 68px;
+  margin: 5px;
+}
+
+@media screen and (max-width: 1024px) {
   .main-grid {
     display: grid;
     width: 77%;
@@ -992,7 +1000,6 @@ label #cancel {
   font-weight: 700;
   font-size: 1.25rem;
   text-transform: uppercase;
-  
 }
 
 #footer .nyhetsbrev input {
@@ -1006,11 +1013,13 @@ label #cancel {
   font-size: 1.25rem;
 }
 
-::-webkit-input-placeholder { /* Edge */
+::-webkit-input-placeholder {
+  /* Edge */
   color: #909090;
 }
 
-:-ms-input-placeholder { /* Internet Explorer */
+:-ms-input-placeholder {
+  /* Internet Explorer */
   color: #909090;
 }
 
