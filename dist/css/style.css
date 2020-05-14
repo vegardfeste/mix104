@@ -68,9 +68,6 @@ h4 {
   letter-spacing: 0.02rem;
 }
 
-/* h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
-h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; } */
-
 p {
   color: var(--black);
   font-family: "museo-sans";
@@ -107,7 +104,6 @@ ul {
   background: url(/img/top_triangle.svg) no-repeat;
   background-position-x: 250px;
   background-position-y: 300px;
-  /* background-size: 105%; */
 }
 
 .intro-tekst {
@@ -213,9 +209,6 @@ header .branding {
   float: left;
   width: 68px;
   height: 68px;
-  /* border: 1px solid var(--primaryGreen);
-  background-color: var(--primaryGreen);
-  border-radius: 50px; */
 }
 
 .sticky {
@@ -363,15 +356,15 @@ label #cancel {
     font-size: 20px;
   }
 
-  #check:checked ~ ul {
+  #check:checked~ul {
     left: 0;
   }
 
-  #check:checked ~ label #btn {
+  #check:checked~label #btn {
     display: none;
   }
 
-  #check:checked ~ label #cancel {
+  #check:checked~label #cancel {
     display: block;
   }
 }
@@ -388,14 +381,11 @@ label #cancel {
 #showcase h1 {
   margin-left: 14.5%;
   margin-top: 100px;
-  /*   position: fixed; */
 }
 
 .showcase-intro {
   width: 1013px;
   margin-left: 14.5%;
-  /*   margin-top: 275px;
-  position: fixed; */
 }
 
 #showcase .intro-tekst {
@@ -450,8 +440,6 @@ label #cancel {
 /* ---------- Hvem vi er seksjon -------------*/
 
 #hvem-vi-er {
-  /* background: white; */
-  /* min-height: 400px; */
   -webkit-transform: skewY(-2deg);
   -ms-transform: skewY(-2deg);
   -o-transform: skewY(-2deg);
@@ -465,7 +453,6 @@ label #cancel {
   -o-transform: skewY(2deg);
   -moz-transform: skewY(2deg);
   transform: skewY(2deg);
-  /* display: flex; */
 }
 
 #hvem-vi-er h2 {
@@ -491,10 +478,6 @@ label #cancel {
     width: 68vw;
     margin: 100px auto;
   }
-
-  /*   #hvem-vi-er br{
-    display: none;
-  } */
 }
 
 @media screen and (max-width: 750px) {
@@ -507,10 +490,6 @@ label #cancel {
     width: 80vw;
     margin-left: 20%;
   }
-
-  /*   br {
-    display: none;
-  } */
 }
 
 /* ------------ HVA VI GJØR SEKSJON -------------- */
@@ -611,7 +590,6 @@ label #cancel {
   #hva-vi-gjør .container {
     display: block;
     padding-top: 60px;
-    /*  border: solid;*/
   }
 
   #hva-vi-gjør .box {
@@ -664,7 +642,6 @@ label #cancel {
   #hva-vi-gjør .content {
     height: auto;
     width: 80vw;
-    /*border: 1px solid black;*/
     margin: 0 auto;
   }
 
@@ -674,9 +651,6 @@ label #cancel {
 }
 
 @media screen and (max-width: 750px) {
-  /*   #hva-vi-gjør p {
-    /*width: 80vw;
-  } */
 
   #hva-vi-gjør .box {
     width: 80vw;
@@ -724,66 +698,18 @@ label #cancel {
 #myter h2 {
   margin-top: 120px;
   margin-left: 14.53%;
-  /*   position: flex; */
 }
 
-/* #myter {
-  margin: 80px 0 80px 0;
-} */
 
 #myter .myter-container {
-  /*border:solid;*/
   display: grid;
   grid-template-columns: repeat(3, 26.7vw);
   margin-left: 14.53%;
   margin-bottom: 60px;
 }
 
-/* #myter .container .illustrasjon {
-  width: 100%;
-  margin-top: 100px;
-  margin-bottom: 80px;
-} */
-
-/* #myte h4 {
-  padding-left: 15vw;
-} */
-
-/* ------------- Klimamyter html -------------- */
-
-/* #klima-myter .kaffe {
-}
-
-#klima-myter .bok {
-} */
-
-/* #klima-myter .kjøtt {
-  margin-top: 80px;
-}
-
-#klima-myter {
-  margin: 80px 0 80px 0;
-}
-
-#klima-myter .container {
-  display: grid;
-  grid-template-columns: repeat(3, 300px);
-  margin-left: 20px;
-  padding: 60px;
-}
-
-#klima-myter .container .illustrasjon {
-  width: 100%;
-  margin-top: 100px;
-  margin-bottom: 80px;
-}
-
-#klima-myter h1 {
-  margin-left: 15%;
-  font-size: 4rem;
-} */
-
 @media screen and (max-width: 1024px) {
+
   #myter .bok,
   #myter .kjøtt,
   #myter .kaffe {
@@ -868,16 +794,11 @@ label #cancel {
 
 #bli-medlem-footer button:hover {
   color: var(--primaryGreen);
-  /*   background: var(--secondaryGreen); */
 }
 
 #bli-medlem-footer p {
   margin-top: 100px;
 }
-
-/* .anchor-space {
-  padding-top: 30px;
-} */
 
 @media screen and (max-width: 1024px) {
   #bli-medlem-footer p {
@@ -908,12 +829,6 @@ label #cancel {
   color: var(--footerGrey);
 }
 
-/* #footer .container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  min-height: 400px;
-} */
-
 #footer .container div:nth-child(1) {
   grid-column: 2/5;
   grid-row: 1;
@@ -933,24 +848,6 @@ label #cancel {
   margin-top: 80px;
   margin-bottom: 80px;
 }
-
-/* #footer table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  line-height: 1.5rem;
-}
-
-#footer table th {
-  font-weight: 700;
-}
-
-#footer table tr td {
-  font-weight: 300;
-}
-
-#footer tr {
-  display: block;
-} */
 
 #footer h4 {
   color: white;
@@ -1005,54 +902,6 @@ label #cancel {
   color: #909090;
 }
 
-/* #footer .nyhetsbrev input::placeholder {
-  padding: 10px;
-  opacity: 0.8;
-} */
-
-/*Tablet version for footer
-@media screen and (max-width:1024px) {
-  br {
-    display: none;
-  }
-
-  p {
-    font-size: 20px;
-  }
-
-  #footer .container div:nth-child(1) {
-    grid-column: 3/12;
-    grid-row: 1;
-    width: 66.5vw;
-  }
-
-  #footer .container div:nth-child(2) {
-    grid-column: 3/12;
-    grid-row: 2;
-    width: 424px;
-  }
-
-  #footer .container div:nth-child(3) {
-    grid-column: 3/12;
-    grid-row: 3;
-    width: 310px;
-  }
-
-  #footer .lite-info {
-    margin-top: 0;
-  }
-
-
-#bli-medlem-footer   p {
-    width: 655px;
-    margin-bottom: 58px;
-  }
-
-  #footer .kontakt,
-  #footer .nyhetsbrev {
-    margin-top: 30px;
-  }
-}*/
 @media screen and (max-width: 1024px) {
   #footer br {
     display: none;
@@ -1109,6 +958,7 @@ label #cancel {
 }
 
 @media screen and (max-width: 500px) {
+
   #bli-medlem-footer p,
   p {
     font-size: 16px;
@@ -1186,23 +1036,6 @@ label #cancel {
 
 /* ---------- BOKARTIKKEL -----------------  */
 
-/* .bok-illustrasjon {
-  float: right;
-  margin-right: 600px;
-  margin-top: 50px;
-  width: 200px;
-
-} */
-
-/* .grid-bok {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  background: url(/img/top_triangle.svg) no-repeat;
-  background-position: 300px;
-  background-position-y: 100px;
-  background-size: 100%;
-} */
-
 .bok-illustrasjon {
   grid-column: 7/12;
   padding-top: 150px;
@@ -1213,63 +1046,18 @@ label #cancel {
 
 .bok-headline {
   grid-column: 2/7;
-  /*   grid-row: 1; */
   padding-top: 300px;
 }
 
 .ingress {
   grid-column: 4/10;
-  /*   grid-row: 2; */
-  /*   line-height: 3rem;
-  font-size: 1.7rem;
-  font-weight: 300; */
 }
 
 .paragraph {
-  /* grid-column: 4/10; */
   grid-column-start: 4;
   grid-column-end: 10;
-  /*   grid-row: 3; */
   margin-bottom: 100px;
-  /* margin-top: 100px; */
-}
 
-/* .paragraph h4 {
-  font-weight: 500;
-  font-size: 1.2rem;
-} */
-
-/* .paragraph h3 {
-  font-weight: 700;
-  font-size: 1.5rem;
-  font-family: "museo-sans";
-} */
-
-.konklusjon {
-  /* background: var(--secondaryGreen); */
-  min-height: 500px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-}
-
-.konk-background {
-  background: var(--secondaryGreen);
-}
-
-.heading {
-  grid-column: 4/10;
-  margin-top: 50px;
-}
-
-/* .heading h1 {
-  font-weight: 700;
-} */
-
-.last_paragraph {
-  grid-column: 5/10;
-  grid-row: 2;
-  /*   line-height: 1.9rem;
-  font-weight: 300; */
 }
 
 /* ----------- KAFFE ARTIKKEL ---------------- */
@@ -1291,39 +1079,7 @@ label #cancel {
   transform: skewY(2deg);
 }
 
-/* .background {
-  background: var(--secondaryGreen);
-  -webkit-transform: skewY(-2deg);
-  -ms-transform: skewY(-2deg);
-  -o-transform: skewY(-2deg);
-  -moz-transform: skewY(-2deg);
-  transform: skewY(-2deg);
-} */
-
-/* .vann-statistikk {
-  -webkit-transform: skewY(2deg);
-  -ms-transform: skewY(2deg);
-  -o-transform: skewY(2deg);
-  -moz-transform: skewY(2deg);
-  transform: skewY(2deg);
-} */
-
 /* -- Kaffe --  */
-
-.grid-utslipp {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  /* background: url(/img/top_triangle.svg) no-repeat; */
-}
-
-.grid-kaffe {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  background: url(img/top_triangle.svg) no-repeat;
-  background-position: 100px;
-  background-position-y: 260px;
-  background-size: 105%;
-}
 
 .kaffe-illustrasjon {
   grid-column: 7/10;
@@ -1336,8 +1092,7 @@ label #cancel {
   grid-column: 2/7;
   grid-row: 1;
   padding-top: 250px;
-  /*   padding-left: 100px;*/
-  /*   line-height: 4rem; */
+
 }
 
 .bønnegraf {
@@ -1346,58 +1101,13 @@ label #cancel {
   margin-bottom: 80px;
 }
 
-/* .kaffe-headline h1 {
-  font-size: 3.5rem;
-} */
+
 
 /* -- Vann -- */
-
-/* .background {
-  background-color: var(--secondaryGreen);
-  width: 100%;
-} */
-
-/* .vann-statistikk {
-  background: var(--secondaryGreen);
-  min-height: 500px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  margin: 20px;
-  padding: 20px;
-} */
 
 .artikkel-heading {
   grid-column: 3/10;
   margin-top: 80px;
-}
-
-.vann-statistikk h2 {
-  grid-column: 4/9;
-  /*   font-family: "museo-slab";
-  font-weight: 700;
-  font-size: 1.9rem; */
-}
-
-/* .vann-paragraph h5 {
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin: 0;
-  margin-top: 60px;
-} */
-
-/* .liten-pg {
-  font-weight: 300;
-  font-size: 0.9rem;
-} */
-
-/* .vann-heading {
-  grid-column: 3/10;
-} */
-
-.vann-paragraph {
-  grid-column: 5/10;
-  /*   line-height: 1.9rem;
-  font-weight: 300; */
 }
 
 .vanngraf {
@@ -1407,16 +1117,6 @@ label #cancel {
 }
 
 /* -- Gass -- */
-
-/* .gass-statistikk {
-  min-height: 500px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-} */
-
-/* .gass-heading {
-  grid-column: 4/10;
-} */
 
 .gass-statistikk h2 {
   grid-column: 4/9;
@@ -1435,15 +1135,8 @@ label #cancel {
 
 /*  -- Fairtrade -- */
 
-/* #fairtrade {
-  background-color: var(--secondaryGreen);
-
-} */
-
 #fairtrade {
   background: var(--secondaryGreen);
-  /* margin-top: 20px;
-  min-height: 800px; */
   -webkit-transform: skewY(-2deg);
   -ms-transform: skewY(-2deg);
   -o-transform: skewY(-2deg);
@@ -1460,7 +1153,6 @@ label #cancel {
 }
 
 .fairtrade-container {
-  /*   font-family: "museo-sans"; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 100px auto 100px auto;
@@ -1473,42 +1165,11 @@ label #cancel {
 
 .fairtrade-paragraph {
   margin: auto;
-  /*   line-height: 1.8rem; */
 }
 
 .fairtrade-container h2 {
-  /*   font-family: "museo-slab";
-  font-size: 2rem; */
   margin-bottom: 40px;
 }
-
-/* .fairtrade-container p {
-  font-family: "museo-sans";
-}
- */
-
-/* .fairtrade-container {
-  width: 50%;
-  margin: auto;
-  text-align: left;
-
-} */
-
-/* .fair-logo {
-  height: 100%;
-  width: 100%;
-} */
-
-/* .fair-logo {
-  margin-top: 50px;
-  margin-right: 100px;
-  width: 25%;
-  float: left;
-} */
-
-/* .fairtrade-paragraph {
-  padding-top: 100px;
-} */
 
 /* TIPS */
 
@@ -1519,8 +1180,6 @@ label #cancel {
 }
 
 .tips h2 {
-  /*   font-family: "museo-slab";
-  font-size: 2.4rem; */
   grid-column: 4/9;
   margin-top: 100px;
 }
@@ -1531,65 +1190,12 @@ label #cancel {
 
 /* OPPDATERING */
 
-/* .oppdatering {
-  min-height: 500px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  margin: 30px;
-  padding: 40px 0 40px 0;
-}
-
-.oppdatering {
-  -webkit-transform: skewY(2deg);
-  -ms-transform: skewY(2deg);
-  -o-transform: skewY(2deg);
-  -moz-transform: skewY(2deg);
-  transform: skewY(2deg);
-}
-
-.oppdatering h2 {
-  grid-column: 4/9;
-  font-family: "museo-sans";
-  font-weight: 500;
-  font-size: 2rem;
-}
-
-.oppdatering-paragraph {
-  grid-column: 5/10;
-  line-height: 1.9rem;
-  font-weight: 300;
-} */
-
-.grid-utslipp {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-}
-
-.grafikk {
-  grid-column: 5/12;
-  margin-bottom: 50px;
-}
-
-.grid-utslipp h3 {
-  grid-column: 5/10;
-}
-
 .utslipp {
   grid-column: 4/10;
 }
 
-.konk-paragraph {
-  grid-column: 5/10;
-  line-height: 1.9rem;
-  font-weight: 300;
-}
-
-.konk-heading {
-  grid-column: 4/10;
-  margin-top: 50px;
-}
-
 @media screen and (max-width: 500px) {
+
   .grid,
   .vann-statistikk,
   .gass-statistikk,
@@ -1598,7 +1204,6 @@ label #cancel {
   .grid-utslipp {
     display: inline-block;
     margin: 0 40px 0 40px;
-    /* margin: 0 15px 0 15px; */
   }
 
   .kaffe-illustrasjon {
@@ -1669,14 +1274,6 @@ label #cancel {
       padding: 20px;
     }
   }
-
-  /* .fair-logo {
-    width: 50%;
-  }
-
-  .fairtrade-paragraph {
-    display: inline-block;
-  } */
 }
 
 @media screen and (max-width: 500px) {
@@ -1765,33 +1362,6 @@ label #cancel {
 
 /************* KJØTT artikler **************/
 
-/* .background {
-  width: 100%;
-  background: var(--secondaryGreen);
-  -webkit-transform: skewY(-2deg);
-  -ms-transform: skewY(-2deg);
-  -o-transform: skewY(-2deg);
-  -moz-transform: skewY(-2deg);
-  transform: skewY(-2deg);
-}
-
-.chapter-farge {
-  -webkit-transform: skewY(2deg);
-  -ms-transform: skewY(2deg);
-  -o-transform: skewY(2deg);
-  -moz-transform: skewY(2deg);
-  transform: skewY(2deg);
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  background: url(/img/top_triangle.svg) no-repeat;
-  background-position: 300px;
-  background-position-y: 120px;
-  background-size: 70%;
-} */
-
 .kjøtt-illustrasjon {
   grid-column: 7/10;
   padding-top: 80px;
@@ -1809,47 +1379,6 @@ label #cancel {
   letter-spacing: 0.07px;
   opacity: 1;
 }
-
-/* .paragraph {
-  font-size: 16px;
-  grid-column: 5/10;
-  grid-row: 3; */
-
-.chapter {
-  margin-top: 50px;
-  min-height: 500px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-}
-
-.chapter-paragraph {
-  grid-column: 5/10;
-  /*   line-height: 1.9rem; */
-  margin-bottom: 50px;
-}
-
-/* .chapter-paragraph p {
-  font-family: "museo-sans";
-  font-weight: 300;
-} */
-
-/* .chapter-paragraph h2 {
-  font-weight: 700;
-  font-family: "museo-slab";
-} */
-
-/* .chapter-paragraph h4 {
-  font-weight: 500;
-  font-family: "museo-sans";
-  font-size: 1rem;
-} */
-
-/* .traktor {
-  margin-top: 300px;
-  grid-column: 3/5;
-  grid-row: 1;
-  width: 50px;
-} */
 
 .traktor {
   width: 200px;
@@ -2203,7 +1732,7 @@ section .form {
   display: none;
 }
 
-.info input[type="checkbox"] + label {
+.info input[type="checkbox"]+label {
   display: block;
   margin: 0.2em;
   /*cursor: pointer;*/
@@ -2214,7 +1743,7 @@ input[type="checkbox"] {
   display: none;
 }
 
-.form input[type="checkbox"] + label:before {
+.form input[type="checkbox"]+label:before {
   content: " ";
   border: 0.1em solid #000;
   border-radius: 0.2em;
@@ -2229,11 +1758,11 @@ input[type="checkbox"] {
   transition: 0.2s;
 }
 
-input[type="checkbox"] + label:active:before {
+input[type="checkbox"]+label:active:before {
   transform: scale(0);
 }
 
-input[type="checkbox"]:checked + label:before {
+input[type="checkbox"]:checked+label:before {
   background-color: MediumSeaGreen;
   border-color: MediumSeaGreen;
   color: #fff;
@@ -2315,6 +1844,7 @@ input[name="epost"] {
 }
 
 @media screen and (max-width: 1024px) {
+
   #form .text,
   #form .form,
   #form .register {
@@ -2439,6 +1969,7 @@ input[name="epost"] {
 }
 
 @media screen and (max-width: 654px) {
+
   #form .text,
   #form .form,
   #form .register {
