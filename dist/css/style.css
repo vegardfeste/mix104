@@ -388,13 +388,13 @@ label #cancel {
 #showcase h1 {
   margin-left: 14.5%;
   margin-top: 100px;
-/*   position: fixed; */
+  /*   position: fixed; */
 }
 
 .showcase-intro {
   width: 1013px;
   margin-left: 14.5%;
-/*   margin-top: 275px;
+  /*   margin-top: 275px;
   position: fixed; */
 }
 
@@ -541,16 +541,6 @@ label #cancel {
   -o-transform: skewY(2deg);
   -moz-transform: skewY(2deg);
   transform: skewY(2deg);
-<<<<<<< HEAD
-}
-
-#hva-vi-gjør .container-1 {
-  margin-top: 10%;
-}
-
-#hva-vi-gjør .container-2 {
-  margin-top: 10%;
-=======
   position: absolute;
   margin-left: 14.53%;
 }
@@ -561,7 +551,6 @@ label #cancel {
 
 #hva-vi-gjør .container-2 {
   margin-top: 19%;
->>>>>>> c40d76f80bdb1e49d4d005e0a2342b71a3a361f1
 }
 
 #hva-vi-gjør h4 {
@@ -735,7 +724,7 @@ label #cancel {
 #myter h2 {
   margin-top: 120px;
   margin-left: 14.53%;
-/*   position: flex; */
+  /*   position: flex; */
 }
 
 /* #myter {
@@ -879,9 +868,8 @@ label #cancel {
 
 #bli-medlem-footer button:hover {
   color: var(--primaryGreen);
-/*   background: var(--secondaryGreen); */
+  /*   background: var(--secondaryGreen); */
 }
-
 
 #bli-medlem-footer p {
   margin-top: 100px;
@@ -892,22 +880,19 @@ label #cancel {
 } */
 
 @media screen and (max-width: 1024px) {
-
-#bli-medlem-footer   p {
+  #bli-medlem-footer p {
     width: 80vw;
     margin-left: 10vw;
   }
 }
 
 @media screen and (max-width: 500px) {
-
-#bli-medlem-footer   {
+  #bli-medlem-footer {
     text-align: left;
     margin: 0;
   }
 
-
-#bli-medlem-footer   .container {
+  #bli-medlem-footer .container {
     max-width: 300px;
   }
 }
@@ -1115,8 +1100,7 @@ label #cancel {
 }
 
 @media screen and (max-width: 750px) {
-
-#bli-medlem-footer   p {
+  #bli-medlem-footer p {
     width: 92vw;
     margin-bottom: 58px;
     margin: 0 auto;
@@ -1125,8 +1109,7 @@ label #cancel {
 }
 
 @media screen and (max-width: 500px) {
-
-#bli-medlem-footer   p,
+  #bli-medlem-footer p,
   p {
     font-size: 16px;
   }
