@@ -16,6 +16,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 a {
@@ -448,8 +449,8 @@ label #cancel {
 /* ---------- Hvem vi er seksjon -------------*/
 
 #hvem-vi-er {
-  background: white;
-  min-height: 400px;
+  /* background: white; */
+  /* min-height: 400px; */
   -webkit-transform: skewY(-2deg);
   -ms-transform: skewY(-2deg);
   -o-transform: skewY(-2deg);
@@ -463,7 +464,7 @@ label #cancel {
   -o-transform: skewY(2deg);
   -moz-transform: skewY(2deg);
   transform: skewY(2deg);
-  display: flex;
+  /* display: flex; */
 }
 
 #hvem-vi-er h2 {
@@ -1865,27 +1866,51 @@ label #cancel {
   font-size: 1rem;
 } */
 
-.traktor {
+/* .traktor {
   margin-top: 300px;
   grid-column: 3/5;
   grid-row: 1;
   width: 50px;
+} */
+
+.traktor {
+  width: 200px;
+  margin-left: -40vw;
+  margin-right: -50vw;
+  position: absolute;
+  margin-top: 200px;
+  left: 50%;
+  right: 50%;
 }
 
 .ku1 {
-  grid-column: 2/4;
-  grid-row: 1;
+  width: 200px;
+  margin-left: -40vw;
+  margin-right: -50vw;
+  position: absolute;
+  margin-top: 1500px;
+  left: 50%;
+  right: 50%;
 }
 
 .ku2 {
-  grid-column: 5;
-  grid-row: 1;
+  width: 200px;
+  margin-left: 25vw;
+  margin-right: -50vw;
+  position: absolute;
+  margin-top: 2200px;
+  left: 50%;
+  right: 50%;
 }
 
 .biff {
-  margin-top: 50px;
-  grid-row: 1;
-  grid-column: 2/4;
+  width: 200px;
+  margin-left: -40vw;
+  margin-right: -50vw;
+  position: absolute;
+  margin-top: 200px;
+  left: 50%;
+  right: 50%;
 }
 
 .carrot {
@@ -1907,7 +1932,7 @@ label #cancel {
 
 .myte {
   grid-column: 2/4;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .myte h2 {
