@@ -114,7 +114,7 @@ ul {
 
 .liten-tekst {
   margin-top: 7px;
-  font-size: 1rem;
+  font-size: .9rem;
 }
 
 .bilde-heading {
@@ -548,11 +548,6 @@ label #cancel {
 
 .icon {
   width: 165px;
-}
-
-.imgBox {
-  float: left;
-  margin-right: 20px;
 }
 
 .container-1 {
@@ -1588,15 +1583,10 @@ label #cancel {
 #form .text,
 #form .form,
 #form .register {
-  width: 1013px;
+  width: 1088px;
   height: auto;
   margin: 0 auto;
   margin-top: 7.1vw;
-}
-
-#form .form .info {
-  width: 56vw;
-  margin-left: 25px;
 }
 
 /* #form h2 {
@@ -1627,6 +1617,8 @@ label #cancel {
 } */
 
 #form .intro-tekst {
+  margin: 0 auto;
+  width: 1013px;
   text-align: center;
 }
 
@@ -1661,18 +1653,15 @@ label #cancel {
   margin: 0 auto;
   margin-top: 30px;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.37rem;
 }
 
 #form .text_3 {
-  font-size: 16px;
   display: block;
   margin: 0 auto;
-  margin-top: 30px;
-  /*width: 220px;*/
+  margin-top: 60px;
   text-align: center;
-  font-size: 16px;
-  color: #4da2d1;
+  font-size: 1.25rem;
 }
 
 .img_guider {
@@ -1683,55 +1672,79 @@ label #cancel {
 }
 
 /****  popup - form ****/
+
+#form .form .info {
+  width: 70vw;
+  /* width: 1013px; */
+  margin: 0 auto;
+}
+
 #medlem .column {
   float: left;
-  width: 382px;
+  width: 568px;
   height: 80px;
-  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-bottom: 60px;
   /*border: 1px solid black;*/
 }
 
-#medlem .column p {
-  font-size: 17px;
+#medlem .column label {
+  color: var(--black);
+  font-family: "museo-sans";
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 #medlem .column input {
   box-sizing: border-box;
-  font-size: 16px;
-  width: 350px;
-  height: 50px;
+  width: 520px;
+  height: 58px;
+  vertical-align: bottom;
   border: none;
   outline: none;
-  border-bottom: 1px black solid;
+  border-bottom: 1px var(--black) solid;
+  font-family: "museo-sans";
+  font-weight: 300;
+  font-size: 1.37rem;
 }
 
 #medlem span {
+  color: var(--black);
+  font-family: "museo-sans";
+  font-weight: 300;
+  font-size: .9rem;
   color: red;
   display: none;
-  margin: 0;
+  margin-top: 5px;
 }
 
 #form .form button {
   clear: both;
   display: block;
-  margin: 0 auto;
+  /* margin: 0 auto;
   margin-top: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 60px; */
+  margin: 30px auto;
   color: #fff;
+  width: 231px;
+  height: 60px;
   background: var(--primaryGreen);
-  padding: 18px 0;
-  border: none;
-  width: 300px;
+  padding: 0.3vw 0.6vw;
   border-radius: 3vw;
-  font-weight: 700;
-  font-size: 1.8rem;
-  letter-spacing: 0.02rem;
+  border: none;
   text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
   cursor: pointer;
 }
 
+/* .btn_3:hover {
+  color: var(--black)
+} */
+
 /***** pop - up for sccessful to regiter **/
-#form .register h2 {
+#form .register h1 {
   width: auto;
 }
 
@@ -1761,11 +1774,11 @@ input[type="checkbox"] {
   border: 0.1em solid #000;
   border-radius: 0.2em;
   display: inline-block;
-  width: 0.6em;
-  height: 0.6em;
+  width: 0.8em;
+  height: 0.8em;
   padding-left: 0.2em;
   padding-bottom: 0.3em;
-  margin-right: 0.2em;
+  /* margin-right: 0.2em; */
   vertical-align: text-bottom;
   color: transparent;
   transition: 0.2s;
@@ -1787,28 +1800,37 @@ input[name="epost"] {
 }
 
 #form .checkbox {
-  margin-left: 12px;
   clear: both;
-  width: 400px;
+  width: 500px;
   height: auto;
+  margin-left: 22px;
 }
 
 #form .checkbox label {
-  line-height: 16px;
-  margin-left: 10px;
   display: block;
   float: left;
-  width: 346.5px;
+  width: 500px;
   height: 70px;
-  font-size: 12px;
+  font-family: "museo-sans";
+  font-weight: 300;
+  line-height: 1.4;
+  text-indent: -1.5em;
+  margin-top: -20px;
+  margin-bottom: 35px;
 }
 
 /********** form end *****************/
 /******************  finish registering  *************/
 /******************  finish registering  *************/
-.illustration {
+/* .illustration {
   width: 744px;
   height: 394px;
+  position: relative;
+} */
+
+.illustration {
+  width: 1088px;
+  height: 445px;
   position: relative;
 }
 
@@ -1817,6 +1839,8 @@ input[name="epost"] {
   width: 200px;
   left: 73px;
   height: auto;
+  margin-left: 160px;
+  transition: transform 1s ease-in 1s;
 }
 
 .illustration .cloud1 {
@@ -1824,6 +1848,7 @@ input[name="epost"] {
   width: 173px;
   height: auto;
   top: 57px;
+  margin-left: 160px;
   transition: transform 1s ease-in 1s;
 }
 
@@ -1833,6 +1858,8 @@ input[name="epost"] {
   height: auto;
   top: 128px;
   left: 168px;
+  margin-left: 160px;
+  transition: transform 1s ease-in 1s;
 }
 
 .illustration .bluecloud1 {
@@ -1840,6 +1867,8 @@ input[name="epost"] {
   width: 280px;
   top: 125.25px;
   left: 275.25px;
+  margin-left: 160px;
+  transition: transform 1s ease-in 1s;
 }
 
 .illustration .bluecloud2 {
@@ -1847,6 +1876,8 @@ input[name="epost"] {
   width: 237px;
   top: 260px;
   left: 470px;
+  margin-left: 160px;
+  transition: transform 1s ease-in 1s;
 }
 
 .illustration img {
@@ -1854,6 +1885,8 @@ input[name="epost"] {
   width: 222.75px;
   left: 414px;
   top: 23px;
+  margin-left: 160px;
+  transition: transform 1s ease-in 1s;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1933,6 +1966,7 @@ input[name="epost"] {
     width: 654px;
     height: 563px;
     position: relative;
+    margin-left: 0;
   }
 
   #register .illustration .sun {
@@ -1940,6 +1974,7 @@ input[name="epost"] {
     width: 229px;
     left: 75px;
     top: 31px;
+    margin-left: 0;
   }
 
   #register .illustration .cloud1 {
@@ -1947,6 +1982,7 @@ input[name="epost"] {
     width: 160px;
     left: 25px;
     top: 121px;
+    margin-left: 0;
   }
 
   #register .illustration .cloud2 {
@@ -1955,6 +1991,7 @@ input[name="epost"] {
     height: auto;
     top: 203px;
     left: 144px;
+    margin-left: 0;
   }
 
   #register .illustration .bluecloud1 {
@@ -1962,6 +1999,7 @@ input[name="epost"] {
     width: 260px;
     top: 300px;
     left: 161px;
+    margin-left: 0;
   }
 
   #register .illustration .bluecloud2 {
@@ -1969,6 +2007,7 @@ input[name="epost"] {
     width: 165px;
     top: 424px;
     left: 374px;
+    margin-left: 0;
   }
 
   #register .illustration img {
@@ -1976,6 +2015,7 @@ input[name="epost"] {
     width: 202px;
     left: 296px;
     top: 179px;
+    margin-left: 0;
   }
 
   /******************  finish registering  end **********/
@@ -1989,7 +2029,7 @@ input[name="epost"] {
     width: 100vw;
   }
 
-  #form h2 {
+  #form h1 {
     font-size: 7vw;
     margin-bottom: 11vw;
     /*width: 62.4vw;*/
@@ -2053,6 +2093,7 @@ input[name="epost"] {
     width: 100vw;
     height: 104.4vw;
     position: relative;
+    margin-left: 0;
   }
 
   #register .illustration .sun {
@@ -2060,6 +2101,7 @@ input[name="epost"] {
     width: 35vw;
     left: 11.46vw;
     top: 11.77vw;
+    margin-left: 0;
   }
 
   #register .illustration .cloud1 {
@@ -2067,6 +2109,7 @@ input[name="epost"] {
     width: 24.46vw;
     left: 3.82vw;
     top: 25.53vw;
+    margin-left: 0;
   }
 
   #register .illustration .cloud2 {
@@ -2075,6 +2118,7 @@ input[name="epost"] {
     height: auto;
     top: 38.07vw;
     left: 22vw;
+    margin-left: 0;
   }
 
   #register .illustration .bluecloud1 {
@@ -2082,6 +2126,7 @@ input[name="epost"] {
     width: 39.75vw;
     top: 53vw;
     left: 24.61vw;
+    margin-left: 0;
   }
 
   #register .illustration .bluecloud2 {
@@ -2089,6 +2134,7 @@ input[name="epost"] {
     width: 25.23vw;
     top: 71.87vw;
     left: 57.2vw;
+    margin-left: 0;
   }
 
   #register .illustration img {
@@ -2096,6 +2142,7 @@ input[name="epost"] {
     width: 31vw;
     left: 45.25vw;
     top: 34.4vw;
+    margin-left: 0;
   }
 
   /******************  finish registering  end **********/
@@ -2114,7 +2161,7 @@ input[name="epost"] {
     margin-top: 14vw;
   }
 
-  #form h2 {
+  #form h1 {
     width: auto;
     font-size: 8.8vw;
     margin-bottom: 14.1vw;
@@ -2153,20 +2200,19 @@ input[name="epost"] {
 
   #medlem .column {
     clear: left;
-    width: 60vw;
+    width: 80vw;
     height: 20vw;
-    margin-left: 16vw;
-    margin-bottom: 0;
+    margin: 0;
   }
 
   #medlem .column input {
-    width: 60vw;
+    width: 6  0vw;
     height: 7.4vw;
     font-size: 2.7vw;
   }
 
-  #medlem .column lable {
-    font-size: 2.4vw;
+  #medlem .column label {
+    font-size: 1.25rem;
   }
 
   #medlem .column span {
@@ -2210,6 +2256,7 @@ input[name="epost"] {
     width: 39vw;
     left: 8.2vw;
     top: 11.2vw;
+    margin-left: 0;
   }
 
   #register .illustration .cloud1 {
@@ -2217,6 +2264,7 @@ input[name="epost"] {
     width: 27.43vw;
     height: auto;
     top: 27.46vw;
+    margin-left: 0;
   }
 
   #register .illustration .cloud2 {
@@ -2225,6 +2273,7 @@ input[name="epost"] {
     height: auto;
     top: 41.3vw;
     left: 20vw;
+    margin-left: 0;
   }
 
   #register .illustration .bluecloud1 {
@@ -2232,6 +2281,7 @@ input[name="epost"] {
     width: 44.57vw;
     top: 57.6vw;
     left: 28.27vw;
+    margin-left: 0;
   }
 
   #register .illustration .bluecloud2 {
@@ -2239,6 +2289,7 @@ input[name="epost"] {
     width: 28.27vw;
     top: 79vw;
     left: 59vw;
+    margin-left: 0;
   }
 
   #register .illustration img {
@@ -2246,5 +2297,6 @@ input[name="epost"] {
     width: 34.7vw;
     left: 45.9vw;
     top: 36.5vw;
+    margin-left: 0;
   }
 }
