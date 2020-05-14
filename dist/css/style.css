@@ -126,7 +126,7 @@ ul {
   margin-bottom: 0;
 }
 
-.stott-oss-tekst {
+.bli-medlem-footer-tekst {
   grid-column: 4/9;
   font-weight: 500;
   font-size: 1.8rem;
@@ -169,11 +169,11 @@ ul {
 
 .social_icon {
   display: flex;
+  margin-left: -7.5px;
 }
 
 .social_icon img {
-  width: 68px;
-  margin: 5px;
+  width: 80px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -182,7 +182,6 @@ ul {
     width: 77%;
     height: 100%;
     grid-template-columns: repeat(12, 1fr);
-    /* grid-template-rows: repeat(12, 1fr); */
     grid-column-gap: 16px;
     margin: 0 auto;
   }
@@ -198,7 +197,6 @@ ul {
     width: 92%;
     height: 100%;
     grid-template-columns: repeat(5, 1fr);
-    /* grid-template-rows: repeat(12, 1fr); */
     grid-column-gap: 10px;
     margin: 0 auto;
   }
@@ -388,13 +386,16 @@ label #cancel {
 }
 
 #showcase h1 {
-  margin-left: 15%;
+  margin-left: 14.5%;
   margin-top: 100px;
+/*   position: fixed; */
 }
 
 .showcase-intro {
   width: 1013px;
-  margin-left: 15%;
+  margin-left: 14.5%;
+/*   margin-top: 275px;
+  position: fixed; */
 }
 
 #showcase .intro-tekst {
@@ -469,11 +470,12 @@ label #cancel {
 
 #hvem-vi-er h2 {
   position: absolute;
+  margin-left: 14.5%;
 }
 
 #hvem-vi-er p {
   margin-top: 250px;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   margin-left: 22%;
   width: 1088px;
 }
@@ -539,6 +541,7 @@ label #cancel {
   -o-transform: skewY(2deg);
   -moz-transform: skewY(2deg);
   transform: skewY(2deg);
+<<<<<<< HEAD
 }
 
 #hva-vi-gjør .container-1 {
@@ -547,11 +550,24 @@ label #cancel {
 
 #hva-vi-gjør .container-2 {
   margin-top: 10%;
+=======
+  position: absolute;
+  margin-left: 14.53%;
+}
+
+#hva-vi-gjør .container-1 {
+  margin-top: 19%;
+}
+
+#hva-vi-gjør .container-2 {
+  margin-top: 19%;
+>>>>>>> c40d76f80bdb1e49d4d005e0a2342b71a3a361f1
 }
 
 #hva-vi-gjør h4 {
   font-weight: 700px;
   font-family: "museo-sans";
+  margin-bottom: -10px;
 }
 
 #hva-vi-gjør p {
@@ -563,7 +579,7 @@ label #cancel {
 }
 
 .icon {
-  width: 150px;
+  width: 165px;
 }
 
 .imgBox {
@@ -593,7 +609,7 @@ label #cancel {
 
 .imgBox {
   float: left;
-  margin-right: 30px;
+  margin-right: 40px;
 }
 
 /* ------ MOBILE Hva vi gjør -------- */
@@ -708,7 +724,7 @@ label #cancel {
 
 #myter .bok {
   width: 300px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 #myter .kjøtt {
@@ -716,30 +732,33 @@ label #cancel {
   margin-top: 50px;
 }
 
-#myter h1 {
-  margin-left: 15%;
+#myter h2 {
+  margin-top: 120px;
+  margin-left: 14.53%;
+/*   position: flex; */
 }
 
-#myter {
+/* #myter {
   margin: 80px 0 80px 0;
-}
+} */
 
-#myter .container {
+#myter .myter-container {
   /*border:solid;*/
   display: grid;
   grid-template-columns: repeat(3, 26.7vw);
-  margin-left: 15vw;
+  margin-left: 14.53%;
+  margin-bottom: 60px;
 }
 
-#myter .container .illustrasjon {
+/* #myter .container .illustrasjon {
   width: 100%;
   margin-top: 100px;
   margin-bottom: 80px;
-}
+} */
 
-#myte h4 {
+/* #myte h4 {
   padding-left: 15vw;
-}
+} */
 
 /* ------------- Klimamyter html -------------- */
 
@@ -749,7 +768,7 @@ label #cancel {
 #klima-myter .bok {
 } */
 
-#klima-myter .kjøtt {
+/* #klima-myter .kjøtt {
   margin-top: 80px;
 }
 
@@ -773,7 +792,7 @@ label #cancel {
 #klima-myter h1 {
   margin-left: 15%;
   font-size: 4rem;
-}
+} */
 
 @media screen and (max-width: 1024px) {
   #myter .bok,
@@ -782,7 +801,7 @@ label #cancel {
     width: 24.6vw;
   }
 
-  #myter h1 {
+  #myter h2 {
     font-size: 2.1rem;
     margin-left: 10vw;
   }
@@ -833,52 +852,62 @@ label #cancel {
 
 /* ------------ STØTT OSS seksjon ------------------*/
 
-#stott-oss {
+#bli-medlem-footer {
   background: var(--primaryGreen);
-  min-height: 500px;
 }
 
-#stott-oss .container {
+#bli-medlem-footer .container {
   max-width: 1000px;
 }
 
-#stott-oss button {
+#bli-medlem-footer button {
   margin: 0 auto;
   display: block;
   color: var(--black);
   background: #fff;
-  padding: 10px 0;
+  padding: 18px 0;
   border: none;
   width: 300px;
-  border-radius: 30px;
+  border-radius: 3vw;
+  font-weight: 700;
   font-size: 1.8rem;
+  letter-spacing: 0.02rem;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 60px;
+  margin-bottom: 100px;
 }
 
-#stott-oss button:hover {
-  color: var(--footerGrey);
+#bli-medlem-footer button:hover {
+  color: var(--primaryGreen);
+/*   background: var(--secondaryGreen); */
 }
 
-/* #stott-oss p {
-  line-height: 2.7rem;
+
+#bli-medlem-footer p {
   margin-top: 100px;
+}
+
+/* .anchor-space {
+  padding-top: 30px;
 } */
 
 @media screen and (max-width: 1024px) {
-  #stott-oss p {
+
+#bli-medlem-footer   p {
     width: 80vw;
     margin-left: 10vw;
   }
 }
 
 @media screen and (max-width: 500px) {
-  #stott-oss {
+
+#bli-medlem-footer   {
     text-align: left;
     margin: 0;
   }
 
-  #stott-oss .container {
+
+#bli-medlem-footer   .container {
     max-width: 300px;
   }
 }
@@ -950,12 +979,24 @@ label #cancel {
   margin-bottom: 0;
 }
 
+#footer .nyhetsbrev input {
+  width: 255px;
+  height: 74px;
+  border: none;
+  padding-left: 17px;
+  margin-bottom: 42px;
+  margin-right: 4px;
+  font-family: "museo-sans";
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
 #footer .nyhetsbrev button {
   margin-top: 14px;
   margin-right: 20px;
   color: #fff;
   background: var(--primaryGreen);
-  /* padding: 14px 25px; */
+  padding: 0px;
   width: 122px;
   height: 74px;
   border: none;
@@ -963,17 +1004,6 @@ label #cancel {
   font-weight: 700;
   font-size: 1.25rem;
   text-transform: uppercase;
-}
-
-#footer .nyhetsbrev input {
-  width: 272px;
-  height: 74px;
-  border: none;
-  padding-left: 17px;
-  margin-bottom: 42px;
-  font-family: "museo-sans";
-  font-weight: 300;
-  font-size: 1.25rem;
 }
 
 ::-webkit-input-placeholder {
@@ -1027,7 +1057,8 @@ label #cancel {
     margin-top: 0;
   }
 
-  #stott-oss p {
+
+#bli-medlem-footer   p {
     width: 655px;
     margin-bottom: 58px;
   }
@@ -1084,7 +1115,8 @@ label #cancel {
 }
 
 @media screen and (max-width: 750px) {
-  #stott-oss p {
+
+#bli-medlem-footer   p {
     width: 92vw;
     margin-bottom: 58px;
     margin: 0 auto;
@@ -1093,7 +1125,8 @@ label #cancel {
 }
 
 @media screen and (max-width: 500px) {
-  #stott-oss p,
+
+#bli-medlem-footer   p,
   p {
     font-size: 16px;
   }
@@ -1136,12 +1169,12 @@ label #cancel {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10%;
+  padding: 48px 14.5%;
 }
 
 .copyright a {
   text-decoration: none;
-  color: var(--footerGrey);
+  color: var(--black);
 }
 
 @media screen and (max-width: 750px) {
