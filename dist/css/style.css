@@ -172,8 +172,6 @@ ul {
   width: 80px;
 }
 
-
-
 /* ------------- HEADER ------------ */
 
 header {
@@ -283,13 +281,7 @@ label #cancel {
   display: none;
 }
 
-
 /* ----------------- NEW HAMBURGER MENU --------------- */
-
-
-
-
-
 
 /* ----------- MOBILE HAMBURGER MENU --------------- */
 
@@ -1893,4 +1885,60 @@ input[name="epost"] {
     margin-left: 20px;
     line-height: 1.7rem;
   }
+}
+
+@media screen and (max-width: 500px) {
+  .main-grid {
+    display: inline-block;
+    margin: 0 40px 0 40px;
+    overflow-x: hidden;
+  }
+
+  .bok-illustrasjon {
+    text-align: center;
+    width: 100%;
+    padding-top: 60px;
+  }
+
+  .bok-headline,
+  .kjøtt-headline,
+  .kaffe-headline {
+    padding-top: 30px;
+  }
+
+  .bok-headline h1,
+  .kjøtt-headline h1,
+  .kaffe-headline h1 {
+    font-size: 2.06rem;
+  }
+
+  .kjøtt-illustrasjon {
+    text-align: center;
+    width: 100%;
+  }
+
+  .kjøtt-headline {
+    padding: 0;
+  }
+
+  .kaffe-illustrasjon {
+    text-align: center;
+    width: 100%;
+  }
+
+  .intro-tekst {
+    font-size: 1.125rem;
+  }
+
+  .liten-tekst {
+    font-size: 0.75rem;
+  }
+
+
+  .list {
+    display: none;
+  }
+
+
+
 }
