@@ -48,7 +48,8 @@
           <i class="fas fa-bars" id="btn"></i>
           <i class="fas fa-times" id="cancel"></i>
         </label>
-        <ul>
+
+        <ul class="menu">
           <li><a href="index.html#hvem-vi-er">HVEM ER VI?</a></li>
           <li><a href="index.html#myter">KLIMAMYTER</a></li>
           <li><a href="index.html#stott-oss">STØTT OSS</a></li>
@@ -58,13 +59,21 @@
     </div>
   </header>
 
+
+
+  <!-- --------- MAIN PART ------------ -->
+
   <main id="main-content">
     <!-- HOVEDBILDE SEKSJON -->
     <section id="showcase">
       <div class="container">
-        <h1>
+        <h1 class="deskh1">
           Støtt arbeidet vårt<br />
           for en grønn fremtid
+        </h1>
+        <h1 class="mobilh1">
+          Støtt arbeidet vårt<br />
+          for en grønn <br>fremtid
         </h1>
         <div class="showcase-intro">
           <p class="intro-tekst">
@@ -161,7 +170,8 @@
         </div>
       </section> -->
 
-    <section id="hva-vi-gjør">
+    <!-- FORELØPIG KORREKT VERSJON -->
+    <!--  <section id="hva-vi-gjør">
       <h2 class="homepage-heading">Hva vi gjør</h2>
       <div class="container">
         <div class="container-1">
@@ -247,7 +257,106 @@
           </div>
         </div>
       </div>
+    </section> -->
+
+
+    <section id="hva-vi-gjør">
+      <h2 class="homepage-heading">Hva vi gjør</h2>
+      <div class="container">
+        <div class="container-1">
+          <div class="row">
+            <div class="imgBox">
+              <img class="icon" class="etiskeklær" src="img/klær200-23.svg" alt="#" />
+            </div>
+            <div class="content">
+              <h4 class="homepage-small-heading">Etiske klær</h4>
+              <p>
+                Vi jobber for at kleskjedene skal å gi
+                tekstilarbeiderne verdige og trygge arbeidsvilkår, med en lønn
+                de kan leve av. Vi arbeider for en etikklov som skal lovfeste
+                retten til å få informasjon om arbeidsforholdene der varen er
+                produsert.
+              </p>
+            </div>
+
+            <div class="imgBox">
+              <img class="icon" class="penger" src="img/bank200-21.svg" alt="#" />
+            </div>
+            <div class="content">
+              <h4 class="homepage-small-heading">Etiske penger</h4>
+              <p>
+                Vi gransker bankenes arbeid med etikk og bærekraft. Vi ser på
+                hvordan selskaper og virksomheter, som bankene investerer i og
+                låner ut penger til, påvirker mennesker og miljø.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="imgBox">
+              <img class="icon" class="oljefond" src="img/olje200-24.svg" alt="#" />
+            </div>
+
+            <div class="content">
+              <h4 class="homepage-small-heading">Grønt oljefond</h4>
+              <p>
+                Vi arbeider for at oljefondet investerer mest mulig klima- og
+                miljøvennlig, og investerer minst mulig i kull og olje. Vi
+                ønsker at fondet skal få investere direkte i fornybar
+                energiinfrastruktur som ikke er tilgjengelig på børsene.
+              </p>
+            </div>
+            <div class="imgBox">
+              <img class="icon" class="livsstil" src="img/livsstil200-20.svg" alt="#" />
+            </div>
+
+            <div class="content">
+              <h4 class="homepage-small-heading">Miljøvennlig livsstil</h4>
+              <p>
+                Vi vil inspirere til etisk og miljøvennlig forbruk. Vi gir deg
+                tips slik at du kan leve mer miljøvennlig i hverdagen. Vi
+                arbeider for at myndigheter og næringsliv gjør det enklere å ta
+                de grønne valgene.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="imgBox">
+              <img class="icon" class="giftfri" src="img/giftfri200-19.svg" alt="#" />
+            </div>
+
+            <div class="content">
+              <h4 class="homepage-small-heading">Giftfri hverdag</h4>
+              <p>
+                Vi jobber for strengere regulering og utfasing av miljøgifter i
+                forbrukerprodukter. Vi legger press på produsenter og arbeider
+                for politisk støtte til strengere regulering, innføring av
+                avgifter og forbud.
+              </p>
+            </div>
+            <div class="imgBox">
+              <img class="icon" class="klimamat" src="img/mat200-22.svg" alt="#" />
+            </div>
+
+            <div class="content">
+              <h4 class="homepage-small-heading">Klimavennlig mat</h4>
+              <p>
+                Maten står for rundt 20 prosent av klimafotavtrykket vårt. Vi
+                arbeider for tiltak som reduserer kastingen av mat og reduserer
+                forbruket av kjøtt til det beste for miljøet, dyrene og helsa.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
     </section>
+
+
+    <!-- ------ TEST MED GRID ------------ -->
     <!-- <section id="hva-vi-gjør">
       <h2 class="homepage-heading">Hva vi gjør</h2>
       <div class="turn-content">
@@ -287,10 +396,9 @@
 
     <!-- KLIMAMYTER seksjon -->
     <section id="myter">
+      <h2 class="homepage-heading">Klimamyter</h2>
       <div class="container">
-        <div>
-          <h2 class="homepage-heading">Klimamyter</h2>
-        </div>
+
         <div class="myter-container">
           <a href="kjøtt.html">
             <img class="kjøtt" src="img/kjøtt5.svg" alt="vekt med kjøtt og grønnsaker" />
@@ -315,7 +423,7 @@
     <!-- INFORMARSJON seksjon og bli medlem -->
     <section id="bli-medlem-footer">
       <div class="container">
-        <p class="bli-medlem-footer-tekst">
+        <p class="lite-info">
           <strong>Liker du arbeidet Framtiden i våre hender gjør?</strong> Vi
           finnes bare på grunn av den økonomiske støtten fra de over 35 000
           medlemmene våre. Desto flere som støtter arbeidet vårt, jo større
@@ -430,7 +538,17 @@
       navbar.classList.add("sticky");
       main.classList.add("content-padding");
     }
+
+
+    const toggleInput = document.getElementById('check');
+
+    document.querySelector('.menu').addEventListener('click', () => {
+      if (toggleInput.checked) {
+        toggleInput.checked = false;
+      }
+    })
   </script>
+
 </body>
 
 </html>
