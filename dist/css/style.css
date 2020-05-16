@@ -406,6 +406,7 @@ label #cancel {
   background: var(--secondaryGreen);
   margin-top: 20px;
   min-height: 800px;
+  padding-top: 20px;
   -webkit-transform: skewY(-2deg);
   -ms-transform: skewY(-2deg);
   -o-transform: skewY(-2deg);
@@ -456,7 +457,9 @@ label #cancel {
 }
 
 .container-1 {
-  margin: 150px;
+  margin-top: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 #hva-vi-gjør .row .content {
