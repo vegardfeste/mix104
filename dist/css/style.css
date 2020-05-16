@@ -961,19 +961,34 @@ label #cancel {
 }
 
 .ku1-mobil {
-  display: none;
+  width: 142px;
+  height: 66.93px;
+  margin-left: 45.5px;
 }
 
 .ku2-mobil {
-  display: none;
+  width: 142px;
+  height: 68.13px;
+  margin-left: 187.5px;
+}
+
+.mobil-biff {
+  margin-top: 30px;
+  margin-left: 218px;
+  width: 81px;
+  height: 56.12px;
 }
 
 .mobil-broccoli {
-  display: none;
+  width: 81px;
+  height: 73.08px;
+  margin-left: 86px;
 }
 
 .mobil-carrot {
-  display: none;
+  width: 111.5px;
+  height: 58.08px;
+  margin-left: 187.5px;
 }
 
 /*  */
@@ -1888,15 +1903,65 @@ input[name="epost"] {
 }
 
 @media screen and (max-width: 500px) {
+
+
   .main-grid {
-    display: inline-block;
-    margin: 0 40px 0 40px;
-    overflow-x: hidden;
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0 15px 0 15px;
   }
 
-  .bok-illustrasjon {
-    text-align: center;
+  .turn-background {
     width: 100%;
+    padding-bottom: 30px;
+    /* padding: 30px 0 30px 0; */
+  }
+
+  .intro-tekst {
+    font-size: 1.125rem;
+  }
+
+  .liten-tekst {
+    font-size: 0.75rem;
+  }
+
+  .artikkel-heading {
+    margin: 0;
+
+  }
+
+  .artikkel-heading h2 {
+    font-size: 1.4rem;
+  }
+
+  .paragraph {
+    margin-bottom: 40px;
+  }
+
+  .paragraph h4 {
+    font-size: 1.03rem;
+    margin: 2rem 0 2rem 0;
+  }
+
+  .paragraph p {
+    font-size: 0.9688rem;
+  }
+
+  .paragraph h3 {
+    font-size: 1.125rem;
+  }
+
+  .list {
+    display: none;
+  }
+
+
+
+  .bok-illustrasjon {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
     padding-top: 60px;
   }
 
@@ -1912,30 +1977,91 @@ input[name="epost"] {
     font-size: 2.06rem;
   }
 
-  .kjøtt-illustrasjon {
-    text-align: center;
-    width: 100%;
-  }
-
-  .kjøtt-headline {
-    padding: 0;
-  }
-
   .kaffe-illustrasjon {
     text-align: center;
     width: 100%;
   }
 
-  .intro-tekst {
-    font-size: 1.125rem;
+  .fairtrade-container {
+    display: block;
+    padding: 0;
+    width: 85%;
   }
 
-  .liten-tekst {
-    font-size: 0.75rem;
+  #fair-logo {
+    width: 100%;
+    margin: 0 auto;
   }
 
 
-  .list {
+
+  /* KJØTT */
+
+  .kjøtt-illustrasjon {
+    /* text-align: center; */
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .kjøtt-headline {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .traktor,
+  .ku1,
+  .ku2,
+  .biff,
+  .carrot,
+  .broccoli {
+    display: none;
+  }
+
+  .kraftfor,
+  .storfe,
+  .sau,
+  .vanngraf,
+  .bønnegraf,
+  .klimagraf,
+  .utslipp {
+    width: 100%;
+  }
+
+  .myte {
+    padding-top: 80px;
+    margin: 0;
+  }
+
+  .myte1 h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-family: "museo-sans";
+  }
+
+  .myte h2 {
+    font-size: 1.4rem;
+    margin: 0 0 10px 0;
+  }
+
+  .mobil-traktor {
+    margin-left: 130px;
+    width: 150px;
+  }
+
+  .kraftfor {
+    display: none;
+  }
+
+  .sau {
+    display: none;
+  }
+
+  .storfe {
     display: none;
   }
 
