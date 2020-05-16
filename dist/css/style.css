@@ -1951,11 +1951,13 @@ input[name="epost"] {
     width: 70%;
   } */
 
-    #footer .kontakt {
-      max-width: 400px;
-      margin-left: 20px;
-      line-height: 1.7rem;
-    }
+
+  }
+
+  #footer .kontakt {
+    max-width: 400px;
+    margin-left: 20px;
+    line-height: 1.7rem;
   }
 
   @media screen and (max-width: 500px) {
@@ -2190,5 +2192,5 @@ input[name="epost"] {
     .mobil-utslipp-3 {
       margin-bottom: 40px;
     }
-
   }
+}
