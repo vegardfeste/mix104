@@ -891,6 +891,10 @@ label #cancel {
   opacity: 1;
 }
 
+.grønnskatt {
+  margin-bottom: 90px;
+}
+
 .traktor {
   width: 200px;
   margin-left: -40vw;
@@ -906,7 +910,7 @@ label #cancel {
   margin-left: -40vw;
   margin-right: -50vw;
   position: absolute;
-  margin-top: 1500px;
+  margin-top: 2000px;
   left: 50%;
   right: 50%;
 }
@@ -916,7 +920,7 @@ label #cancel {
   margin-left: 25vw;
   margin-right: -50vw;
   position: absolute;
-  margin-top: 2200px;
+  margin-top: 2700px;
   left: 50%;
   right: 50%;
 }
