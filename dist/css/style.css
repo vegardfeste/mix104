@@ -332,15 +332,15 @@ label #cancel {
     font-size: 20px;
   }
 
-  #check:checked~ul {
+  #check:checked ~ ul {
     left: 0;
   }
 
-  #check:checked~label #btn {
+  #check:checked ~ label #btn {
     display: none;
   }
 
-  #check:checked~label #cancel {
+  #check:checked ~ label #cancel {
     display: block;
   }
 }
@@ -558,7 +558,6 @@ label #cancel {
 }
 
 @media screen and (max-width: 500px) {
-
   #bli-medlem-footer p,
   p {
     font-size: 16px;
@@ -759,6 +758,17 @@ label #cancel {
   padding-top: 250px;
 }
 
+/* Display none */
+
+.mobil-bønnegraf,
+.mobil-vanngraf,
+.mobil-utslipp-1,
+.mobil-utslipp-2,
+.mobil-utslipp-3,
+.mobil-klimagraf {
+  display: none;
+}
+
 .bønnegraf {
   grid-column: 4/7;
   margin-top: 40px;
@@ -768,6 +778,11 @@ label #cancel {
 /* -- Vann -- */
 
 .artikkel-heading {
+  grid-column: 3/10;
+  margin-top: 80px;
+}
+
+.artikkel-heading1 {
   grid-column: 3/10;
   margin-top: 80px;
 }
@@ -951,6 +966,16 @@ label #cancel {
   font-family: "museo-sans";
 }
 
+.myte1 {
+  grid-column: 2/4;
+  margin-top: 80px;
+}
+
+.myte1 h2 {
+  font-weight: 300;
+  font-family: "museo-sans";
+}
+
 .sau {
   grid-column: 4/9;
   margin-bottom: 40px;
@@ -961,6 +986,19 @@ label #cancel {
   grid-column: 4/9;
   margin-bottom: 40px;
   margin-top: 40px;
+}
+
+/* DISPLAY NONE */
+.mobil-traktor,
+.ku1-mobil,
+.ku2-mobil,
+.mobil-biff,
+.mobil-broccoli,
+.mobil-carrot,
+.mobil-storfe,
+.mobil-kraftfor,
+.mobil-sau {
+  display: none;
 }
 
 .ku1-mobil {
@@ -1185,7 +1223,7 @@ section .form {
   display: none;
 }
 
-.info input[type="checkbox"]+label {
+.info input[type="checkbox"] + label {
   display: block;
   margin: 0.2em;
   /*cursor: pointer;*/
@@ -1196,7 +1234,7 @@ input[type="checkbox"] {
   display: none;
 }
 
-.form input[type="checkbox"]+label:before {
+.form input[type="checkbox"] + label:before {
   content: " ";
   border: 0.1em solid #000;
   border-radius: 0.2em;
@@ -1211,11 +1249,11 @@ input[type="checkbox"] {
   transition: 0.2s;
 }
 
-input[type="checkbox"]+label:active:before {
+input[type="checkbox"] + label:active:before {
   transform: scale(0);
 }
 
-input[type="checkbox"]:checked+label:before {
+input[type="checkbox"]:checked + label:before {
   background-color: MediumSeaGreen;
   border-color: MediumSeaGreen;
   color: #fff;
@@ -1317,7 +1355,6 @@ input[name="epost"] {
 }
 
 @media screen and (max-width: 1024px) {
-
   #form .text,
   #form .form,
   #form .register {
@@ -1449,7 +1486,6 @@ input[name="epost"] {
 }
 
 @media screen and (max-width: 654px) {
-
   #form .text,
   #form .form,
   #form .register {
@@ -1827,8 +1863,6 @@ input[name="epost"] {
     margin: 0;
   }
 
-
-
   #hva-vi-gjør h4 {
     text-align: center;
   }
@@ -1845,7 +1879,6 @@ input[name="epost"] {
     margin-top: 10px;
     margin-bottom: 20px;
     position: relative;
-
   }
 }
 
@@ -1912,7 +1945,6 @@ input[name="epost"] {
 
   .social_icon {
     margin-left: 1px;
-
   }
 
   .social_icon img {
@@ -1930,15 +1962,12 @@ input[name="epost"] {
 
   .copyright a {
     font-size: 0.75rem;
-    font-family: 'museo-sans';
+    font-family: "museo-sans";
     font-weight: 300;
   }
 
   .LOGONAVN {
     float: right;
-
-
-
 
     /* .lite-info {
     max-width: 400px;
@@ -1953,8 +1982,6 @@ input[name="epost"] {
     /* #footer .nyhetsbrev input {
     width: 70%;
   } */
-
-
   }
 
   #footer .kontakt {
@@ -1964,8 +1991,6 @@ input[name="epost"] {
   }
 
   @media screen and (max-width: 500px) {
-
-
     .main-grid {
       display: block;
       width: auto;
@@ -2090,10 +2115,6 @@ input[name="epost"] {
       font-size: 1.4rem;
     }
 
-
-
-
-
     /* KJØTT */
 
     .kjøtt-illustrasjon,
@@ -2137,6 +2158,11 @@ input[name="epost"] {
       margin: 0;
     }
 
+    .myte1 {
+      padding-top: 0;
+      margin: 0;
+    }
+
     .myte1 h2 {
       margin: 0 0 10px 0;
       font-size: 1.4rem;
@@ -2152,6 +2178,18 @@ input[name="epost"] {
     .mobil-traktor {
       margin-left: 130px;
       width: 150px;
+    }
+
+    .mobil-traktor,
+    .ku1-mobil,
+    .ku2-mobil,
+    .mobil-biff,
+    .mobil-broccoli,
+    .mobil-carrot,
+    .mobil-storfe,
+    .mobil-kraftfor,
+    .mobil-sau {
+      display: block;
     }
 
     .kraftfor {
