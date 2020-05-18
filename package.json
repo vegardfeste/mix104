@@ -1,0 +1,23 @@
+{
+  "name": "webpage_mix104",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vegardfeste/mix104.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vegardfeste/mix104/issues"
+  },
+  "homepage": "https://vegardfeste.github.io/mix104",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
