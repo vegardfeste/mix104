@@ -706,7 +706,7 @@ label #cancel {
   padding-top: 150px;
   padding-right: 20px;
   grid-row: 1;
-  width: 800px;
+  width: 36.5vw;
 }
 
 .bok-headline {
@@ -721,7 +721,7 @@ label #cancel {
 .paragraph {
   grid-column-start: 4;
   grid-column-end: 10;
-  margin-bottom: 100px;
+/*  margin-bottom:5.2vw;*/
 }
 
 /* ----------- KAFFE ARTIKKEL ---------------- */
@@ -749,7 +749,7 @@ label #cancel {
   grid-column: 7/10;
   padding-top: 80px;
   padding-right: 20px;
-  width: 700px;
+  width: 37vw;
 }
 
 .kaffe-headline {
@@ -773,6 +773,7 @@ label #cancel {
   grid-column: 4/7;
   margin-top: 40px;
   margin-bottom: 80px;
+  width: 50vw;
 }
 
 /* -- Vann -- */
@@ -791,6 +792,7 @@ label #cancel {
   grid-column: 4/8;
   margin-top: 40px;
   margin-bottom: 80px;
+  width: 50vw;
 }
 
 /* -- Gass -- */
@@ -804,6 +806,7 @@ label #cancel {
 .klimagraf {
   grid-column: 4/8;
   margin-top: 40px;
+  width: 50vw;
 }
 
 .gass-paragraph h4 {
@@ -869,6 +872,7 @@ label #cancel {
 
 .utslipp {
   grid-column: 4/10;
+  width: 50vw;
 }
 
 /************* KJØTT artikler **************/
@@ -877,7 +881,7 @@ label #cancel {
   grid-column: 7/10;
   padding-top: 80px;
   padding-right: 20px;
-  width: 700px;
+  width: 36.6vw;
   margin-bottom: 70px;
 }
 
@@ -891,10 +895,12 @@ label #cancel {
   opacity: 1;
 }
 
-.grønnskatt {
+.grønnskatt  {
   margin-bottom: 90px;
 }
-
+.grønnskatt img{
+    width:42vw;
+}
 .traktor {
   width: 200px;
   margin-left: -40vw;
@@ -958,6 +964,7 @@ label #cancel {
 .kraftfor {
   grid-column: 4/9;
   margin-bottom: 40px;
+  width:42vw;
 }
 
 .myte {
@@ -983,13 +990,15 @@ label #cancel {
 .sau {
   grid-column: 4/9;
   margin-bottom: 40px;
-  margin-top: 40px;
+  /*margin-top: 40px;*/
+  width:42vw;
 }
 
 .storfe {
   grid-column: 4/9;
   margin-bottom: 40px;
-  margin-top: 40px;
+  /*margin-top: 40px;*/
+  width:42vw;
 }
 
 /* DISPLAY NONE */
@@ -1417,6 +1426,11 @@ input[name="epost"] {
 #form .text_3{
   margin-top: 40px;
 }
+/******* 1800 kafe artiker  .kaffe-illustrasjon, .kjøtt-illustrasjon,*****/
+.kaffe-illustrasjon, .kjøtt-illustrasjon{
+  width: 36.5vw;
+}
+
 
 }
 
@@ -1551,6 +1565,16 @@ input[name="epost"] {
     left: 296px;
     top: 179px;
     margin-left: 0;
+  }
+
+  .ingress {
+    grid-column: 3/10;
+  }
+  .intro-tekst{
+    width:654px;
+  }
+  .bok-illustrasjon{
+    width:390px;
   }
 
 }
@@ -1924,6 +1948,26 @@ input[name="epost"] {
 .social_icon img{
   width: 4.2vw;
 }
+p{
+  font-size: 16px;
+}
+.intro-tekst{
+  width:42.5vw;
+  font-size: 1.7vw;
+}
+h2{
+  font-size: 1.7vw;
+}
+/***** 1800 kjøtt****/
+.biff,.broccoli,.carrot{
+  width:10vw;
+}
+/********* 1800 kaffe****/
+.bønnegraf, {
+  width:50vw;
+}
+
+
 }
 @media screen and (max-width: 1200px) {
   /********* heading *******/
@@ -2154,8 +2198,68 @@ p {
 #bli-medlem-footer .lite-info{
   width: 80vw;
 }
+/******* artikler *****/
+.ingress{
+  grid-column: 3/10;
+}
+h2{
+  width: 63vw;
+  font-size:23px;
+}
+.intro-tekst{
+  width:64vw;
+  font-size: 25px;
+}
+/******* 1200 bok ****/
+.paragraph {
+    /*grid-column-start: 3;*/
+    grid-column-end: 12;
 
 }
+.ku2{
+  display:none;
+}
+.list{
+  margin-left: 0;
+}
+.traktor, .ku1{
+  width:15vw;
+}
+.ku1{
+  margin-top: 150vh;
+}
+
+p, .grønnskatt img, .kraftfor, .sau, .storfe,
+.utslipp, .bønnegraf,.vanngraf,.klimagraf{
+  width:64vw;
+  grid-column: 3/10;
+}
+/****** kjøtt *********/
+.fairtrade-paragraph p{
+  width:60vw;
+}
+.fair-logo{
+  padding-right:4vw;
+  width:20vw;
+}
+.utslipp {
+    grid-column: 3/10;
+    width: 64vw;
+}
+.tips-paragraph{
+  grid-column: 4/10;
+  width:64vw;
+}
+.broccoli{
+  margin-top: 50px;
+}
+
+.kafe {
+  grid-column-start: 3;
+}
+
+}
+
 @media screen and (max-width: 750px){
   #hva-vi-gjør .homepage-heading, #myter .homepage-heading , #hvem-vi-er .homepage-heading{
     margin-left:10%;
@@ -2178,7 +2282,63 @@ p {
   #footer .container div:nth-child(1){
     margin-top: 100px;
   }
+  .main-grid {
+    display: block;
+  }
+
+  .fairtrade-container, .tips{
+    display:block;
+  }
+  .fair-logo{
+    width:50vw;
+    margin-bottom: 20px;
+  }
+  .kjøtt-illustrasjon,
+    .kaffe-illustrasjon,.bok-illustrasjon, .tips{
+      width: 80vw;
+      margin:0 auto;
+    }
+    .bok-headline,
+   .kjøtt-headline,
+   .kaffe-headline {
+     padding-left: 0;
+     padding-top:0;
+   }
+   .intro-tekst, p ,
+    .grønnskatt img, .kraftfor,
+     .sau, .storfe, .utslipp,
+    .bønnegraf, .vanngraf, .klimagraf{
+     width:80vw;
+   }
+   .ku1, .ku2{
+     display: none;
+   }
+   .traktor{
+     width:100px;
+   }
+   .traktor {
+    margin-left: -103vw;
+    position: absolute;
+    margin-top: 30px;
+    left: 110%;
+    right: 50%
 }
+.ku1, .ku2, .biff, .broccoli, .carrot{
+    display: none;
+}
+.ku1-mobil, .ku2-mobil, .mobil-biff, .mobil-broccoli, .mobil-carrot {
+    display: block;
+    width: auto;
+}
+.mobil-biff{
+  display: inline-block;
+  float: right;
+  margin-right: 100px;
+  margin-right: 0;
+}
+
+}
+
 
 @media screen and (max-width: 500px) {
   /* ------- SHOWCASE IMAGE TEXT AND NAVIGATION -------- */
@@ -2293,6 +2453,10 @@ p {
 }
 
 @media screen and (max-width: 500px) {
+  p{
+    width:auto;
+  }
+
   #myter .myter-container {
     display: block;
     text-align: center;
@@ -2312,6 +2476,9 @@ p {
     margin-left: 15px;
     margin-top: 30px;
   }
+}
+.fairtrade-paragraph p{
+  width:auto;
 }
 
 /* ---- LAST FOOTER GRAY AREA ----- */
@@ -2620,7 +2787,15 @@ font-size: 1.25em;
     .mobil-kraftfor,
     .mobil-sau {
       display: block;
+      width:auto;
     }
+    .grønnskatt img{
+      width:90vw;
+    }
+
+    .mobil-traktor {
+    margin-left: 130px;
+    width: 150px}
 
     .kraftfor {
       display: none;
