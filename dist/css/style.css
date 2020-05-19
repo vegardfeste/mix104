@@ -1052,10 +1052,10 @@ label #cancel {
 #form .text,
 #form .form,
 #form .register {
-  width: 1088px;
+  width: 57vw;
   height: auto;
   margin: 0 auto;
-  margin-top: 7.1vw;
+  margin-top: 50px;
 }
 
 /* #form h2 {
@@ -1087,7 +1087,8 @@ label #cancel {
 
 #form .intro-tekst {
   margin: 0 auto;
-  width: 1013px;
+  width:58vw;
+  font-size: 1.8vw;
   text-align: center;
 }
 
@@ -1095,7 +1096,7 @@ label #cancel {
   display: block;
   margin: 0 auto;
   margin-top: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   color: #fff;
   background: var(--primaryGreen);
   padding: 18px 0;
@@ -1122,13 +1123,13 @@ label #cancel {
   margin: 0 auto;
   margin-top: 30px;
   text-align: center;
-  font-size: 1.37rem;
+  font-size: 1.3vw;
 }
 
 #form .text_3 {
   display: block;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 40px;
   text-align: center;
   font-size: 1.25rem;
 }
@@ -1150,7 +1151,7 @@ label #cancel {
 
 #medlem .column {
   float: left;
-  width: 568px;
+  width: 29vw;
   height: 80px;
   margin-top: 10px;
   margin-bottom: 60px;
@@ -1166,7 +1167,7 @@ label #cancel {
 
 #medlem .column input {
   box-sizing: border-box;
-  width: 520px;
+  width:27vw;
   height: 58px;
   vertical-align: bottom;
   border: none;
@@ -1190,10 +1191,9 @@ label #cancel {
 #form .form button {
   clear: both;
   display: block;
-  /* margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 60px; */
-  margin: 30px auto;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 60px;
   color: #fff;
   width: 231px;
   height: 60px;
@@ -1278,13 +1278,12 @@ input[name="epost"] {
 #form .checkbox label {
   display: block;
   float: left;
-  width: 500px;
+  width: 25vw;
   height: 70px;
   font-family: "museo-sans";
   font-weight: 300;
   line-height: 1.4;
   text-indent: -1.5em;
-  margin-top: -20px;
   margin-bottom: 35px;
 }
 
@@ -1358,7 +1357,73 @@ input[name="epost"] {
   transition: transform 1s ease-in 1s;
 }
 
+
+}
+@media (max-width: 1800px) {
+  #form h1{
+    font-size: 3.2vw;
+  }
+  #form{
+  clear: both;
+  height: auto;
+  padding-bottom: 7.1vw;
+  position: relative;
+  /*border: 1px solid black;*/
+}
+#form .text{
+
+}
+
+#form .text, #form .form, #form .register{
+  width:56.7vw;
+  height:auto;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+ #form .form{
+   border: 1px black solid;
+ }
+
+ #form .form .info{
+   width:56vw;
+   margin-left: 25px;
+  }
+
+#form h2{
+  font-family: "museo slab";
+  width:477px; /*33vw, 477px*/
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 53px;/*3.75vw, 54px*/
+  margin-bottom: 20px;
+}
+
+
+#form .text_1{
+  font-size: 1.67vw;
+}
+#form .intro-tekst{
+  width:60vw;
+  font-size: 1.9vw;
+}
+#form .text .text_2{
+  font-size: 17px;
+}
+#form .text .btn_2{
+  margin-bottom: 40px;
+}
+#form .text_3{
+  margin-top: 40px;
+}
+
+}
+
 @media screen and (max-width: 1024px) {
+  #form .checkbox label{
+    width:370px;
+  }
   #form .text,
   #form .form,
   #form .register {
@@ -1400,17 +1465,20 @@ input[name="epost"] {
   } */
 
   /**************  column *************/
+  .input-setting{
+    width:370px;
+    margin:0 auto;
+  }
   #medlem .column {
     clear: left;
-    width: 329px;
+    width: 379px;
     height: 119;
-    margin-left: 162.5px;
     margin-bottom: 15px;
   }
 
   #medlem .column input {
     height: 42px;
-    width: 329px;
+    width:370px;
   }
 
   #medlem .text_3 {
@@ -1419,7 +1487,6 @@ input[name="epost"] {
 
   #form .checkbox label {
     height: 64px;
-    margin-left: 175px;
     margin-bottom: 11px;
   }
 
@@ -1486,8 +1553,9 @@ input[name="epost"] {
     margin-left: 0;
   }
 
-  /******************  finish registering  end **********/
 }
+
+  /******************  finish registering  end **********/
 
 @media screen and (max-width: 654px) {
   #form .text,
@@ -1529,7 +1597,6 @@ input[name="epost"] {
     clear: left;
     width: 50vw;
     height: 18.19vw;
-    margin-left: 24.8vw;
     margin-bottom: 2.3vw;
   }
 
@@ -1545,7 +1612,6 @@ input[name="epost"] {
   #form .checkbox label {
     width: 50vw;
     height: 9.8vw;
-    margin-left: 26.7vw;
     margin-bottom: 1.7vw;
   }
 
@@ -1664,10 +1730,12 @@ input[name="epost"] {
   #form .form .info {
     margin-left: 0;
   }
-
+  #form .input-setting{
+    width:50vw;
+    margin: 0 auto;
+  }
   #medlem .column {
     clear: left;
-    width: 80vw;
     height: 20vw;
     margin: 0;
   }
@@ -1691,12 +1759,11 @@ input[name="epost"] {
     line-height: 16px;
     padding: 0;
     display: block;
-    width: 60vw;
+    width: 45vw;
     height: 14vw;
     margin: 0 auto;
     font-size: 2.7vw;
     margin-bottom: 5.3vw;
-    margin-left: 12.5vw;
   }
 
   #form .form button {
