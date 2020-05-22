@@ -668,10 +668,16 @@ label #cancel {
 
 /* BUNN AV SIDE */
 
-.copyright {
+/* .copyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 48px 14.5%;
+} */
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
   padding: 48px 14.5%;
 }
 
