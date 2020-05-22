@@ -159,6 +159,11 @@ ul {
   list-style-position: outside;
 }
 
+
+.totop {
+  text-align: center;
+}
+
 .list li {
   margin-bottom: 1.75rem;
 }
