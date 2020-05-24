@@ -4,17 +4,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/style.css" type="text/css" />
-  <!-- <link rel="stylesheet" href="https://use.typekit.net/fym6brr.css" /> -->
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <title>Fremtiden i våre hender</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="stylesheet" href="https://use.typekit.net/lso1gho.css" />
+  <script defer src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on("click", function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $("html, body").animate({
+              scrollTop: $(hash).offset().top,
+            },
+            700,
+            function () {
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            }
+          );
+        }
+      });
+    });
+  </script>
+  <title>Framtiden i våre hender</title>
 </head>
 
 <body>
   <header>
-    <div class="header-container">
+    <div id="navigation-bar" class="header-container">
       <a href="index.html">
-        <div class="branding"></div>
+        <div class="branding">
+          <img src="img/f-logo.svg" alt="" />
+        </div>
       </a>
       <nav>
         <input type="checkbox" id="check" />
@@ -22,27 +48,36 @@
           <i class="fas fa-bars" id="btn"></i>
           <i class="fas fa-times" id="cancel"></i>
         </label>
-        <ul>
-          <li><a href="hvem-er-vi.html">HVEM ER VI?</a></li>
-          <li><a href="klimamyter.html">KLIMAMYTER</a></li>
-          <li><a href="støtt-oss.html">STØTT OSS</a></li>
+
+        <ul class="menu">
+          <li><a href="index.html#hvem-vi-er">HVEM ER VI?</a></li>
+          <li><a href="index.html#myter">KLIMAMYTER</a></li>
+          <li><a href="index.html#stott-oss">STØTT OSS</a></li>
           <a href="form1.html"><button class="button_1">BLI MEDLEM</button></a>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
+
+
+  <!-- --------- MAIN PART ------------ -->
+
+  <main id="main-content">
     <!-- HOVEDBILDE SEKSJON -->
     <section id="showcase">
       <div class="container">
-        <h1>
+        <h1 class="deskh1">
           Støtt arbeidet vårt<br />
           for en grønn fremtid
         </h1>
-        <div class="intro">
-          <p>
-            Fremtiden i våre hender jobber for etisk og miljøvennlig forbruk.
+        <h1 class="mobilh1">
+          Støtt arbeidet vårt<br />
+          for en grønn <br>fremtid
+        </h1>
+        <div class="showcase-intro">
+          <p class="intro-tekst">
+            Framtiden i våre hender jobber for etisk og miljøvennlig forbruk.
             Målet vårt er en rettferdig verden i økologisk balanse. Vi bidrar
             til endring ved å spre kunnskap og finne løsninger.
           </p>
@@ -53,46 +88,125 @@
     <!-- Hvem vi er seksjon -->
     <section id="hvem-vi-er">
       <div class="container">
-        <h1>Hvem vi er</h1>
-        <p>
+        <h2 class="homepage-heading">Hvem vi er</h2>
+        <p class="intro-tekst">
           Framtiden i våre hender er blant Norges største miljø- og
-          <br />solidaritetsorganisasjoner med over 35000 medlemmer. Det
-          overordnede <br />målet vårt er global rettferdighet, økologisk
-          balanse og en løsning på <br />verdens fattigdomsproblemer, slik at
-          det blir mulig for alle mennesker på<br />
+          solidaritetsorganisasjoner med over 35000 medlemmer. Det
+          overordnede målet vårt er global rettferdighet, økologisk
+          balanse og en løsning på verdens fattigdomsproblemer, slik at
+          det blir mulig for alle mennesker på
           jorda å leve et verdig liv.
         </p>
       </div>
     </section>
 
     <!-- Hva vi gjør seksjon -->
-    <section id="hva-vi-gjør">
-      <h1>Hva vi gjør</h1>
+    <!-- <section id="hva-vi-gjør">
+        <h1>Hva vi gjør</h1>
+        <div class="container">
+          <div class="container-1">
+            <div class="box">
+              <img class="etiskeklær" src="img/etiskeklær.svg" alt="#" />
+              <h4>Etiske klær</h4>
+              <p>
+                Vi jobber for at kleskjedene skal å gi<br />
+                tekstilarbeiderne verdige og trygge arbeidsvilkår, med en lønn
+                de kan leve av. Vi arbeider for en etikklov som skal lovfeste
+                retten til å få informasjon om arbeidsforholdene der varen er
+                produsert.
+              </p>
+            </div>
+            <div class="box">
+              <img class="penger" src="img/bank_icon.svg" alt="#" />
+              <h4>Etiske penger</h4>
+              <p>
+                Vi gransker bankenes arbeid med etikk og bærekraft. Vi ser på
+                hvordan selskaper og virksomheter, som bankene investerer i og
+                låner ut penger til, påvirker mennesker og miljø.
+              </p>
+            </div>
+            <div class="box">
+              <img class="oljefond" src="img/olje_icon.svg" alt="#" />
+              <h4>Grønt oljefond</h4>
+              <p>
+                Vi arbeider for at oljefondet investerer mest mulig klima- og
+                miljøvennlig, og investerer minst mulig i kull og olje. Vi
+                ønsker at fondet skal få investere direkte i fornybar
+                energiinfrastruktur som ikke er tilgjengelig på børsene.
+              </p>
+            </div>
+          </div>
+          <div class="container-2">
+            <div class="box">
+              <img class="livsstil" src="img/livsstil_icon.svg" alt="#" />
+              <h4>Miljøvennlig livsstil</h4>
+              <p>
+                Vi vil inspirere til etisk og miljøvennlig forbruk. Vi gir deg
+                tips slik at du kan leve mer miljøvennlig i hverdagen. Vi
+                arbeider for at myndigheter og næringsliv gjør det enklere å ta
+                de grønne valgene.
+              </p>
+            </div>
+            <div class="box">
+              <img class="giftfri" src="img/giftfri.svg" alt="#" />
+              <h4>Giftfri hverdag</h4>
+              <p>
+                Vi jobber for strengere regulering og utfasing av miljøgifter i
+                forbrukerprodukter. Vi legger press på produsenter og arbeider
+                for politisk støtte til strengere regulering, innføring av
+                avgifter og forbud.
+              </p>
+            </div>
+            <div class="box">
+              <img class="klimamat" src="img/klimamat.svg" alt="#" />
+              <h4>Klimavennlig mat</h4>
+              <p>
+                Maten står for rundt 20 prosent av klimafotavtrykket vårt. Vi
+                arbeider for tiltak som reduserer kastingen av mat og reduserer
+                forbruket av kjøtt til det beste for miljøet, dyrene og helsa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+    <!-- FORELØPIG KORREKT VERSJON -->
+    <!--  <section id="hva-vi-gjør">
+      <h2 class="homepage-heading">Hva vi gjør</h2>
       <div class="container">
         <div class="container-1">
-          <div class="box">
-            <img class="klær" src="#" alt="#" />
-            <h4>Etiske klær</h4>
+          <div class="imgBox">
+            <img class="icon" class="etiskeklær" src="img/klær200-23.svg" alt="#" />
+          </div>
+          <div class="content">
+            <h4 class="homepage-small-heading">Etiske klær</h4>
             <p>
-              Vi jobber for at kleskjedene skal å gi<br />
+              Vi jobber for at kleskjedene skal å gi
               tekstilarbeiderne verdige og trygge arbeidsvilkår, med en lønn
               de kan leve av. Vi arbeider for en etikklov som skal lovfeste
               retten til å få informasjon om arbeidsforholdene der varen er
               produsert.
             </p>
           </div>
-          <div class="box">
-            <img class="penger" src="#" alt="#" />
-            <h4>Etiske penger</h4>
+
+          <div class="imgBox">
+            <img class="icon" class="penger" src="img/bank200-21.svg" alt="#" />
+          </div>
+          <div class="content">
+            <h4 class="homepage-small-heading">Etiske penger</h4>
             <p>
               Vi gransker bankenes arbeid med etikk og bærekraft. Vi ser på
               hvordan selskaper og virksomheter, som bankene investerer i og
               låner ut penger til, påvirker mennesker og miljø.
             </p>
           </div>
-          <div class="box">
-            <img class="oljefond" src="#" alt="#" />
-            <h4>Grønt oljefond</h4>
+
+          <div class="imgBox">
+            <img class="icon" class="oljefond" src="img/olje200-24.svg" alt="#" />
+          </div>
+
+          <div class="content">
+            <h4 class="homepage-small-heading">Grønt oljefond</h4>
             <p>
               Vi arbeider for at oljefondet investerer mest mulig klima- og
               miljøvennlig, og investerer minst mulig i kull og olje. Vi
@@ -101,10 +215,14 @@
             </p>
           </div>
         </div>
+
         <div class="container-2">
-          <div class="box">
-            <img class="livsstil" src="#" alt="#" />
-            <h4>Miljøvennlig livsstil</h4>
+          <div class="imgBox">
+            <img class="icon" class="livsstil" src="img/livsstil200-20.svg" alt="#" />
+          </div>
+
+          <div class="content">
+            <h4 class="homepage-small-heading">Miljøvennlig livsstil</h4>
             <p>
               Vi vil inspirere til etisk og miljøvennlig forbruk. Vi gir deg
               tips slik at du kan leve mer miljøvennlig i hverdagen. Vi
@@ -112,9 +230,12 @@
               de grønne valgene.
             </p>
           </div>
-          <div class="box">
-            <img class="giftfri" src="#" alt="#" />
-            <h4>Giftfri hverdag</h4>
+          <div class="imgBox">
+            <img class="icon" class="giftfri" src="img/giftfri200-19.svg" alt="#" />
+          </div>
+
+          <div class="content">
+            <h4 class="homepage-small-heading">Giftfri hverdag</h4>
             <p>
               Vi jobber for strengere regulering og utfasing av miljøgifter i
               forbrukerprodukter. Vi legger press på produsenter og arbeider
@@ -122,9 +243,12 @@
               avgifter og forbud.
             </p>
           </div>
-          <div class="box">
-            <img class="mat" src="#" alt="#" />
-            <h4>Klimavennlig mat</h4>
+          <div class="imgBox">
+            <img class="icon" class="klimamat" src="img/mat200-22.svg" alt="#" />
+          </div>
+
+          <div class="content">
+            <h4 class="homepage-small-heading">Klimavennlig mat</h4>
             <p>
               Maten står for rundt 20 prosent av klimafotavtrykket vårt. Vi
               arbeider for tiltak som reduserer kastingen av mat og reduserer
@@ -133,50 +257,191 @@
           </div>
         </div>
       </div>
+    </section> -->
+
+
+    <section id="hva-vi-gjør">
+      <div>
+        <h2 class="homepage-heading">Hva vi gjør</h2>
+      </div>
+
+      <div class="container">
+        <div class="container-1">
+          <div class="row">
+            <div class="imgBox">
+              <img class="icon" class="etiskeklær" src="img/klær200-23.svg" alt="#" />
+            </div>
+            <div class="content">
+              <h4 class="homepage-small-heading">Etiske klær</h4>
+              <p>
+                Vi jobber for at kleskjedene skal å gi
+                tekstilarbeiderne verdige og trygge arbeidsvilkår, med en lønn
+                de kan leve av. Vi arbeider for en etikklov som skal lovfeste
+                retten til å få informasjon om arbeidsforholdene der varen er
+                produsert.
+              </p>
+            </div>
+
+            <div class="imgBox">
+              <img class="icon" class="penger" src="img/bank200-21.svg" alt="#" />
+            </div>
+            <div class="content">
+              <h4 class="homepage-small-heading">Etiske penger</h4>
+              <p>
+                Vi gransker bankenes arbeid med etikk og bærekraft. Vi ser på
+                hvordan selskaper og virksomheter, som bankene investerer i og
+                låner ut penger til, påvirker mennesker og miljø.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="imgBox">
+              <img class="icon" class="oljefond" src="img/olje200-24.svg" alt="#" />
+            </div>
+
+            <div class="content">
+              <h4 class="homepage-small-heading">Grønt oljefond</h4>
+              <p>
+                Vi arbeider for at oljefondet investerer mest mulig klima- og
+                miljøvennlig, og investerer minst mulig i kull og olje. Vi
+                ønsker at fondet skal få investere direkte i fornybar
+                energiinfrastruktur som ikke er tilgjengelig på børsene.
+              </p>
+            </div>
+            <div class="imgBox">
+              <img class="icon" class="livsstil" src="img/livsstil200-20.svg" alt="#" />
+            </div>
+
+            <div class="content">
+              <h4 class="homepage-small-heading">Miljøvennlig livsstil</h4>
+              <p>
+                Vi vil inspirere til etisk og miljøvennlig forbruk. Vi gir deg
+                tips slik at du kan leve mer miljøvennlig i hverdagen. Vi
+                arbeider for at myndigheter og næringsliv gjør det enklere å ta
+                de grønne valgene.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="imgBox">
+              <img class="icon" class="giftfri" src="img/giftfri200-19.svg" alt="#" />
+            </div>
+
+            <div class="content">
+              <h4 class="homepage-small-heading">Giftfri hverdag</h4>
+              <p>
+                Vi jobber for strengere regulering og utfasing av miljøgifter i
+                forbrukerprodukter. Vi legger press på produsenter og arbeider
+                for politisk støtte til strengere regulering, innføring av
+                avgifter og forbud.
+              </p>
+            </div>
+            <div class="imgBox">
+              <img class="icon" class="klimamat" src="img/mat200-22.svg" alt="#" />
+            </div>
+
+            <div class="content">
+              <h4 class="homepage-small-heading">Klimavennlig mat</h4>
+              <p>
+                Maten står for rundt 20 prosent av klimafotavtrykket vårt. Vi
+                arbeider for tiltak som reduserer kastingen av mat og reduserer
+                forbruket av kjøtt til det beste for miljøet, dyrene og helsa.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
     </section>
+
+
+    <!-- ------ TEST MED GRID ------------ -->
+    <!-- <section id="hva-vi-gjør">
+      <h2 class="homepage-heading">Hva vi gjør</h2>
+      <div class="turn-content">
+        <div class="wrapper">
+          <div class="box a">
+            <img class="icon" src="img/klær200-23.svg" alt="">
+            <h4 class="homepage-small-heading">Etiske klær</h4>
+            <p>
+              Vi jobber for at kleskjedene skal å gi
+              tekstilarbeiderne verdige og trygge arbeidsvilkår, med en lønn
+              de kan leve av. Vi arbeider for en etikklov som skal lovfeste
+              retten til å få informasjon om arbeidsforholdene der varen er
+              produsert.
+            </p>
+          </div>
+          <div class="box b">
+            <img class="icon" src="img/bank200-21.svg" alt="">
+          </div>
+          <div class="box c">
+            <img class="icon" src="img/olje200-24.svg" alt="">
+          </div>
+          <div class="box d">
+            <img class="icon" src="img/livsstil200-20.svg" alt="">
+          </div>
+          <div class="box e">
+            <img class="icon" src="img/giftfri200-19.svg" alt="">
+          </div>
+          <div class="box f">
+            <img class="icon" src="img/mat200-22.svg" alt="">
+          </div>
+        </div>
+      </div> -->
+
+
+    </section>
+
 
     <!-- KLIMAMYTER seksjon -->
     <section id="myter">
-      <h1>Klimamyter</h1>
+      <h2 class="homepage-heading">Klimamyter</h2>
       <div class="container">
-        <a href="kjøtt.html">
-          <img class="kjøtt" src="/img/kjøtt5.svg" alt="#" />
-          <h4>Sju myter om kjøtt</h4>
-        </a>
-        <a href="kaffe.html">
-          <img class="kaffe" src="/img/kaffe4.svg" alt="#" />
-          <h4>Er kapselkaffe en mijøbombe?</h4>
-        </a>
-        <a href="bok.html">
-          <img class="bok" src="/img/bok_bib.svg" alt="bibliotek" />
-          <h4>
-            Er papirbøker mer miljøvennlige enn<br />
-            e-bøker?
-          </h4>
-        </a>
+
+        <div class="myter-container">
+          <a href="kjøtt.html">
+            <img class="kjøtt" src="img/kjøtt5.svg" alt="vekt med kjøtt og grønnsaker" />
+            <h4 class="homepage-small-heading">Sju myter om kjøtt</h4>
+          </a>
+          <a href="kaffe.html">
+            <img class="kaffe" src="img/kaffe4.svg" alt="illustrasjon av et valg mellom kapsel og filter-kaffe" />
+            <h4 class="homepage-small-heading">Er kapselkaffe en mijøbombe?</h4>
+          </a>
+          <a href="bok.html">
+            <img class="bok" src="img/bokbib-02.svg" alt="bibliotek" />
+            <h4 class="homepage-small-heading">
+              Er papirbøker mer miljøvennlige enn<br />
+              e-bøker?
+            </h4>
+          </a>
+          <div id="stott-oss"></div>
+        </div>
       </div>
     </section>
 
     <!-- INFORMARSJON seksjon og bli medlem -->
-    <section id="info">
+    <section id="bli-medlem-footer">
       <div class="container">
-        <p>
+        <p class="bli-medlem-footer-tekst">
           <strong>Liker du arbeidet Framtiden i våre hender gjør?</strong> Vi
           finnes bare på grunn av den økonomiske støtten fra de over 35 000
           medlemmene våre. Desto flere som støtter arbeidet vårt, jo større
           påvirkningskraft har vi også i møte med myndigheter, politikere og
-          næringsliv. Bli medlem i dag!
+          næringsliv.<br /><br />
+          Bli medlem i dag!
         </p>
         <a href="form1.html"><button class="button_2">BLI MEDLEM</button></a>
       </div>
-
-
     </section>
   </main>
 
   <!--  FOOOTER med info og kontakt -->
   <footer id="footer">
-    <div class="container">
+    <div class="main-grid container">
       <div class="lite-info">
         <h4>FRAMTIDEN I VÅRE HENDER</h4>
         <p>
@@ -194,57 +459,29 @@
           <button>SEND INN</button>
         </form>
         <h4>FØLG OSS</h4>
-        <img src="#" alt="#" />
-        <img src="#" alt="#" />
-        <img src="#" alt="#" />
-        <img src="#" alt="#" />
-        <img src="#" alt="#" />
+        <div class="social_icon">
+          <a href="https://www.facebook.com/framtidenivh"><img src="img/faceicon-02.svg" alt="Facebook" /></a>
+          <a href="https://twitter.com/FIVH"><img src="img/twittericon-03.svg" alt="Twitter" /></a>
+          <a href="https://www.youtube.com/user/Framtidenivh"><img src="img/youtubeicon-04.svg" alt="Youtube" /></a>
+          <a href="https://www.instagram.com/framtidenivarehender/"><img src="img/instaicon-05.svg" alt="Instagram" /></a>
+          <a href="https://www.framtiden.no/aktuelt/?format=feed&type=rss"><img src="img/podicon-06.svg" alt="RSS" /></a>
+        </div>
       </div>
-      <!-- <div class="sosiale-medier">
-                <h4>FØLG OSS</h4>
-                <img src="#" alt="#" />
-                <img src="#" alt="#" />
-                <img src="#" alt="#" />
-                <img src="#" alt="#" />
-                <img src="#" alt="#" />
-            </div> -->
+
       <div class="kontakt">
-        <h4>Kontakt oss</h4>
+        <h4>KONTAKT OSS</h4>
         <p>
           Noe du lurer på? Ta gjerne kontakt med oss. Vi er tilgjengelige
           mellom 09.00 og 15.00 på hverdager.
         </p>
-        <table>
-          <!-- <tr>
-                        <th>ADRESSE:</th>
-                        <th>TELEFON:</th>
-                        <th>E-POST:</th>
-                        <th>KONTO:</th>
-                        <th>VIPPS:</th>
-                    </tr> -->
-          <tbody>
-            <tr>
-              <th>Adresse:</th>
-              <td>Mariboes gate 8, 0183 Oslo</td>
-            </tr>
-            <tr>
-              <th>Telefon:</th>
-              <td>22 03 31 50</td>
-            </tr>
-            <tr>
-              <th>E-post:</th>
-              <td>post@framtiden.no</td>
-            </tr>
-            <tr>
-              <th>Konto:</th>
-              <td>1254 62 79969</td>
-            </tr>
-            <tr>
-              <th>Vipps:</th>
-              <td>522118</td>
-            </tr>
-          </tbody>
-        </table>
+        <p>
+          <strong>ADRESSE:</strong> Mariboes gate 8, 0183 Oslo</br>
+          <strong>TELEFON:</strong> 22 03 31 50</br>
+          <strong>E-POST:</strong> post@framtiden.no</br>
+          <strong>KONTO:</strong> 1254 62 79969</br>
+          <strong>VIPPS:</strong> 522118</br>
+        </p>
+
       </div>
     </div>
     <!-- BUNN AV SIDE -->
@@ -254,6 +491,30 @@
       <a href="#" class="LOGONAVN">&copy 2020 FRAMTIDEN I VÅRE HENDER</a>
     </div>
   </footer>
+
+  <script>
+    window.onscroll = function () {
+      stickyNav();
+    };
+
+    var navbar = document.getElementById("navigation-bar");
+    var main = document.getElementById("main-content");
+
+    function stickyNav() {
+      navbar.classList.add("sticky");
+      main.classList.add("content-padding");
+    }
+
+
+    const toggleInput = document.getElementById('check');
+
+    document.querySelector('.menu').addEventListener('click', () => {
+      if (toggleInput.checked) {
+        toggleInput.checked = false;
+      }
+    })
+  </script>
+
 </body>
 
 </html>
