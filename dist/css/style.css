@@ -159,7 +159,6 @@ ul {
   list-style-position: outside;
 }
 
-
 .totop {
   text-align: center;
 }
@@ -732,7 +731,7 @@ label #cancel {
 .paragraph {
   grid-column-start: 4;
   grid-column-end: 10;
-/*  margin-bottom:5.2vw;*/
+  /*  margin-bottom:5.2vw;*/
 }
 
 /* ----------- KAFFE ARTIKKEL ---------------- */
@@ -906,11 +905,11 @@ label #cancel {
   opacity: 1;
 }
 
-.grønnskatt  {
+.grønnskatt {
   margin-bottom: 90px;
 }
-.grønnskatt img{
-    width:42vw;
+.grønnskatt img {
+  width: 42vw;
 }
 .traktor {
   width: 200px;
@@ -975,7 +974,7 @@ label #cancel {
 .kraftfor {
   grid-column: 4/9;
   margin-bottom: 40px;
-  width:42vw;
+  width: 42vw;
 }
 
 .myte {
@@ -1002,14 +1001,14 @@ label #cancel {
   grid-column: 4/9;
   margin-bottom: 40px;
   /*margin-top: 40px;*/
-  width:42vw;
+  width: 42vw;
 }
 
 .storfe {
   grid-column: 4/9;
   margin-bottom: 40px;
   /*margin-top: 40px;*/
-  width:42vw;
+  width: 42vw;
 }
 
 /* DISPLAY NONE */
@@ -1107,7 +1106,7 @@ label #cancel {
 
 #form .intro-tekst {
   margin: 0 auto;
-  width:58vw;
+  width: 58vw;
   font-size: 1.8vw;
   text-align: center;
 }
@@ -1187,7 +1186,7 @@ label #cancel {
 
 #medlem .column input {
   box-sizing: border-box;
-  width:27vw;
+  width: 27vw;
   height: 58px;
   vertical-align: bottom;
   border: none;
@@ -1377,77 +1376,75 @@ input[name="epost"] {
   transition: transform 1s ease-in 1s;
 }
 
-
-}
 @media (max-width: 1800px) {
-  #form h1{
+  #form h1 {
     font-size: 3.2vw;
   }
-  #form{
-  clear: both;
-  height: auto;
-  padding-bottom: 7.1vw;
-  position: relative;
-  /*border: 1px solid black;*/
-}
-#form .text{
+  #form {
+    clear: both;
+    height: auto;
+    padding-bottom: 7.1vw;
+    position: relative;
+    /*border: 1px solid black;*/
+  }
+  /* #form .text{
 
-}
+} */
 
-#form .text, #form .form, #form .register{
-  width:60vw;
-  height:auto;
-  margin: 0 auto;
-  margin-top: 20px;
-}
-
- #form .form{
-   border: 1px black solid;
- }
-
- #form .form .info{
-   width:56vw;
-   margin-left: 25px;
+  #form .text,
+  #form .form,
+  #form .register {
+    width: 60vw;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 20px;
   }
 
-#form h2{
-  font-family: "museo slab";
-  width:477px; /*33vw, 477px*/
-  height: auto;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 53px;/*3.75vw, 54px*/
-  margin-bottom: 20px;
-}
+  #form .form {
+    border: 1px black solid;
+  }
 
+  #form .form .info {
+    width: 56vw;
+    margin-left: 25px;
+  }
 
-#form .text_1{
-  font-size: 1.67vw;
-}
-#form .intro-tekst{
-  width:60vw;
-  font-size: 1.9vw;
-}
-#form .text .text_2{
-  font-size: 17px;
-}
-#form .text .btn_2{
-  margin-bottom: 40px;
-}
-#form .text_3{
-  margin-top: 40px;
-}
-/******* 1800 kafe artiker  .kaffe-illustrasjon, .kjøtt-illustrasjon,*****/
-.kaffe-illustrasjon, .kjøtt-illustrasjon{
-  width: 36.5vw;
-}
+  #form h2 {
+    font-family: "museo slab";
+    width: 477px; /*33vw, 477px*/
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 53px; /*3.75vw, 54px*/
+    margin-bottom: 20px;
+  }
 
-
+  #form .text_1 {
+    font-size: 1.67vw;
+  }
+  #form .intro-tekst {
+    width: 60vw;
+    font-size: 1.9vw;
+  }
+  #form .text .text_2 {
+    font-size: 17px;
+  }
+  #form .text .btn_2 {
+    margin-bottom: 40px;
+  }
+  #form .text_3 {
+    margin-top: 40px;
+  }
+  /******* 1800 kafe artiker  .kaffe-illustrasjon, .kjøtt-illustrasjon,*****/
+  .kaffe-illustrasjon,
+  .kjøtt-illustrasjon {
+    width: 36.5vw;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-  #form .checkbox label{
-    width:370px;
+  #form .checkbox label {
+    width: 370px;
   }
   #form .text,
   #form .form,
@@ -1490,9 +1487,9 @@ input[name="epost"] {
   } */
 
   /**************  column *************/
-  .input-setting{
-    width:370px;
-    margin:0 auto;
+  .input-setting {
+    width: 370px;
+    margin: 0 auto;
   }
   #medlem .column {
     clear: left;
@@ -1503,7 +1500,7 @@ input[name="epost"] {
 
   #medlem .column input {
     height: 42px;
-    width:370px;
+    width: 370px;
   }
 
   #medlem .text_3 {
@@ -1581,16 +1578,15 @@ input[name="epost"] {
   .ingress {
     grid-column: 3/10;
   }
-  .intro-tekst{
-    width:654px;
+  .intro-tekst {
+    width: 654px;
   }
-  .bok-illustrasjon{
-    width:390px;
+  .bok-illustrasjon {
+    width: 390px;
   }
-
 }
 
-  /******************  finish registering  end **********/
+/******************  finish registering  end **********/
 
 @media screen and (max-width: 654px) {
   #form .text,
@@ -1765,8 +1761,8 @@ input[name="epost"] {
   #form .form .info {
     margin-left: 0;
   }
-  #form .input-setting{
-    width:50vw;
+  #form .input-setting {
+    width: 50vw;
     margin: 0 auto;
   }
   #medlem .column {
@@ -1876,129 +1872,130 @@ input[name="epost"] {
 
 /* ----------- MEDIA QUERIES --------------- */
 @media screen and (max-width: 1800px) {
-  #hvem-vi-er h2{
-    position:relative;
+  #hvem-vi-er h2 {
+    position: relative;
   }
 
-  #showcase{
-    height:80vw;
+  #showcase {
+    height: 80vw;
     background-position: 75%;
   }
-  #showcase h1{
-    margin-top:3vw;
+  #showcase h1 {
+    margin-top: 3vw;
   }
-  h1{
+  h1 {
     font-size: 3.75vw;
   }
-  #showcase .intro-tekst{
+  #showcase .intro-tekst {
     font-size: 1.83vw;
-    width:52.8vw;
+    width: 52.8vw;
   }
   /************** hvem er vi ***********/
-  #hvem-vi-er h2{
-    font-size: 3.5vw;
-}
-#hvem-vi-er p{
-  font-size: 1.7vw;
-  width:55vw;
-  margin-top:0;
-}
-  /************** hva gjør vi ***********/
-  #hva-vi-gjør h2{
+  #hvem-vi-er h2 {
     font-size: 3.5vw;
   }
-#hva-vi-gjør p {
-  font-size: 16px;
-  width:20.1vw;
-}
-.icon{
-  width:8.5vw;
-}
+  #hvem-vi-er p {
+    font-size: 1.7vw;
+    width: 55vw;
+    margin-top: 0;
+  }
+  /************** hva gjør vi ***********/
+  #hva-vi-gjør h2 {
+    font-size: 3.5vw;
+  }
+  #hva-vi-gjør p {
+    font-size: 16px;
+    width: 20.1vw;
+  }
+  .icon {
+    width: 8.5vw;
+  }
 
-#bli-medlem-footer p{
-  margin: 0 auto;
-  margin-top: 100px;
-  width:56.67vw;
-  font-size: 1.7vw;
-}
+  #bli-medlem-footer p {
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 56.67vw;
+    font-size: 1.7vw;
+  }
 
-#bli-medlem-footer button {
-  margin: 0 auto;
-  display: block;
-  color: var(--black);
-  background: #fff;
-  padding: 18px 0;
-  border: none;
-  width: 300px;
-  border-radius: 52px;
-  font-weight: 700;
-  font-size: 1.8rem;
-  letter-spacing: 0.02rem;
-  text-transform: uppercase;
-  margin-top: 60px;
-  margin-bottom: 100px;
-}
-#bli-medlem-footer p{
-  font-size: 20px;
-}
-#bli-medlem-footer h4{
-  font-size: 20px;
-}
-#footer h4, #footer p{
-  font-size: 16px;
-}
-#footer .nyhetsbrev input{
-  width:13.3vw;
-  height: 4vw;
-}
-#footer .nyhetsbrev button{
-  width:6.4vw;
-  font-size: 16px;
-  height: 4vw;
-}
-.social_icon img{
-  width: 4.2vw;
-}
-p{
-  font-size: 16px;
-}
-.intro-tekst{
-  width:42.5vw;
-  font-size: 1.7vw;
-}
-h2{
-  font-size: 1.7vw;
-}
-/***** 1800 kjøtt****/
-.biff,.broccoli,.carrot{
-  width:10vw;
-}
-/********* 1800 kaffe****/
-.bønnegraf, {
-  width:50vw;
-}
-
-
+  #bli-medlem-footer button {
+    margin: 0 auto;
+    display: block;
+    color: var(--black);
+    background: #fff;
+    padding: 18px 0;
+    border: none;
+    width: 300px;
+    border-radius: 52px;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 0.02rem;
+    text-transform: uppercase;
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+  #bli-medlem-footer p {
+    font-size: 20px;
+  }
+  #bli-medlem-footer h4 {
+    font-size: 20px;
+  }
+  #footer h4,
+  #footer p {
+    font-size: 16px;
+  }
+  #footer .nyhetsbrev input {
+    width: 13.3vw;
+    height: 4vw;
+  }
+  #footer .nyhetsbrev button {
+    width: 6.4vw;
+    font-size: 16px;
+    height: 4vw;
+  }
+  .social_icon img {
+    width: 4.2vw;
+  }
+  p {
+    font-size: 16px;
+  }
+  .intro-tekst {
+    width: 42.5vw;
+    font-size: 1.7vw;
+  }
+  h2 {
+    font-size: 1.7vw;
+  }
+  /***** 1800 kjøtt****/
+  .biff,
+  .broccoli,
+  .carrot {
+    width: 10vw;
+  }
+  /********* 1800 kaffe****/
+  .bønnegraf {
+    width: 50vw;
+  }
 }
 @media screen and (max-width: 1200px) {
   /********* heading *******/
-  #showcase h1{
-    margin-top:10vh;
+  #showcase h1 {
+    margin-top: 10vh;
   }
-  #showcase{
-    height:60vh;
+  #showcase {
+    height: 60vh;
     background-position: 70%;
   }
-  h1{
+  h1 {
     font-size: 36px;
   }
-  header .button_1{
-  }
-  #showcase .intro-tekst{
+  /* header .button_1{
+  } */
+  #showcase .intro-tekst {
     font-size: 20px;
-    width:44vw;
+    width: 44vw;
   }
-/****** menu***********************/
+  /****** menu***********************/
   header .branding {
     margin: 10px 15px 10px 15px;
     float: left;
@@ -2051,305 +2048,330 @@ h2{
     display: block;
   }
   /************** hvem er vi ***********/
-  #hvem-vi-er h2, #hva-vi-gjør h2{
+  #hvem-vi-er h2,
+  #hva-vi-gjør h2 {
     font-size: 36px;
-}
-#hvem-vi-er p{
-  font-size:20px;
-  width:55vw;
-}
-/**********hva gjør vi********/
-/* ---------- HVA VI GJØR SEKSJON ----------- */
-.icon{
-  width:180px;
-}
-
-#hva-vi-gjør {
-  margin: 0;
-  padding-top: 20px;
-}
-
-
-#hva-vi-gjør .container-1 {
-  margin: 0;
-}
-
-#hva-vi-gjør .row {
-  display: block;
-}
-
-#hva-vi-gjør .row .content {
-  height: auto;
-  width: 100%;
-}
-
-#hva-vi-gjør .imgBox {
-  float: none;
-  text-align: center;
-  margin: 0;
-}
-
-#hva-vi-gjør h4 {
-  text-align: center;
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-
-#hva-vi-gjør p {
-  font-size: 20px;
-  width:550px;
-  margin: 0 auto;
-  margin-bottom: 42px;
-}
-
-#hva-vi-gjør .homepage-heading {
-  font-size: 32px;
-  margin: 0;
-  margin-left:14.5%;
-  margin-top: 100px;
-  margin-bottom:45px;
-  position: relative;
-}
-
-#myter .myter-container {
-  display: block;
-  text-align: center;
-  margin-left: 0;
-}
-
-#myter .homepage-heading {
-  font-size: 32px;
-  margin: 0;
-  margin-left:14.5%;
-  margin-top: 100px;
-}
-
-#myter .homepage-small-heading {
-  text-align: center;
-  font-size: 20px;
-  margin-left: 15px;
-  margin-top: 30px;
-}
-
-#bli-medlem-footer p{
-  font-size: 20px;
-  width:654px;
-  margin: auto;
-  margin-top: 100px;
-}
-
-#bli-medlem-footer button {
-  width: 257px;
-  height: 56px;
-  font-size: 1.2rem;
-}
-#bli-medlem-footer .lite-info {
-  width: 56.7vw;
-  margin: 0 auto;
-  margin-top: 100px;
-  font-size: 20px;
-}
-
-#bli-medlem-footer p,
-p {
-  font-size: 16px;
-}
-
-#footer .container div:nth-child(1),
-#footer .container div:nth-child(2),
-#footer .container div:nth-child(3) {
-  width: 56.7vw;
-  margin:auto;
-  margin-bottom: 40px;
-}
-#footer .container div:nth-child(1){
-  margin-top: 100px;
-}
-
-#footer .container div:nth-child(3) {
-  padding: 0;
-}
-
-#footer .container {
-  display: block;
-}
-
-#footer .nyhetsbrev input {
-  width: 195px;
-  height: 64px;
-}
-
-#footer .nyhetsbrev button {
-  height: 64px;
-}
-
-.social_icon {
-  margin-left: 1px;
-}
-
-.social_icon img {
-  width: 70px;
-}
-
-.kontakt p {
-  padding-bottom: 30px;
-}
-#footer .nyhetsbrev input{
-  width:200px;
-  height: 60px;
-}
-#footer .nyhetsbrev button{
-  width:96px;
-  font-size: 16px;
-  height:60px;
-}
-.social_icon img{
-  width:64px;
-}
-#bli-medlem-footer .lite-info{
-  width: 75vw;
-}
-/******* artikler *****/
-.ingress{
-  grid-column: 3/10;
-}
-h2{
-  width: 63vw;
-  font-size:23px;
-}
-.intro-tekst{
-  width:64vw;
-  font-size: 25px;
-}
-/******* 1200 bok ****/
-.paragraph {
-    /*grid-column-start: 3;*/
-    grid-column-end: 12;
-
-}
-.ku2{
-  display:none;
-}
-.list{
-  margin-left: 0;
-}
-.traktor, .ku1{
-  width:15vw;
-}
-.ku1{
-  margin-top: 150vh;
-}
-
-p, .grønnskatt img, .kraftfor, .sau, .storfe,
-.utslipp, .bønnegraf,.vanngraf,.klimagraf{
-  width:64vw;
-  grid-column: 3/10;
-}
-/****** kjøtt *********/
-.fairtrade-paragraph p{
-  width:60vw;
-}
-.fair-logo{
-  padding-right:4vw;
-  width:20vw;
-}
-.utslipp {
-    grid-column: 3/10;
-    width: 64vw;
-}
-.tips-paragraph{
-  grid-column: 4/10;
-  width:64vw;
-}
-.broccoli{
-  margin-top: 50px;
-}
-
-.kafe {
-  grid-column-start: 3;
-}
-
-}
-
-@media screen and (max-width: 750px){
-  #hva-vi-gjør .homepage-heading, #myter .homepage-heading , #hvem-vi-er .homepage-heading{
-    margin-left:10%;
   }
-  #hva-vi-gjør p , #bli-medlem-footer p{
-    width:80vw;
+  #hvem-vi-er p {
+    font-size: 20px;
+    width: 55vw;
+  }
+  /**********hva gjør vi********/
+  /* ---------- HVA VI GJØR SEKSJON ----------- */
+  .icon {
+    width: 180px;
+  }
+
+  #hva-vi-gjør {
+    margin: 0;
+    padding-top: 20px;
+  }
+
+  #hva-vi-gjør .container-1 {
+    margin: 0;
+  }
+
+  #hva-vi-gjør .row {
+    display: block;
+  }
+
+  #hva-vi-gjør .row .content {
+    height: auto;
+    width: 100%;
+  }
+
+  #hva-vi-gjør .imgBox {
+    float: none;
+    text-align: center;
+    margin: 0;
+  }
+
+  #hva-vi-gjør h4 {
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  #hva-vi-gjør p {
+    font-size: 20px;
+    width: 550px;
     margin: 0 auto;
     margin-bottom: 42px;
   }
-  #bli-medlem-footer p{
+
+  #hva-vi-gjør .homepage-heading {
+    font-size: 32px;
+    margin: 0;
+    margin-left: 14.5%;
+    margin-top: 100px;
+    margin-bottom: 45px;
+    position: relative;
+  }
+
+  #myter .myter-container {
+    display: block;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  #myter .homepage-heading {
+    font-size: 32px;
+    margin: 0;
+    margin-left: 14.5%;
+    margin-top: 100px;
+  }
+
+  #myter .homepage-small-heading {
+    text-align: center;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: 30px;
+  }
+
+  #bli-medlem-footer p {
+    font-size: 20px;
+    width: 654px;
+    margin: auto;
+    margin-top: 100px;
+  }
+
+  #bli-medlem-footer button {
+    width: 257px;
+    height: 56px;
+    font-size: 1.2rem;
+  }
+  #bli-medlem-footer .lite-info {
+    width: 56.7vw;
+    margin: 0 auto;
+    margin-top: 100px;
+    font-size: 20px;
+  }
+
+  #bli-medlem-footer p,
+  p {
+    font-size: 16px;
+  }
+
+  #footer .container div:nth-child(1),
+  #footer .container div:nth-child(2),
+  #footer .container div:nth-child(3) {
+    width: 56.7vw;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  #footer .container div:nth-child(1) {
+    margin-top: 100px;
+  }
+
+  #footer .container div:nth-child(3) {
+    padding: 0;
+  }
+
+  #footer .container {
+    display: block;
+  }
+
+  #footer .nyhetsbrev input {
+    width: 195px;
+    height: 64px;
+  }
+
+  #footer .nyhetsbrev button {
+    height: 64px;
+  }
+
+  .social_icon {
+    margin-left: 1px;
+  }
+
+  .social_icon img {
+    width: 70px;
+  }
+
+  .kontakt p {
+    padding-bottom: 30px;
+  }
+  #footer .nyhetsbrev input {
+    width: 200px;
+    height: 60px;
+  }
+  #footer .nyhetsbrev button {
+    width: 96px;
+    font-size: 16px;
+    height: 60px;
+  }
+  .social_icon img {
+    width: 64px;
+  }
+  #bli-medlem-footer .lite-info {
+    width: 75vw;
+  }
+  /******* artikler *****/
+  .ingress {
+    grid-column: 3/10;
+  }
+  h2 {
+    width: 63vw;
+    font-size: 23px;
+  }
+  .intro-tekst {
+    width: 64vw;
+    font-size: 25px;
+  }
+  /******* 1200 bok ****/
+  .paragraph {
+    /*grid-column-start: 3;*/
+    grid-column-end: 12;
+  }
+  .ku2 {
+    display: none;
+  }
+  .list {
+    margin-left: 0;
+  }
+  .traktor,
+  .ku1 {
+    width: 15vw;
+  }
+  .ku1 {
+    margin-top: 150vh;
+  }
+
+  p,
+  .grønnskatt img,
+  .kraftfor,
+  .sau,
+  .storfe,
+  .utslipp,
+  .bønnegraf,
+  .vanngraf,
+  .klimagraf {
+    width: 64vw;
+    grid-column: 3/10;
+  }
+  /****** kjøtt *********/
+  .fairtrade-paragraph p {
+    width: 60vw;
+  }
+  .fair-logo {
+    padding-right: 4vw;
+    width: 20vw;
+  }
+  .utslipp {
+    grid-column: 3/10;
+    width: 64vw;
+  }
+  .tips-paragraph {
+    grid-column: 4/10;
+    width: 64vw;
+  }
+  .broccoli {
+    margin-top: 50px;
+  }
+
+  .kafe {
+    grid-column-start: 3;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #hva-vi-gjør .homepage-heading,
+  #myter .homepage-heading,
+  #hvem-vi-er .homepage-heading {
+    margin-left: 10%;
+  }
+  #hva-vi-gjør p,
+  #bli-medlem-footer p {
+    width: 80vw;
+    margin: 0 auto;
+    margin-bottom: 42px;
+  }
+  #bli-medlem-footer p {
     margin-top: 100px;
   }
   #footer .container div:nth-child(1),
   #footer .container div:nth-child(2),
   #footer .container div:nth-child(3) {
-    width:80vw;
-    margin:auto;
+    width: 80vw;
+    margin: auto;
     margin-bottom: 40px;
   }
-  #footer .container div:nth-child(1){
+  #footer .container div:nth-child(1) {
     margin-top: 100px;
   }
   .main-grid {
     display: block;
   }
 
-  .fairtrade-container, .tips{
-    display:block;
+  .fairtrade-container,
+  .tips {
+    display: block;
   }
-  .fair-logo{
-    width:50vw;
+  .fair-logo {
+    width: 50vw;
     margin-bottom: 20px;
   }
   .kjøtt-illustrasjon,
-    .kaffe-illustrasjon,.bok-illustrasjon, .tips{
-      width: 80vw;
-      margin:0 auto;
-    }
-    .bok-headline,
-   .kjøtt-headline,
-   .kaffe-headline {
-     padding-left: 0;
-     padding-top:0;
-   }
-   .intro-tekst, p ,
-    .grønnskatt img, .kraftfor,
-     .sau, .storfe, .utslipp,
-    .bønnegraf, .vanngraf, .klimagraf{
-     width:80vw;
-   }
-   .ku1, .ku2{
-     display: none;
-   }
-   .traktor{
-     width:100px;
-   }
-   .traktor {
+  .kaffe-illustrasjon,
+  .bok-illustrasjon,
+  .tips {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .bok-headline,
+  .kjøtt-headline,
+  .kaffe-headline {
+    padding-left: 0;
+    padding-top: 0;
+  }
+  .intro-tekst,
+  p,
+  .grønnskatt img,
+  .kraftfor,
+  .sau,
+  .storfe,
+  .utslipp,
+  .bønnegraf,
+  .vanngraf,
+  .klimagraf {
+    width: 80vw;
+  }
+  .ku1,
+  .ku2 {
+    display: none;
+  }
+  .traktor {
+    width: 100px;
+  }
+  .traktor {
     margin-left: -103vw;
     position: absolute;
     margin-top: 30px;
     left: 110%;
-    right: 50%
-}
-.ku1, .ku2, .biff, .broccoli, .carrot{
+    right: 50%;
+  }
+  .ku1,
+  .ku2,
+  .biff,
+  .broccoli,
+  .carrot {
     display: none;
-}
-.ku1-mobil, .ku2-mobil, .mobil-biff, .mobil-broccoli, .mobil-carrot {
+  }
+  .ku1-mobil,
+  .ku2-mobil,
+  .mobil-biff,
+  .mobil-broccoli,
+  .mobil-carrot {
     display: block;
     width: auto;
+  }
+  .mobil-biff {
+    display: inline-block;
+    /* float: right; */
+    margin-right: 100px;
+    margin-right: 0;
+  }
 }
-.mobil-biff{
-  display: inline-block;
-  float: right;
-  margin-right: 100px;
-  margin-right: 0;
-}
-
-}
-
 
 @media screen and (max-width: 500px) {
   /* ------- SHOWCASE IMAGE TEXT AND NAVIGATION -------- */
@@ -2378,7 +2400,7 @@ p, .grønnskatt img, .kraftfor, .sau, .storfe,
   }
 
   #showcase {
-    background: url("/dist/img/ny_main_mobil-13.svg") no-repeat;
+    background: url("img/ny_main_mobil-13.svg") no-repeat;
     background-position: center;
     background-size: cover;
     height: 110vh;
@@ -2464,8 +2486,8 @@ p, .grønnskatt img, .kraftfor, .sau, .storfe,
 }
 
 @media screen and (max-width: 500px) {
-  p{
-    width:auto;
+  p {
+    width: auto;
   }
 
   #myter .myter-container {
@@ -2488,366 +2510,370 @@ p, .grønnskatt img, .kraftfor, .sau, .storfe,
     margin-top: 30px;
   }
 }
-.fairtrade-paragraph p{
-  width:auto;
+.fairtrade-paragraph p {
+  width: auto;
 }
 
 /* ---- LAST FOOTER GRAY AREA ----- */
 
 @media screen and (max-width: 500px) {
-  @media screen and (max-width: 750px){
-    #hva-vi-gjør .homepage-heading, #myter .homepage-heading , #hvem-vi-er .homepage-heading{
-      margin-left:15px;
+  @media screen and (max-width: 750px) {
+    #hva-vi-gjør .homepage-heading,
+    #myter .homepage-heading,
+    #hvem-vi-er .homepage-heading {
+      margin-left: 15px;
     }
 
-#footer .container div:nth-child(1) {
-  grid-column: 2/5;
-  grid-row: 1;
-  margin-top: 80px;
-}
+    #footer .container div:nth-child(1) {
+      grid-column: 2/5;
+      grid-row: 1;
+      margin-top: 80px;
+    }
 
-#footer h4{
-font-size: 1.25em;
-}
-#footer .container div:nth-child(1),
-#footer .container div:nth-child(2),
-#footer .container div:nth-child(3) {
-  width:auto;
-  margin-bottom: 80px;
-}
-  #bli-medlem-footer .lite-info {
-    width: 85%;
-    margin-left: 15px;
-    margin-top: 30px;
-  }
+    #footer h4 {
+      font-size: 1.25em;
+    }
+    #footer .container div:nth-child(1),
+    #footer .container div:nth-child(2),
+    #footer .container div:nth-child(3) {
+      width: auto;
+      margin-bottom: 80px;
+    }
+    #bli-medlem-footer .lite-info {
+      width: 85%;
+      margin-left: 15px;
+      margin-top: 30px;
+    }
 
-  #bli-medlem-footer p,
-  p {
-    font-size: 16px;
-  }
+    #bli-medlem-footer p,
+    p {
+      font-size: 16px;
+    }
 
-  /* #footer .container div:nth-child(1),
+    /* #footer .container div:nth-child(1),
   #footer .container div:nth-child(2),
   #footer .container div:nth-child(3) {
     width: auto;
     margin-top: 40px;
   } */
 
-  #footer .container div:nth-child(3) {
-    padding: 0;
-    margin: 0;
-  }
+    #footer .container div:nth-child(3) {
+      padding: 0;
+      margin: 0;
+    }
 
-  #footer .container {
-    display: block;
-  }
+    #footer .container {
+      display: block;
+    }
 
-  #footer .nyhetsbrev input {
-    width: 195px;
-    height: 64px;
-  }
+    #footer .nyhetsbrev input {
+      width: 195px;
+      height: 64px;
+    }
 
-  #footer .nyhetsbrev button {
-    height: 64px;
-  }
+    #footer .nyhetsbrev button {
+      height: 64px;
+    }
 
-  .social_icon {
-    margin-left: 1px;
-  }
+    .social_icon {
+      margin-left: 1px;
+    }
 
-  .social_icon img {
-    width: 70px;
-  }
+    .social_icon img {
+      width: 70px;
+    }
 
-  .kontakt p {
-    padding-bottom: 30px;
-  }
+    .kontakt p {
+      padding-bottom: 30px;
+    }
 
-  .copyright {
-    padding: 15px;
-    display: block;
-  }
+    .copyright {
+      padding: 15px;
+      display: block;
+    }
 
-  .copyright a {
-    font-size: 0.75rem;
-    font-family: "museo-sans";
-    font-weight: 300;
-  }
+    .copyright a {
+      font-size: 0.75rem;
+      font-family: "museo-sans";
+      font-weight: 300;
+    }
 
-  .LOGONAVN {
-    float: right;
+    .LOGONAVN {
+      float: right;
 
-    /* .lite-info {
+      /* .lite-info {
     max-width: 400px;
     margin-left: 20px;
     line-height: 1.7rem;
   } */
 
-    /* #footer .nyhetsbrev {
+      /* #footer .nyhetsbrev {
     margin-left: 20px;
   } */
 
-    /* #footer .nyhetsbrev input {
+      /* #footer .nyhetsbrev input {
     width: 70%;
   } */
-  }
-
-  #footer .kontakt {
-    max-width: 400px;
-    margin-left: 20px;
-    line-height: 1.7rem;
-  }
-
-  @media screen and (max-width: 500px) {
-    .main-grid {
-      display: block;
-      width: auto;
-      height: auto;
-      margin: 0 15px 0 15px;
     }
 
-    .turn-background {
-      width: 100%;
-      padding-bottom: 30px;
-      /* padding: 30px 0 30px 0; */
+    #footer .kontakt {
+      max-width: 400px;
+      margin-left: 20px;
+      line-height: 1.7rem;
     }
 
-    .intro-tekst {
-      font-size: 1.125rem;
-    }
+    @media screen and (max-width: 500px) {
+      .main-grid {
+        display: block;
+        width: auto;
+        height: auto;
+        margin: 0 15px 0 15px;
+      }
 
-    .liten-tekst {
-      font-size: 0.75rem;
-    }
+      .turn-background {
+        width: 100%;
+        padding-bottom: 30px;
+        /* padding: 30px 0 30px 0; */
+      }
 
-    .artikkel-heading {
-      margin: 0;
-    }
+      .intro-tekst {
+        font-size: 1.125rem;
+      }
 
-    .artikkel-heading h2 {
-      font-size: 1.4rem;
-      /* padding-top: 80px; */
-    }
+      .liten-tekst {
+        font-size: 0.75rem;
+      }
 
-    .artikkel-heading1 {
-      margin: 0;
-      padding-top: 30px;
-    }
+      .artikkel-heading {
+        margin: 0;
+      }
 
-    .artikkel-heading1 h2 {
-      font-size: 1.4rem;
-      /* padding-top: 80px; */
-    }
+      .artikkel-heading h2 {
+        font-size: 1.4rem;
+        /* padding-top: 80px; */
+      }
 
-    .paragraph {
-      margin-bottom: 40px;
-    }
+      .artikkel-heading1 {
+        margin: 0;
+        padding-top: 30px;
+      }
 
-    .paragraph h4 {
-      font-size: 1.03rem;
-      margin: 2rem 0 2rem 0;
-    }
+      .artikkel-heading1 h2 {
+        font-size: 1.4rem;
+        /* padding-top: 80px; */
+      }
 
-    .paragraph p {
-      font-size: 0.9688rem;
-    }
+      .paragraph {
+        margin-bottom: 40px;
+      }
 
-    .paragraph h3 {
-      font-size: 1.125rem;
-    }
+      .paragraph h4 {
+        font-size: 1.03rem;
+        margin: 2rem 0 2rem 0;
+      }
 
-    /* .list {
+      .paragraph p {
+        font-size: 0.9688rem;
+      }
+
+      .paragraph h3 {
+        font-size: 1.125rem;
+      }
+
+      /* .list {
     display: none;
   } */
 
-    .tips {
-      display: block;
-      margin-left: 15px;
-      margin-right: 15px;
-    }
+      .tips {
+        display: block;
+        margin-left: 15px;
+        margin-right: 15px;
+      }
 
-    .tips h2 {
-      font-size: 1.4rem;
-    }
+      .tips h2 {
+        font-size: 1.4rem;
+      }
 
-    .list {
-      margin-left: 0;
-      margin-right: 15px;
-      padding-bottom: 30px;
-    }
+      .list {
+        margin-left: 0;
+        margin-right: 15px;
+        padding-bottom: 30px;
+      }
 
-    .bok-illustrasjon {
-      width: 100%;
-      margin: 0 auto;
-      padding: 0;
-      padding-top: 60px;
-    }
+      .bok-illustrasjon {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        padding-top: 60px;
+      }
 
-    .bok-headline,
-    .kjøtt-headline,
-    .kaffe-headline {
-      padding-top: 30px;
-    }
+      .bok-headline,
+      .kjøtt-headline,
+      .kaffe-headline {
+        padding-top: 30px;
+      }
 
-    .bok-headline h1,
-    .kjøtt-headline h1,
-    .kaffe-headline h1 {
-      font-size: 2.06rem;
-    }
+      .bok-headline h1,
+      .kjøtt-headline h1,
+      .kaffe-headline h1 {
+        font-size: 2.06rem;
+      }
 
-    .kaffe-illustrasjon {
-      text-align: center;
-      width: 100%;
-    }
+      .kaffe-illustrasjon {
+        text-align: center;
+        width: 100%;
+      }
 
-    .fairtrade-container {
-      /* display: block;
+      .fairtrade-container {
+        /* display: block;
     padding: 0;
     width: 85%; */
-      padding: 0;
-      display: block;
-    }
+        padding: 0;
+        display: block;
+      }
 
-    .fair-logo {
-      text-align: center;
-      width: 200px;
-      padding-top: 40px;
-    }
+      .fair-logo {
+        text-align: center;
+        width: 200px;
+        padding-top: 40px;
+      }
 
-    .fairtrade-paragraph {
-      margin-left: 15px;
-    }
+      .fairtrade-paragraph {
+        margin-left: 15px;
+      }
 
-    .fairtrade-paragraph h2 {
-      margin-top: 30px;
-      font-size: 1.4rem;
-    }
+      .fairtrade-paragraph h2 {
+        margin-top: 30px;
+        font-size: 1.4rem;
+      }
 
-    /* KJØTT */
+      /* KJØTT */
 
-    .kjøtt-illustrasjon,
-    .kaffe-illustrasjon {
-      /* text-align: center; */
-      padding: 0;
-      margin: 0;
-      margin-top: 50px;
-      margin-bottom: 40px;
-      width: 100%;
-    }
+      .kjøtt-illustrasjon,
+      .kaffe-illustrasjon {
+        /* text-align: center; */
+        padding: 0;
+        margin: 0;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        width: 100%;
+      }
 
-    .kjøtt-headline,
-    .kaffe-headline {
-      padding: 0;
-      margin: 0;
-      text-align: center;
-    }
+      .kjøtt-headline,
+      .kaffe-headline {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+      }
 
-    .traktor,
-    .ku1,
-    .ku2,
-    .biff,
-    .carrot,
-    .broccoli {
-      display: none;
-    }
+      .traktor,
+      .ku1,
+      .ku2,
+      .biff,
+      .carrot,
+      .broccoli {
+        display: none;
+      }
 
-    .kraftfor,
-    .storfe,
-    .sau,
-    .vanngraf,
-    .bønnegraf,
-    .klimagraf,
-    .utslipp {
-      width: 100%;
-    }
+      .kraftfor,
+      .storfe,
+      .sau,
+      .vanngraf,
+      .bønnegraf,
+      .klimagraf,
+      .utslipp {
+        width: 100%;
+      }
 
-    .myte {
-      padding-top: 80px;
-      margin: 0;
-    }
+      .myte {
+        padding-top: 80px;
+        margin: 0;
+      }
 
-    .myte1 {
-      padding-top: 0;
-      margin: 0;
-    }
+      .myte1 {
+        padding-top: 0;
+        margin: 0;
+      }
 
-    .myte1 h2 {
-      margin: 0 0 10px 0;
-      font-size: 1.4rem;
-      font-weight: 300;
-      font-family: "museo-sans";
-    }
+      .myte1 h2 {
+        margin: 0 0 10px 0;
+        font-size: 1.4rem;
+        font-weight: 300;
+        font-family: "museo-sans";
+      }
 
-    .myte h2 {
-      font-size: 1.4rem;
-      margin: 0 0 10px 0;
-    }
+      .myte h2 {
+        font-size: 1.4rem;
+        margin: 0 0 10px 0;
+      }
 
-    .mobil-traktor {
-      margin-left: 130px;
-      width: 150px;
-    }
+      .mobil-traktor {
+        margin-left: 130px;
+        width: 150px;
+      }
 
-    .mobil-traktor,
-    .ku1-mobil,
-    .ku2-mobil,
-    .mobil-biff,
-    .mobil-broccoli,
-    .mobil-carrot,
-    .mobil-storfe,
-    .mobil-kraftfor,
-    .mobil-sau {
-      display: block;
-      width:auto;
-    }
-    .grønnskatt img{
-      width:90vw;
-    }
+      .mobil-traktor,
+      .ku1-mobil,
+      .ku2-mobil,
+      .mobil-biff,
+      .mobil-broccoli,
+      .mobil-carrot,
+      .mobil-storfe,
+      .mobil-kraftfor,
+      .mobil-sau {
+        display: block;
+        width: auto;
+      }
+      .grønnskatt img {
+        width: 90vw;
+      }
 
-    .mobil-traktor {
-    margin-left: 130px;
-    width: 150px}
+      .mobil-traktor {
+        margin-left: 130px;
+        width: 150px;
+      }
 
-    .kraftfor {
-      display: none;
-    }
+      .kraftfor {
+        display: none;
+      }
 
-    .sau {
-      display: none;
-    }
+      .sau {
+        display: none;
+      }
 
-    .storfe {
-      display: none;
-    }
+      .storfe {
+        display: none;
+      }
 
-    .vanngraf,
-    .klimagraf,
-    .bønnegraf {
-      display: none;
-    }
+      .vanngraf,
+      .klimagraf,
+      .bønnegraf {
+        display: none;
+      }
 
-    .mobil-bønnegraf {
-      padding-bottom: 50px;
-    }
+      .mobil-bønnegraf {
+        padding-bottom: 50px;
+      }
 
-    .utslipp {
-      display: none;
-    }
+      .utslipp {
+        display: none;
+      }
 
-    .utslipp-img {
-      text-align: center;
-    }
+      .utslipp-img {
+        text-align: center;
+      }
 
-    .mobil-utslipp-1 {
-      margin-bottom: 25px;
-    }
+      .mobil-utslipp-1 {
+        margin-bottom: 25px;
+      }
 
-    .mobil-utslipp-2 {
-      margin-bottom: 25px;
-    }
+      .mobil-utslipp-2 {
+        margin-bottom: 25px;
+      }
 
-    .mobil-utslipp-3 {
-      margin-bottom: 40px;
+      .mobil-utslipp-3 {
+        margin-bottom: 40px;
+      }
     }
   }
 }
