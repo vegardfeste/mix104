@@ -1377,71 +1377,7 @@ input[name="epost"] {
   transition: transform 1s ease-in 1s;
 }
 
-@media (max-width: 1800px) {
-  #form h1 {
-    font-size: 3.2vw;
-  }
-  #form {
-    clear: both;
-    height: auto;
-    padding-bottom: 7.1vw;
-    position: relative;
-    /*border: 1px solid black;*/
-  }
-  /* #form .text{
 
-} */
-
-  #form .text,
-  #form .form,
-  #form .register {
-    width: 60vw;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
-
-  #form .form {
-    border: 1px black solid;
-  }
-
-  #form .form .info {
-    width: 56vw;
-    margin-left: 25px;
-  }
-
-  #form h2 {
-    font-family: "museo slab";
-    width: 477px; /*33vw, 477px*/
-    height: auto;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 53px; /*3.75vw, 54px*/
-    margin-bottom: 20px;
-  }
-
-  #form .text_1 {
-    font-size: 1.67vw;
-  }
-  #form .intro-tekst {
-    width: 60vw;
-    font-size: 1.9vw;
-  }
-  #form .text .text_2 {
-    font-size: 17px;
-  }
-  #form .text .btn_2 {
-    margin-bottom: 40px;
-  }
-  #form .text_3 {
-    margin-top: 40px;
-  }
-  /******* 1800 kafe artiker  .kaffe-illustrasjon, .kjøtt-illustrasjon,*****/
-  .kaffe-illustrasjon,
-  .kjøtt-illustrasjon {
-    width: 36.5vw;
-  }
-}
 
 @media screen and (max-width: 1024px) {
   #form .checkbox label {
@@ -1618,10 +1554,23 @@ input[name="epost"] {
     margin-top: 8.9vw;
   }
 
-  #form .text .btn_2 {
+  /*#form .text .btn_2 {
     width: 39.2vw;
     height: 8.5vw;
     font-size: 3.66vw;
+  }*/
+  #form .text .btn_2{
+    width: 257px;
+    height: 56px;
+    font-size: 19.2px;
+    margin: 0 auto;
+    display: block;
+    padding: 18px 0;
+    border: none;
+    border-radius: 52px;
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+    text-transform: uppercase;
   }
 
   /**************  column ************/
@@ -1746,13 +1695,13 @@ input[name="epost"] {
     line-height: 6.4vw;
   }
 
-  #form .text .btn_2 {
+  /****#form .text .btn_2 {
     width: 54.4vw;
     height: 12.2vw;
     border-radius: 13.8vw;
     font-size: 5vw;
     margin-bottom: 14.1vw;
-  }
+  }***/
 
   .img_guider {
     display: none;
@@ -1779,11 +1728,15 @@ input[name="epost"] {
   }
 
   #medlem .column label {
-    font-size: 1.25rem;
+    font-size: 0.8rem;
   }
 
   #medlem .column span {
     font-size: 2.4vw;
+  }
+  #medlem span{
+    font-size: 2.4vw;
+    margin-top: 0;
   }
 
   #form .checkbox label {
@@ -1803,7 +1756,8 @@ input[name="epost"] {
     height: 12.2vw;
     border-radius: 14vw;
     font-size: 5vw;
-    margin-top: 0;
+    margin-top: 80px;
+    margin-bottom: 0;
   }
 
   #form .text_3 {
