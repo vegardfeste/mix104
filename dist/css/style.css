@@ -722,6 +722,7 @@ label #cancel {
 .bok-headline {
   grid-column: 2/7;
   padding-top: 300px;
+  text-align: center;
 }
 
 .ingress {
@@ -2848,7 +2849,7 @@ input[name="epost"] {
       .vanngraf,
       .klimagraf,
       .bønnegraf {
-        display: none;
+        display: block;
       }
 
       .mobil-bønnegraf {
@@ -2856,7 +2857,7 @@ input[name="epost"] {
       }
 
       .utslipp {
-        display: none;
+        display: block;
       }
 
       .utslipp-img {
