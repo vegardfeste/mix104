@@ -2401,7 +2401,7 @@ input[name="epost"] {
   }
 
   #showcase {
-    background: url("img/ny_main_mobil-13.svg") no-repeat;
+    background: url("/img/ny_main_mobil-13.svg") no-repeat;
     background-position: center;
     background-size: cover;
     height: 110vh;
