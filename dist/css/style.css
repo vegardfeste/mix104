@@ -11,7 +11,7 @@
   --black: #333333;
   --linkBlue: #4da2d1;
 }
-a{
+a {
   text-decoration: underline;
 }
 
@@ -643,7 +643,7 @@ label #cancel {
 #footer .nyhetsbrev button {
   margin-top: 14px;
   margin-right: 20px;
-  color: #fff;
+  color: var(--black);
   background: var(--primaryGreen);
   padding: 0px;
   width: 122px;
@@ -689,7 +689,7 @@ label #cancel {
   color: var(--black);
 }
 
-a .homepage-small-heading{
+a .homepage-small-heading {
   text-decoration: underline;
 }
 /* @media screen and (max-width: 750px) {
@@ -1384,8 +1384,6 @@ input[name="epost"] {
   transition: transform 1s ease-in 1s;
 }
 
-
-
 @media screen and (max-width: 1024px) {
   #form .checkbox label {
     width: 370px;
@@ -1566,7 +1564,7 @@ input[name="epost"] {
     height: 8.5vw;
     font-size: 3.66vw;
   }*/
-  #form .text .btn_2{
+  #form .text .btn_2 {
     width: 257px;
     height: 56px;
     font-size: 19.2px;
@@ -1741,7 +1739,7 @@ input[name="epost"] {
   #medlem .column span {
     font-size: 2.4vw;
   }
-  #medlem span{
+  #medlem span {
     font-size: 2.4vw;
     margin-top: 0;
   }
