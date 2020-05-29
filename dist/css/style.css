@@ -11,6 +11,9 @@
   --black: #333333;
   --linkBlue: #4da2d1;
 }
+a{
+  text-decoration: underline;
+}
 
 body {
   padding: 0;
@@ -132,6 +135,7 @@ ul {
 
 .link {
   color: var(--linkBlue);
+  text-decoration: underline;
 }
 
 .homepage-heading {
@@ -681,10 +685,13 @@ label #cancel {
 }
 
 .copyright a {
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--black);
 }
 
+a .homepage-small-heading{
+  text-decoration: underline;
+}
 /* @media screen and (max-width: 750px) {
   .copyright a {
     width: 200px;
