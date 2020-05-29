@@ -180,6 +180,10 @@ ul {
   width: 80px;
 }
 
+label {
+  font-family: "museo-sans";
+}
+
 /* ------------- HEADER ------------ */
 
 header {
